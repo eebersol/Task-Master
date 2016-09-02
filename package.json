@@ -1,0 +1,19 @@
+{
+  "name": "task-master",
+  "version": "1.0.0",
+  "description": "",
+  "main": "taskmaster.js",
+  "scripts": {
+    "start": "node taskmaster.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eebersol/Task-Master.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eebersol/Task-Master/issues"
+  },
+  "homepage": "https://github.com/eebersol/Task-Master#readme"
+}

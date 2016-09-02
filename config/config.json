@@ -1,0 +1,60 @@
+{
+    "ls" : {
+        "cmd" : "/bin/ls -l",
+        "numprocs" : 2,
+        "umask": "022",
+        "workingdir": "/tmp",
+        "autostart": true,
+        "autorestart": "unexpected",
+        "exitcodes": [0, 1, 2],
+        "startretries": 3,
+        "starttime": 5,
+        "stopsignal": "TERM",
+        "stoptime": 10,
+        "stdout": "/tmp/ls.stdout",
+        "stderr": "/tmp/ls.stderr",
+        "env": {
+            "STARTED_BY": "taskmaster",
+            "ANSWER": 42
+        } 
+    },
+    "pwd" : {
+        "cmd" : "/bin/pwd",
+        "numprocs" : 3,
+        "umask": "022",
+        "workingdir": "/tmp",
+        "autostart": true,
+        "autorestart": "unexpected",
+        "exitcodes": [0, 1, 2],
+        "startretries": 3,
+        "starttime": 5,
+        "stopsignal": "TERM",
+        "stoptime": 10,
+        "stdout": "/tmp/pwd.stdout",
+        "stderr": "/tmp/pwd.stderr",
+        "env": {
+            "STARTED_BY": "taskmaster",
+            "ANSWER": 42
+        } 
+    },
+    "ping" : {
+        "cmd" : "/sbin/ping 8.8.8.8",
+        "numprocs" : 1,
+        "umask": "022",
+        "workingdir": "/tmp",
+        "autostart": true,
+        "autorestart": "unexpected",
+        "exitcodes": [0, 1, 2],
+        "startretries": 3,
+        "starttime": 5,
+        "stopsignal": "TERM",
+        "stoptime": 10,
+        "stdout": "/tmp/pwd.stdout",
+        "stderr": "/tmp/pwd.stderr",
+        "env": {
+            "STARTED_BY": "taskmaster",
+            "ANSWER": 42
+        } 
+    }
+
+}

@@ -1,5 +1,4 @@
 const readline 	= require("readline");
-//const exit 		= require("exit");
 
 module.exports = class Readline {
 
@@ -37,7 +36,7 @@ module.exports = class Readline {
 
 	help() {
 		console.log(" _____________________________________________ ");
-		console.log("|                                             |")
+		console.log("|                                             |");
 		console.log("|             Default command :               |");
 		console.log("|_____________________________________________|");
 		console.log("|                                             |");

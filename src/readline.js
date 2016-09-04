@@ -22,13 +22,13 @@ module.exports = class Readline {
 		} else if (opts[0] == "restart") {
 			this.taskmaster.process_manager.restart(opts[1]);
 		} else if (opts[0] == "status") {
-			this.taskmaster.process_manager.check_status(opts[1]);
+			this.taskmaster.process_manager.check_status(opts);
 		} else if (opts[0] == "shutdown") {
 			process.exit(1);
 		}  else if (opts[0] == "start") {
 			this.taskmaster.process_manager.start_one(opts[1]);
-		} else if (cmds != "") {
-			console.log(opts[0], ": command not found");
+		} else if (cmds != "" === true) {
+			console.log(cmds +": command not found");
 		}
 		this.readline.setPrompt("taskmaster>", 11);
 		this.readline.prompt()

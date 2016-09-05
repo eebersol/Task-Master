@@ -1,5 +1,5 @@
-console.log("test : " +exit_code.indexOf(code))
 const child_process = require("child_process");
+const Process = require("./process");
 
 
 module.exports = class ProcessManager {
@@ -27,7 +27,7 @@ module.exports = class ProcessManager {
 		if (this.check_name(cmd) === true) {
 			while (index < this.taskmaster.config.options[cmd].numprocs) {
 				if (this.taskmaster.config.options[cmd].autostart == true) { // permet de check si autostart
-					let _process = new Process(this.taskmaster.config.options[cmd], this.name_array[index_array], this.paths); 
+					let _process = new Process(this.taskmaster.config.options[cmd], this.name_array[index_array], this.paths, cmd); 
 					this.processes[cmd].push(_process);
 				}
 				index++;
@@ -68,6 +68,7 @@ module.exports = class ProcessManager {
 		}
 			
 		if (this.check_name(cmd) === true) {
+			console.log("cmd : " +cmd)
 			this.stop_one(cmd);
 			this.start_one(cmd);
 		} else {

@@ -1,162 +1,131 @@
 const child_process = require("child_process");
-const Process = require("./process");
+const Process       = require("./process");
 
 
 module.exports = class ProcessManager {
-	constructor(taskmaster) {
+  constructor(taskmaster) {
 
-		this.processes 	= {};
-		this.taskmaster = taskmaster;
-		this.name_array = [];
-		this.paths 		= process.cwd();
-		let index_array = 0;
+    this.processes  = {};
+    this.taskmaster = taskmaster;
+    this.old_path   = process.cwd();
 
-		for (let process_name in taskmaster.config.options) {
-			this.name_array[index_array] = process_name;
-			this.start_one(process_name, index_array, this.paths);
-			index_array++;
-		}
+    let index_array = 0;
 
-	}
+    for (let process_name in taskmaster.config.options) {
+      this.start_one(process_name);
+      index_array++;
+    }
 
-	start_one(cmd, index_array, paths) {
+  }
 
-		this.processes[cmd] = [];
-		let index = 0;
+  start_one(cmd) {
+    this.processes[cmd] = [];
 
-		if (this.check_name(cmd) === true) {
-			while (index < this.taskmaster.config.options[cmd].numprocs) {
-				if (this.taskmaster.config.options[cmd].autostart == true) { // permet de check si autostart
-					let _process = new Process(this.taskmaster.config.options[cmd], this.name_array[index_array], this.paths, cmd); 
-					this.processes[cmd].push(_process);
-				}
-				index++;
-			}
-		}
-	}
+    let index = 0;
 
-	stop_one(cmd) {
-	
-		if (cmd == null) {
-			console.log("Error : stop requires a process name");
-			console.log("stop <name>            Stop a process");
-			console.log("stop <name> <name>     Stop multiple process");
-			console.log("stop all               Stop all process");
-			return;
-		}
+    if (!this.process_exists(cmd)) {
+      console.log("Error : invalid process name.");
+      return;
+    }
 
-		let processes = this.processes[cmd];
-		let index = 0;
+    while (index < this.taskmaster.config.options[cmd].numprocs) {
+      //Autostart process if needed
+      if (this.taskmaster.config.options[cmd].autostart == true) {
+        let _process = new Process(
+          this.taskmaster.config.options[cmd],
+          cmd,
+          this.old_path
+        ); 
+        this.processes[cmd].push(_process);
+      }
+      index++;
+    }
+  }
 
-		 if (this.check_name(cmd) === true) {
-			while (processes[index]) {
-				processes[index].stop();
-				index++;
-			}
-		} else {
-			console.log("Error : invalid process name.");
-		}
+  stop_general(cmd) {
+    let ii = 0;
+    cmd.splice(0, 1);
 
+    if (!cmd) {
+      console.log("Error : stop requires a process name");
+      console.log("stop <name>            Stop a process");
+      console.log("stop <name> <name>     Stop multiple process");
+      console.log("stop                   Stop all process");
+      return;
+    }
+ /*   
+    if (!this.process_exists(cmd)) {
+      console.log("Error : invalid process name.");
+      return;
+    }
+*/
+    if (!cmd[0]) {
+      for (let process_name in this.processes) {
+        this.stop_one(process_name);
+      }
+      return;
+    }
 
-	}
+    while(ii < cmd.length) {
+      this.stop_one(cmd[ii]);
+      ii++;
+    }
+  }
 
-	restart(cmd) {
+  restart(cmd) {
+    let iii = 0;
+    if (!cmd) {
+      console.log("Error : restart recquire process name.")
+      return;
+    }  
+/* 
+    if (!this.process_exists(cmd)) {
+      console.log("Error : invalid process name.");
+      return;
+    } 
+*/ 
+    this.stop_general(cmd);
+    while (iii < cmd.length) {
+      this.start_one(cmd[iii]);
+      iii++;
+    }
+  }
 
-		if (cmd == null) {
-			console.log("Error : restart recquire process name.")
-			return;
-		}
-			
-		if (this.check_name(cmd) === true) {
-			console.log("cmd : " +cmd)
-			this.stop_one(cmd);
-			this.start_one(cmd);
-		} else {
-			console.log("Error : invalid process name.");
-		}
-		
-	}
+  status(opts) {
+    let i = 0;
+    opts.splice(0, 1);
 
-	check_status(opts) {
+    console.log("");
 
-		let i_opts 		= 0;
-		let lenght 		= this.array_lenght(this.name_array);
-		let index 		= 0;
-		opts.splice(0, 1);
-		let lenght_opts = this.array_lenght(opts);
+    //No command, show all statut
+    if (!opts[0]) {
+      for (let process_name in this.processes) {
+        this.status_one(process_name);
+      }
+      return;
+    }
 
-		console.log("");
+    while(i < opts.length) {
+      this.status_one(opts[i]);
+      i++;
+    }
+  }
 
-		if (opts[0] == undefined) {
-			this.check_all_status(lenght);
-		} else {
-			while (i_opts < lenght_opts) {
-				if (this.check_name(opts[i_opts]) === true) {
-					let count = this.found_process(this.name_array, opts, i_opts);
-					let processes = this.processes[this.name_array[count]];
-					let str = this.name_array[count];
-					while (processes[index]) {
-						processes[index].status(str, index);
-						index++;
-					}} else if (this.check_name(opts[i_opts]) == undefined) {
-						console.log("Error : " +opts[i_opts] +" : does not exist");
-						console.log("");
-						}
-						i_opts++;
-					}
-				}
-				console.log("");
-	}
+  status_one(process_name) {
+    let index = 0;
+    this.processes[process_name].forEach(_process => {
+      _process.status(index);
+      index++;
+    });
+  }
 
-	check_all_status(lenght) {
+  stop_one(process_name) {
+    this.processes[process_name].forEach(_process => {
+      _process.stop();
+    });
+  }
 
-		let index = 0;
-		let	i = 0;
-
-		while (i < lenght) {
-			let processes 	= this.processes[this.name_array[i]];
-			let str = this.name_array[i];
-			while (processes[index]) {
-				processes[index].status(str, index);
-				index++;
-			}
-			index = 0;
-			i++;
-		}
-
-	}
-
-	check_name(cmd) {
-
-		let index = 0;
-
-		while (this.name_array[index]) {
-			if (cmd == this.name_array[index]) {
-				return true;
-			}
-			index++;
-		}
-
-
-	}
-
-	array_lenght(name_array) {
-
-		let index = 0;
-
-		while (name_array[index]) {
-			index++;
-		}
-		return index;
-	}
-
-	found_process(name_array, opts, i_opts) {
-
-		let index = 0;
-		while(name_array[index] != opts[i_opts]) {
-			index++
-		}
-		return index;
-
-	}
+  process_exists(cmd) {
+    return this.processes[cmd];
+  }
 }

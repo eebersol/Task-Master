@@ -1,104 +1,87 @@
 
 const child_process = require("child_process");
-const fs 			= require("fs");
-const util 			= require("util");
-const exec			= require('child_process').exec;
-const Timer 			= require('../node_modules/easytimer.js')
-
+const fs      = require("fs");
 
 module.exports = class Process {
-	constructor(options, cmd, paths, test) {
-		
-		let contents = fs.readFileSync(paths +"/config/config.json", 'utf8');
-		this.options = JSON.parse(contents);
+  constructor(options, process_name, paths) {
+    
+    let contents = fs.readFileSync(paths + "/config/config.json", 'utf8');
+    this.options = JSON.parse(contents);
 
-		let opt = options.cmd.split(" ");
-		let _cmd = opt[0];
-  		opt.splice(0, 1);
+    this.args = options.cmd.split(" ");
+    
+    this.process_name = process_name;
 
-  		console.log("test : " +test);
-  		if (cmd == undefined)
-  			cmd = test;
-  		console.log("cmd apres test : " +cmd)
-		this.spawn_process(_cmd, opt, cmd);
-	}
+    this.cmd = this.args[0];
 
-	spawn_process(_cmd, opt, cmd) {
+    this.uptime = 0;
 
-		let workdir 	= this.options[cmd].workingdir;
-		let umask_value = this.options[cmd].umask;
-		let log_file 	= fs.createWriteStream(this.options[cmd].stdout, {flags : 'a'});
-		let log_err  	= fs.createWriteStream(this.options[cmd].stderr, {flags : 'a'});
-		let exit_code 	= this.options[cmd].exitcodes;
-		const that 		= this;
+    this.args.splice(0, 1);
 
-		process.umask(umask_value);
-		process.chdir(workdir);
-		process.env.ANSWER;
-		process.env.STARTDED_BY;
+    this.spawn_process();
+  }
 
-	/*	while (num < index) {
-			let test = env_array[index_array];
-			let tmp = process.env;
-			num++;
-		}
-	*/
-		this.timer();
+  spawn_process() {
 
-		this._process = child_process.spawn(_cmd, [opt]);
+    let workdir   = this.options[this.process_name].workingdir;
+    let umask_value = this.options[this.process_name].umask;
+    let log_file  = fs.createWriteStream(this.options[this.process_name].stdout, { flags : 'a' });
+    let log_err   = fs.createWriteStream(this.options[this.process_name].stderr, { flags : 'a' });
 
-		this._process.stdout.on("data", (data) => {	
-			console.log = function(d) {
- 				log_file.write(util.format(d) + '\n');
- 				process.stdout.write(util.format(d) + '\n');
-			};
-			//console.log("stdout " +data);
-		});
+    let exit_code   = this.options[this.process_name].exitcodes;
 
-		this._process.stderr.on("data", (data) => {
-			console.log = function(d) {
- 				log_err.write(util.format(d) + '\n');
- 				process.stderr.write(util.format(d) + '\n');
-			};
-			//console.log("stderr " +data);
-		});
-	
-		this._process.on("close", (code) => {
-			if (exit_code.indexOf(code) != -1) {
-				return;
-			} else {
-				console.log("Error : crash restart process");
-				that.restart(cmd);
-			}
-		});
-	}
+    process.umask(umask_value);
+    process.chdir(workdir);
 
-	stop() {
+    for(let env_key in this.options[this.process_name].env) {
+      process.env[env_key] = this.options[this.process_name].env[env_key];
+    }
 
-		this._process.kill("SIGINT");
-		this._process.pid = null;
-	}
+    this.timer();
 
-	status(str, index) {
+    this._process = child_process.spawn(this.cmd, this.args);
 
-		if (this._process.pid != null) {
-			console.log("[ " +str +" ]" +"     process number : " +index +"            RUNNING      " +"pid " +this._process.pid +", uptime " + this.timer_end());
-		} else {
-			console.log("[ " +str +" ]" +"     process number : " +index +"            STOPPED");
-		}
-		console.log("");
-	}
+    this._process.stdout.pipe(log_file);
+    this._process.stderr.pipe(log_err);
+  
+    this._process.on("close", (code) => {
+      if (exit_code.indexOf(code) != -1) {
+        return;
+      } else {
+        console.log("Error : crash restart process");
+        this.restart();
+      }
+    });
+  }
 
-	timer() {
+  stop() {
 
-		this.timer = new Timer();
-		this.timer.start();
-	}
+    this.uptime = 0;
+    this._process.kill("SIGINT");
+    this._process.pid = null;
+  }
 
-	timer_end() {
+  restart() {
+    this.stop();
+    this.spawn_process();
+  }
 
-		let time = this.timer.getTimeValues().toString();
-		return time;
-	}
+  status(index) {
+
+    if (this._process.pid != null) {
+      console.log(`[${this.process_name}][${index}] RUNNING with [${this._process.pid}] and uptime ${this.uptime}`);
+    } else {
+      console.log(`[${this.process_name}][${index}] STOPPED`);
+    }
+    console.log("");
+  }
+
+  timer() {
+    setInterval(() => {
+      if (this._process.pid) {
+        this.uptime++;
+      }
+    }, 1000)
+  }
 }
 

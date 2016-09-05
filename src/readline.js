@@ -3,7 +3,6 @@ const readline 	= require("readline");
 module.exports = class Readline {
 
 	constructor(taskmaster) {
-
 		this.taskmaster = taskmaster;
 		this.readline = readline.createInterface(process.stdin, process.stdout);
 		this.readline.setPrompt("taskmaster>", 11);
@@ -12,17 +11,16 @@ module.exports = class Readline {
 	}
 
 	on_command(cmds) {
-
 		let opts = cmds.split(" ");
 
 		if (opts[0] == "help"){
 			this.help();
 		} else if (opts[0] == "stop") {
-			this.taskmaster.process_manager.stop_one(opts[1]);
+			this.taskmaster.process_manager.stop_general(opts);
 		} else if (opts[0] == "restart") {
-			this.taskmaster.process_manager.restart(opts[1]);
+			this.taskmaster.process_manager.restart(opts);
 		} else if (opts[0] == "status") {
-			this.taskmaster.process_manager.check_status(opts);
+			this.taskmaster.process_manager.status(opts);
 		} else if (opts[0] == "shutdown") {
 			process.exit(1);
 		}  else if (opts[0] == "start") {
@@ -30,6 +28,7 @@ module.exports = class Readline {
 		} else if (cmds != "" === true) {
 			console.log(cmds +": command not found");
 		}
+
 		this.readline.setPrompt("taskmaster>", 11);
 		this.readline.prompt()
 	}

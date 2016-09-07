@@ -1,5 +1,8 @@
 const child_process = require("child_process");
+const StartRetries  = require("./object/start_retries");
 const Process       = require("./process");
+const fs              = require("fs");
+
 
 
 module.exports = class ProcessManager {
@@ -9,18 +12,17 @@ module.exports = class ProcessManager {
     this.taskmaster = taskmaster;
     this.old_path   = process.cwd();
 
-    let index_array = 0;
-
     for (let process_name in taskmaster.config.options) {
+      this.startretries = new StartRetries(
+        process_name, 
+        taskmaster.config.options[process_name].startretries);
       this.start_one(process_name);
-      index_array++;
     }
 
   }
 
   start_one(cmd) {
     this.processes[cmd] = [];
-
     let index = 0;
 
     if (!this.process_exists(cmd)) {
@@ -29,8 +31,7 @@ module.exports = class ProcessManager {
     }
 
     while (index < this.taskmaster.config.options[cmd].numprocs) {
-      //Autostart process if needed
-      if (this.taskmaster.config.options[cmd].autostart == true) {
+      if (this.taskmaster.config.options[cmd].autostart == true && this.startretries.nb > 0) {
         let _process = new Process(
           this.taskmaster.config.options[cmd],
           cmd,
@@ -40,6 +41,9 @@ module.exports = class ProcessManager {
       }
       index++;
     }
+    this.startretries.nb--;
+    console.log(`${cmd} : started`);
+
   }
 
   stop_general(cmd) {
@@ -53,37 +57,44 @@ module.exports = class ProcessManager {
       console.log("stop                   Stop all process");
       return;
     }
- /*   
-    if (!this.process_exists(cmd)) {
-      console.log("Error : invalid process name.");
-      return;
-    }
-*/
+
+    while (ii < (cmd.length - 1)) {
+      if (!this.process_exists(cmd[ii])) {
+         console.log(`Error  ${cmd[ii]}: invalid process name.`);
+        return;
+      }
+      ii++;
+    } 
+    ii = 0;
+
     if (!cmd[0]) {
       for (let process_name in this.processes) {
-        this.stop_one(process_name);
-      }
-      return;
+         this.stop_one(process_name);
+       }
+       return;
     }
 
-    while(ii < cmd.length) {
+     while(ii < cmd.length) {
       this.stop_one(cmd[ii]);
-      ii++;
-    }
+       ii++;
+     }
   }
 
   restart(cmd) {
-    let iii = 0;
+    let iii = 1;
     if (!cmd) {
       console.log("Error : restart recquire process name.")
       return;
     }  
-/* 
-    if (!this.process_exists(cmd)) {
-      console.log("Error : invalid process name.");
-      return;
+ 
+    while (iii < (cmd.length - 1)) {
+      if (!this.process_exists(cmd[iii])) {
+        console.log(`Error  ${cmd[iii]}: invalid process name.`);
+        return;
+      }
+      iii++;
     } 
-*/ 
+    iii = 0;
     this.stop_general(cmd);
     while (iii < cmd.length) {
       this.start_one(cmd[iii]);
@@ -123,6 +134,7 @@ module.exports = class ProcessManager {
     this.processes[process_name].forEach(_process => {
       _process.stop();
     });
+    console.log(`${process_name} : stopped`);
   }
 
   process_exists(cmd) {

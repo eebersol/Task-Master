@@ -19,6 +19,8 @@ module.exports = class Readline {
 			this.taskmaster.process_manager.stop_general(opts);
 		} else if (opts[0] == "restart") {
 			this.taskmaster.process_manager.restart(opts);
+		} else if (opts[0] == "reload") {
+			this.taskmaster.process_manager.reload_process(opts);
 		} else if (opts[0] == "status") {
 			this.taskmaster.process_manager.status(opts);
 		} else if (opts[0] == "shutdown") {

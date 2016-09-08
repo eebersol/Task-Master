@@ -18,7 +18,7 @@ module.exports = class Readline {
 		} else if (opts[0] == "stop") {
 			this.taskmaster.process_manager.stop_general(opts);
 		} else if (opts[0] == "restart") {
-			this.taskmaster.process_manager.restart(opts, 1);
+			this.taskmaster.process_manager.restart(opts, 0);
 		} else if (opts[0] == "reload") {
 			this.taskmaster.process_manager.restart(opts, 0);
 		} else if (opts[0] == "status") {
@@ -26,7 +26,7 @@ module.exports = class Readline {
 		} else if (opts[0] == "shutdown") {
 			process.exit(1);
 		}  else if (opts[0] == "start") {
-			this.taskmaster.process_manager.start_one(opts[1], 0);
+			this.taskmaster.process_manager.start_one(opts[1], 1);
 		} else if (cmds != "" === true) {
 			console.log(cmds +": command not found");
 		}

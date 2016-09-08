@@ -35,17 +35,15 @@ module.exports = class ProcessManager {
     if (!this.process_exists(process_name)) { 
       console.log(`\x1b[31m Error : invalid process name.\x1b[0m`); // BUGBUGBUGBUGBUG
     } 
-    if (index == 0) 
+    if (index == 0)
       object = new GetProperty(process_name, this.old_path, 0, this.config.options);
-    else 
+    else
       object = new GetProperty(process_name, this.old_path, 1, this.config.options);
-  
-
     if (this.first_time != 0 || (this.first_time == 0 && object.autostart == true)) {
-      while (index < object.numprocs) {
+      while (indexes < object.numprocs) {
           let _process = new Process(object, process_name);
           this.processes[process_name].push(_process);
-          index++;
+          indexes++;
        }
      console.log(`\n\x1b[32m${process_name} : started\x1b[0m`);
      }
@@ -118,6 +116,7 @@ module.exports = class ProcessManager {
  }
 
   restart(cmd, index) {
+    console.log(`index ${index}`)
     let i_restart = 1;
     if (!cmd) {
       console.log(`\x1b[31m Error : restart recquire process name.\x1b[0m`)
@@ -140,7 +139,6 @@ module.exports = class ProcessManager {
   }
 
   process_exists(cmd) {
-    console.log(typeof this.processes[cmd]);
     return this.processes[cmd];
   }
 }

@@ -5,7 +5,7 @@ module.exports = class Readline {
 	constructor(taskmaster) {
 		this.taskmaster = taskmaster;
 		this.readline = readline.createInterface(process.stdin, process.stdout);
-		this.readline.setPrompt("taskmaster>", 11);
+		this.readline.setPrompt(`taskmaster>`, 11);
 		this.readline.on("line", this.on_command.bind(this));
   		this.readline.prompt();
 	}
@@ -18,20 +18,20 @@ module.exports = class Readline {
 		} else if (opts[0] == "stop") {
 			this.taskmaster.process_manager.stop_general(opts);
 		} else if (opts[0] == "restart") {
-			this.taskmaster.process_manager.restart(opts);
+			this.taskmaster.process_manager.restart(opts, 1);
 		} else if (opts[0] == "reload") {
-			this.taskmaster.process_manager.reload_process(opts);
+			this.taskmaster.process_manager.restart(opts, 0);
 		} else if (opts[0] == "status") {
-			this.taskmaster.process_manager.status(opts);
+			this.taskmaster.process_manager.status_general(opts);
 		} else if (opts[0] == "shutdown") {
 			process.exit(1);
 		}  else if (opts[0] == "start") {
-			this.taskmaster.process_manager.start_one(opts[1]);
+			this.taskmaster.process_manager.start_one(opts[1], 0);
 		} else if (cmds != "" === true) {
 			console.log(cmds +": command not found");
 		}
 
-		this.readline.setPrompt("taskmaster>", 11);
+		this.readline.setPrompt(`taskmaster>`, 11);
 		this.readline.prompt()
 	}
 

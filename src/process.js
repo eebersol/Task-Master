@@ -3,80 +3,73 @@ const child_process   = require("child_process");
 const fs              = require("fs");
 
 module.exports = class Process {
-  constructor(options, process_name, paths) {
-    
-    let contents      = fs.readFileSync(paths + "/config/config.json", 'utf8');
-    this.options      = JSON.parse(contents);
-
-    this.args         = options.cmd.split(" ");
+  constructor(object, process_name) {
     
     this.process_name = process_name;
-
+    this.object       = object;
+    this.args         = object.cmd.split(" ");
     this.cmd          = this.args[0];
-
-    this.uptime       = 0;
-
     this.args.splice(0, 1);
-
+    this.uptime       = 0;
 
     this.spawn_process();
   }
 
   spawn_process(options) {
 
-    let workdir       = this.options[this.process_name].workingdir;
-    let umask_value   = this.options[this.process_name].umask;
     let log_file      = fs.createWriteStream(
-                             this.options[this.process_name].stdout, 
+                             this.object.stdout, 
                               { flags : 'a' });
     let log_err       = fs.createWriteStream(
-                              this.options[this.process_name].stderr, 
+                              this.object.stderr, 
                               { flags : 'a' });
-    let exit_code     = this.options[this.process_name].exitcodes;
+    let exit_code     = this.object.exitcodes;
 
-    process.umask(umask_value);
-    process.chdir(workdir);
-
+    process.umask(this.object.umask);
+    process.chdir(this.object.workingdir);
+    
     this.set_env()
     this.timer();
 
     this._process = child_process.spawn(this.cmd, this.args);
-
     this._process.stdout.pipe(log_file);
     this._process.stderr.pipe(log_err);
-  
     this._process.on("close", (code) => {
       if (exit_code.indexOf(code) != -1) {
         return;
-      } else if (this.options[this.process_name].autorestart == "unexpected" 
-        || this.options[this.process_name].autorestart == "always") {
+      } else if (this.object.autorestart == "unexpected" 
+        || this.object.autorestart == "always" && this.object.startretries > 0) {
         console.log("Error : crash restart process");
+        this.object.startretries--;
+        console.log(`startretries -> ${this.object.startretries}`)
         this.restart();
       }
     });
 
-  //  this.get_cpu();
-
+    if (this._process.pid != undefined && this.uptime == 5)
+        console.log(` ${this.process_name} : started`);
+  return ;
   }
 
   stop() {
 
     this.uptime = 0;
-    this._process.kill("SIG" +this.options[this.process_name].stopsignal);
+    this._process.kill("SIG" +this.object.stopsignal);
     this._process.pid = null;
   }
 
   restart() {
     this.stop();
     this.spawn_process();
+    console.log(`\n\x1b[32m${this.process_name} : started\x1b[0m`);
   }
 
-  status(index) {
+  status(process_name, index) {
 
     if (this._process.pid != null) {
-      console.log(`[${this.process_name}][${index}] RUNNING with [${this._process.pid}] and uptime ${this.uptime}`);
+      console.log(`[${process_name}][${index}] RUNNING with [${this._process.pid}] and uptime ${this.uptime}s`);
     } else {
-      console.log(`[${this.process_name}][${index}] STOPPED`);
+      console.log(`[${process_name}][${index}] STOPPED`);
     }
     console.log("");
   }
@@ -85,46 +78,16 @@ module.exports = class Process {
     setInterval(() => {
       if (this._process.pid) {
         this.uptime++;
-        if (this.uptime == this.options[this.process_name].starttime &&
-          this._process.pid != null)
-           console.log(`\nprocess : [ ${this.process_name} ] successful`);
+        if (this.uptime == this.object.starttime &&
+          this._process.pid == null)
+           console.log(`\nprocess : [ ${this.process_name} ] fail`);
       }
     }, 1000)
   }
 
   set_env() {
-      for(let env_key in this.options[this.process_name].env) {
-       process.env[env_key] = this.options[this.process_name].env[env_key];
+      for(let env_key in this.object.env) {
+       process.env[env_key] = this.object.env[env_key];
     }
   }
-/*
-  get_cpu() {
-
-    console.log(`pid = ${this._process.pid}`)
-    let getUsage = (cb) => {
-       let contents = fs.readFile("/proc" + this._process.pid + "stat");
-            console.log(`Contents : ${contents}`);
-            let elems = contents.toString().split(' ');
-            let utime = elems[13];
-            let stime = elems[14];
-
-            cb(utime + stime);
-    }
-
-    setInterval(() => {
-        getUsage((startTime) =>{
-            setTimeout(() =>{
-                getUsage((endTime) =>{
-                    let delta = endTime - startTime;
-                    let percentage = 100 * (delta / 10000);
-
-                    if (percentage > 1){
-                        console.log("CPU Usage Over 20%!");
-                    }
-                });
-            }, 1000);
-        });
-    }, 10000);
-  }
-*/
 }

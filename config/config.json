@@ -1,7 +1,7 @@
 {
     "ls" : {
         "cmd" : "/bin/ls -l",
-        "numprocs" : 3,
+        "numprocs" : 10,
         "umask": "022",
         "workingdir": "/tmp",
         "autostart": false,

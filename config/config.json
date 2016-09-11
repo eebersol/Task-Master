@@ -1,10 +1,10 @@
 {
     "ls" : {
-        "cmd" : "/bin/ls -l",
-        "numprocs" : 3,
+        "cmd" : "/bindsfdfs/ls -l",
+        "numprocs" : 2,
         "umask": "022",
         "workingdir": "/tmp",
-        "autostart": false,
+        "autostart": true,
         "autorestart": "unexpected",
         "exitcodes": [0, 1, 2],
         "startretries": 3,
@@ -56,5 +56,4 @@
             "ANSWER": 42
         } 
     }
-
 }

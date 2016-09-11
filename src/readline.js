@@ -1,4 +1,5 @@
-const readline 	= require("readline");
+const readline 			= require("readline");
+const CheckProperty 	= require("./object/check_property.js");
 
 module.exports = class Readline {
 
@@ -8,6 +9,7 @@ module.exports = class Readline {
 		this.readline.setPrompt(`taskmaster>`, 11);
 		this.readline.on("line", this.on_command.bind(this));
   		this.readline.prompt();
+  		this.path = process.cwd();
 	}
 
 	on_command(cmds) {
@@ -20,6 +22,9 @@ module.exports = class Readline {
 		} else if (opts[0] == "restart") {
 			this.taskmaster.process_manager.restart(opts, 0);
 		} else if (opts[0] == "reload") {
+			new CheckProperty(this.taskmaster.config.options, this.taskmaster, opts[1], this.path);
+			console.log(`Finish`);
+			return;
 			this.taskmaster.process_manager.restart(opts, 0);
 		} else if (opts[0] == "status") {
 			this.taskmaster.process_manager.status_general(opts);

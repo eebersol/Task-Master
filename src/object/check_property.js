@@ -14,7 +14,7 @@ module.exports =  class CheckProperty {
 		let nb_prog  = this.array.length;	
 		this.list_keys();
 		this.check_diff(process_name);
-		this.apply_diff();
+		this.apply_diff(process_name);
 	 }
 
 	 check_value (old_contents, new_contents) {
@@ -64,14 +64,34 @@ module.exports =  class CheckProperty {
 	 			this.property_modified.push(_property);
 	 		}
 	 	});
-	 	console.log(this.property_modified);
 	}
 
-	apply_diff() {
+	apply_diff(process_name) {
 		let index = 0;
-		while (index < this.property_modified.length)
-			if (this.property_modified[index] == "cmd")
-					this.taskmaster.process_manager.stop_one(this.process_name);
+		console.log(process_name);
+		while (index < this.property_modified.length) {
+			if (this.property_modified[index] == "cmd") {
+				console.log(`Cmd modified Taskmaster need to restart prog to refresh cmd.`)
+			//	this.taskmaster.process_manager.stop_one(process_name);
+			} if (this.property_modified[index] == "numprocs") {
+				let numprocs = this.old_config[process_name][this.property_modified[index]] 
+								- this.new_config[process_name][this.property_modified[index]];
+				if (numprocs > 0) {
+					console.log(`Program : ${process_name} have ${numprocs} more process`)
+					// Lauch x procs more
+				}
+				else {
+					numprocs = numprocs.substring(1, numprocs.length);
+					console.log(`Program : ${process_name} have ${numprocs} left process`)
+					// kill x numprocs 
+				}
+			}
+			index++
+
+		}
+
 	}
 
+
+// utiliser la nouvelle config.json pour le reste
 }

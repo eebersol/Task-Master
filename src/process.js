@@ -1,5 +1,5 @@
 
-const child_process   = require("child_process");
+const spawn   = require("child_process").spawn;
 const fs              = require("fs");
 
 module.exports = class Process {
@@ -11,37 +11,36 @@ module.exports = class Process {
     this.cmd          = this.args[0];
     this.args.splice(0, 1);
     this.uptime       = 0;
+    this.retries      = 0;
 
     this.spawn_process();
   }
 
   spawn_process(options) {
 
-    let log_file      = fs.createWriteStream(
-                             this.object.stdout, 
-                              { flags : 'a' });
-    let log_err       = fs.createWriteStream(
-                              this.object.stderr, 
-                              { flags : 'a' });
-    let exit_code     = this.object.exitcodes;
-
-    process.umask(this.object.umask);
+    if (this.object.stdout)
+      this.stdout = fs.createWriteStream(this.object.stdout, { flags : 'a' });
+    if (this.object.stderr)
+      this.stderr = fs.createWriteStream(this.object.stderr, { flags : 'a' });
+    let exit_codes = this.object.exitcodes;
+    //process.umask(this.object.umask);
     process.chdir(this.object.workingdir);
     
     this.set_env()
     this.timer();
 
-    this._process = child_process.spawn(this.cmd, this.args);
-    this._process.stdout.pipe(log_file);
-    this._process.stderr.pipe(log_err);
+    this._process = spawn(this.cmd, this.args, {env : this.object.env});
+    console.log(this._process.connected)
+    this._process.stdout.pipe(this.stdout);
+    this._process.stderr.pipe(this.stderr);
     this._process.on("close", (code) => {
-      if (exit_code.indexOf(code) != -1) {
+      if (exit_codes.indexOf(code) != -1) {
         return;
       } else if (this.object.autorestart == "unexpected" 
-        || this.object.autorestart == "always" && this.object.startretries > 0) {
+         || this.object.autorestart == "always" 
+            && this.retries < this.object.startretries) {
         console.log("Error : crash restart process");
-        this.object.startretries--;
-        console.log(`startretries -> ${this.object.startretries}`)
+        this.retries++;
         this.restart();
       }
     });
@@ -51,15 +50,24 @@ module.exports = class Process {
   return ;
   }
 
-  stop() {
-
+  stop(force_stop = false) {
+   if (force_stop == true)
+      this.object.startretries = 0;
     this.uptime = 0;
-    this._process.kill("SIG" +this.object.stopsignal);
-    this._process.pid = null;
+    try {
+        this._process.kill("SIG" +this.object.stopsignal);
+        this._process.pid = null;
+    } catch (e) { }
+
+    this._process.stdout.end();
+    this._process.stderr.end();
+    setTimeout(() => {
+       console.log(`\n\x1b[32m${this.process_name} : stopped\x1b[0m`); 
+    }, 1000 * this.object.stoptime);
   }
 
   restart() {
-    this.stop();
+    this.stop()
     this.spawn_process();
     console.log(`\n\x1b[32m${this.process_name} : started\x1b[0m`);
   }

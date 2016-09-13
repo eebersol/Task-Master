@@ -1,14 +1,14 @@
 {
     "ls" : {
-        "cmd" : "/bin/ls -l",
-        "numprocs" : 2,
+        "cmd" : "/bin/ls -la",
+        "numprocs" : 5,
         "umask": "022",
         "workingdir": "/tmp",
-        "autostart": false,
+        "autostart": true,
         "autorestart": "unexpected",
         "exitcodes": [0, 1, 2],
         "startretries": 3,
-        "starttime": 5,
+        "starttime": 3,
         "stopsignal": "TERM",
         "stoptime": 10,
         "stdout": "/tmp/ls.stdout",
@@ -38,11 +38,11 @@
         } 
     },
     "ping" : {
-        "cmd" : "/sbinfsdsd/ping 8.8.8.8",
-        "numprocs" : 4,
+        "cmd" : "/sbin/ping 8.8.8.8",
+        "numprocs" : 1,
         "umask": "022",
         "workingdir": "/tmp",
-        "autostart": false,
+        "autostart": true,
         "autorestart": "always",
         "exitcodes": [0, 1, 2],
         "startretries": 3,
@@ -56,4 +56,5 @@
             "ANSWER": 42
         } 
     }
+
 }

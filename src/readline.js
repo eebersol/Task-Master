@@ -20,16 +20,17 @@ module.exports = class Readline {
 		} else if (opts[0] == "stop") {
 			this.taskmaster.process_manager.stop_general(opts);
 		} else if (opts[0] == "restart") {
-			this.taskmaster.process_manager.restart(opts, 0);
+			console.log("1");
+			this.taskmaster.process_manager.restart(opts);
 		} else if (opts[0] == "reload") {
-			new CheckProperty(this.taskmaster.config.options, this.taskmaster, opts[1], this.path);
+			this.taskmaster.process_manager.reload(opts[1]);
+			//new CheckProperty(this.taskmaster.config.options, this.taskmaster, opts[1], this.path);
 			console.log(`Finish`);
-			return;
-			this.taskmaster.process_manager.restart(opts, 0);
+		//	this.taskmaster.process_manager.restart(opts, 0);
 		} else if (opts[0] == "status") {
 			this.taskmaster.process_manager.status_general(opts);
 		} else if (opts[0] == "shutdown") {
-			process.exit(1);
+			this.taskmaster.process_manager._exit();
 		}  else if (opts[0] == "start") {
 			this.taskmaster.process_manager.start_one(opts[1], 1);
 		} else if (cmds != "" === true) {

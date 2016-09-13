@@ -20,8 +20,12 @@ module.exports = class Readline {
 		} else if (opts[0] == "stop") {
 			this.taskmaster.process_manager.stop_general(opts);
 		} else if (opts[0] == "restart") {
+<<<<<<< HEAD
 			console.log("1");
 			this.taskmaster.process_manager.restart(opts);
+=======
+			this.taskmaster.process_manager.restart(opts, 1);
+>>>>>>> 786037c89abfd9a863b2ef878e2ad6531b4613a3
 		} else if (opts[0] == "reload") {
 			this.taskmaster.process_manager.reload(opts[1]);
 			//new CheckProperty(this.taskmaster.config.options, this.taskmaster, opts[1], this.path);

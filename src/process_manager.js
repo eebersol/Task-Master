@@ -1,6 +1,6 @@
-const child_process   = require("child_process");
-const Process         = require("./process");
-const fs              = require("fs");
+const child_process   = require('child_process');
+const Process         = require('./process');
+const fs              = require('fs');
 
 
 module.exports = class ProcessManager {
@@ -24,16 +24,16 @@ module.exports = class ProcessManager {
     this.processes[process_name] = [];
     let indexes = 0;
 
-    if (!this.process_exists(process_name)) { 
-      console.log(`\x1b[31m Error : invalid process name.\x1b[0m`);
-    } 
-    if (this.first_time != 0 || (this.first_time == 0 && this.config_file[process_name].autostart == true)) {
-      while (indexes < this.config_file[process_name].numprocs) {
-          let _process = new Process(this.config_file[process_name], process_name);
-          this.processes[process_name].push(_process);
-          indexes++;
-       }
-     }
+    if (!this.process_exists(process_name)) {
+        console.log(`\x1b[31mError  ${process_name}: invalid process name.\x1b[0m`);
+        return;
+    } else if (this.first_time != 0 || (this.first_time == 0 && this.config_file[process_name].autostart == true)) {
+        while (indexes < this.config_file[process_name].numprocs) {
+            let _process = new Process(this.config_file[process_name], process_name);
+            this.processes[process_name].push(_process);
+            indexes++;
+        }
+      }
   }
 
   stop_general(cmd) {
@@ -50,35 +50,35 @@ module.exports = class ProcessManager {
 
     while (i_stop < (cmd.length)) {
       if (!this.process_exists(cmd[i_stop])) {
-         console.log(`\x1b[31mError  ${cmd[i_stop]}: invalid process name.\x1b[0m`);
+        console.log(`\x1b[31mError  ${cmd[i_stop]}: invalid process name.\x1b[0m`);
         return;
       }
       i_stop++;
     } 
     i_stop = 0;
 
-    if (cmd[0] == "all") {
+    if (cmd[0] == 'all') {
       for (let process_name in this.processes) {
-         this.stop_one(process_name, this.processes);
+         this.stop_one(process_name, cmd);
        }
        return;
     }
 
      while(i_stop < cmd.length) {
-      this.stop_one(cmd[i_stop], this.processes);
+      this.stop_one(cmd[i_stop], cmd);
        i_stop++;
      }
   }
 
-  stop_one(process_name, array_process) {
-    array_process[process_name].forEach(_process => {
-      _process.stop();
+  stop_one(cmd) {
+    this.processes[cmd].forEach(_process => {
+      _process.stop(true);
     });
   }
 
   status_general(opts) {
     opts.splice(0, 1);
-    console.log("");
+    console.log('');
     if (!opts[0]) {
       for (let process_name in this.config_file) { 
         this.status_one(process_name);
@@ -127,17 +127,20 @@ module.exports = class ProcessManager {
     let old_config = Object.assign({}, this.config_file);
     let updated_properies = [];
 
-    //Reload config file;
+    if (!this.process_exists(cmd)) {
+        console.log(`\x1b[31mError  ${cmd}: invalid process name.\x1b[0m`);
+        return;
+      }
     this.taskmaster.config.load_config(this.old_path);
 
     for (let _p in this.config_file[cmd]) {
       let old_property = old_config[cmd][_p];
       let new_property = this.config_file[cmd][_p];
 
-      if ((old_property != new_property) && _p == "cmd") {
+      if ((old_property != new_property) && _p == 'cmd') {
         this.__reload_cmd(cmd);
       }
-      if ((old_property != new_property) && _p == "numprocs") {
+      if ((old_property != new_property) && _p == 'numprocs') {
         this.__reload_numprocs(cmd);
       }
 
@@ -150,12 +153,12 @@ module.exports = class ProcessManager {
   }
 
   __reload_numprocs(cmd) {
-    let numprocs = this.taskmaster.config.options[cmd]["numprocs"];
+    let numprocs = this.taskmaster.config.options[cmd]['numprocs'];
 
     if (numprocs > this.processes[cmd].length) {
       let new_proc = numprocs - this.processes[cmd].length;
-      console.log("new_proc " +new_proc);
-      console.log("numprocs " +numprocs);
+      console.log('new_proc ' +new_proc);
+      console.log('numprocs ' +numprocs);
       for(let index = 0; index < new_proc; index++) {
         let _process = new Process(this.config_file[cmd], cmd);
         this.processes[cmd].push(_process);
@@ -172,11 +175,11 @@ module.exports = class ProcessManager {
   }
 
   process_exists(cmd) {
-    return this.processes[cmd];
+    return this.config_file[cmd];
   }
 
   _exit() {
-    console.log("Stopping, please wait");
+    console.log('Stopping, please wait');
     for (var process_name in this.processes) {
       let program_ = this.processes[process_name];
       program_.forEach(process_ => {

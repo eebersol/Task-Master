@@ -1,6 +1,6 @@
 
-const spawn   = require("child_process").spawn;
-const fs              = require("fs");
+const spawn   = require('child_process').spawn;
+const fs              = require('fs');
 
 module.exports = class Process {
   constructor(process_config, process_name) {
@@ -139,11 +139,9 @@ module.exports = class Process {
       this.startretries = 0;
     this.uptime = 0;
     try {
-        this._process.kill("SIG" +this.stopsignal);
+        this._process.kill('SIG' +this.stopsignal);
         this._process.pid = null;
-    } catch (e) {
-      console.log(e);
-    }
+    } catch (e) {}
     setTimeout(() => {
        console.log(`\n\x1b[32m${this.name} : stopped\x1b[0m`); 
     }, 1000 * this.stoptime);

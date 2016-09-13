@@ -1,5 +1,4 @@
 const readline 			= require("readline");
-const CheckProperty 	= require("./object/check_property.js");
 
 module.exports = class Readline {
 

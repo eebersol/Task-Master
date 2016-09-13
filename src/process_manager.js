@@ -1,5 +1,4 @@
 const child_process   = require("child_process");
-const CheckProperty   = require("./object/check_property");
 const Process         = require("./process");
 const fs              = require("fs");
 
@@ -8,15 +7,13 @@ module.exports = class ProcessManager {
   constructor(taskmaster) {
 
     this.processes  = {};
-    this.taskmaster = taskmaster;
     this.old_path   = process.cwd();
-    this.config     = this.taskmaster.config;
-    this.array      = [];
+    this.config_file = taskmaster.config.options;
     this.first_time = 0;
-    this.processes  = [];
+  //  this.processes  = [];
 
-    for (let process_name in taskmaster.config.options) {
-      this.start_one(process_name, this.taskmaster.config.options[process_name]);
+    for (let process_name in this.config_file) {
+      this.start_one(process_name, this.config_file[process_name]);
     }
     this.first_time = 1;
 
@@ -30,9 +27,9 @@ module.exports = class ProcessManager {
     if (!this.process_exists(process_name)) { 
       console.log(`\x1b[31m Error : invalid process name.\x1b[0m`);
     } 
-    if (this.first_time != 0 || (this.first_time == 0 && this.taskmaster.config.options[process_name].autostart == true)) {
-      while (indexes < this.taskmaster.config.options[process_name].numprocs) {
-          let _process = new Process(this.taskmaster.config.options[process_name], process_name);
+    if (this.first_time != 0 || (this.first_time == 0 && this.config_file[process_name].autostart == true)) {
+      while (indexes < this.config_file[process_name].numprocs) {
+          let _process = new Process(this.config_file[process_name], process_name);
           this.processes[process_name].push(_process);
           indexes++;
        }
@@ -83,7 +80,7 @@ module.exports = class ProcessManager {
     opts.splice(0, 1);
     console.log("");
     if (!opts[0]) {
-      for (let process_name in this.taskmaster.config.options) { 
+      for (let process_name in this.config_file) { 
         this.status_one(process_name);
       }
       return;
@@ -127,15 +124,15 @@ module.exports = class ProcessManager {
   }
 
   reload(cmd) {
-    let old_config = Object.assign({}, this.taskmaster.config.options);
+    let old_config = Object.assign({}, this.config_file);
     let updated_properies = [];
 
     //Reload config file;
     this.taskmaster.config.load_config(this.old_path);
 
-    for (let _p in this.taskmaster.config.options[cmd]) {
+    for (let _p in this.config_file[cmd]) {
       let old_property = old_config[cmd][_p];
-      let new_property = this.taskmaster.config.options[cmd][_p];
+      let new_property = this.config_file[cmd][_p];
 
       if ((old_property != new_property) && _p == "cmd") {
         this.__reload_cmd(cmd);
@@ -149,7 +146,7 @@ module.exports = class ProcessManager {
 
   __reload_cmd(cmd) {
     this.taskmaster.process_manager.stop_one(cmd);
-    this.taskmaster.process_manager.start_one(cmd, this.config[cmd]);
+    this.taskmaster.process_manager.start_one(cmd, this.taskmaster.config[cmd]);
   }
 
   __reload_numprocs(cmd) {
@@ -160,7 +157,7 @@ module.exports = class ProcessManager {
       console.log("new_proc " +new_proc);
       console.log("numprocs " +numprocs);
       for(let index = 0; index < new_proc; index++) {
-        let _process = new Process(this.taskmaster.config.options[cmd], cmd);
+        let _process = new Process(this.config_file[cmd], cmd);
         this.processes[cmd].push(_process);
       }
     }

@@ -3,18 +3,17 @@ const spawn   = require("child_process").spawn;
 const fs              = require("fs");
 
 module.exports = class Process {
-  constructor(object, process_name) {
+  constructor(process_config, process_name) {
     
-    this.name         = process_name;
-    this.object       = object;
-    this.args         = object.cmd.split(' ');
-    this.cmd          = this.args[0];
+    this.name             = process_name;
+    this.args             = process_config.cmd.split(' ');
+    this.cmd_bis          = this.args[0];
     this.args.splice(0, 1);
-    this.state        = 'stopped'
-    this.uptime       = 0;
-    this.retries      = 0;
+    this.state            = 'stopped'
+    this.uptime           = 0;
+    this.retries          = 0;
 
-    this.reload_config(object);
+    this.reload_config(process_config);
     this.spawn_process();
   }
 
@@ -33,17 +32,20 @@ module.exports = class Process {
     this.stdout       = process_config.stdout;
     this.stderr       = process_config.stderr;
     this.env          = process_config.env || {};
-
-    console.log("ok")
   }
 
   spawn_process(options) {
 
-    if (this.state == 'starting' || tjis.state == 'started')
+    if (this.state == 'starting' || this.state == 'started')
       return;
     this.state = 'starting';
 
-    if (!fs.existSync(this.cmd))
+
+    let args             = this.cmd.split(' ');
+    let process_cmd      = args[0];
+    args.splice(0, 1);
+
+    if (!fs.existsSync(process_cmd))
       console.log(`Cannot launch process ${this.name}`);
 
     //process.umask(this.object.umask);
@@ -52,7 +54,7 @@ module.exports = class Process {
     this.set_env();
     this.timer();
 
-    this._process = spawn(this.cmd, this.args, {env : this.object.env});
+    this._process = spawn(process_cmd, args, {env : this.env});
     if (this._process.connected) {
       console.log('Yes umask setting');
       this._process._handle.umask([parseInt(this.umask)])
@@ -67,7 +69,7 @@ module.exports = class Process {
       if (this.is_running()) {
         this.state = 'started';
         this._process.on('close', this._on_close.bind(this));
-        console.log(`${this.name} has sucessfully started ...`);
+        console.log(`\x1b[32m${this.name} has sucessfully started.\x1b[0m`);
       } 
       else
         this._on_close(this._process.exitCode);
@@ -78,12 +80,12 @@ module.exports = class Process {
     try {
       let flag = {flags : 'a'};
       if (this.stdout) {
-        fs.appendfileSync(this.stdout, ' ', flag)
-        this.stdout_stream = fs.createWriteStream(this.object.stdout, { flags : 'a' });
+        fs.appendFileSync(this.stdout, ' ', flag)
+        this.stdout_stream = fs.createWriteStream(this.stdout, { flags : 'a' });
       }
       if (this.stderr) {
-        fs.appendfileSync(this.stderr, ' ', flag)
-        this.stderr_stream = fs.createWriteStream(this.object.stderr, { flags : 'a' });
+        fs.appendFileSync(this.stderr, ' ', flag)
+        this.stderr_stream = fs.createWriteStream(this.stderr, { flags : 'a' });
       }
     }
     catch(e) {
@@ -97,13 +99,13 @@ module.exports = class Process {
     }
   }
 
-  _on_stderr() {
+  _on_stderr(data) {
     if (this.stderr_stream) {
       this.stderr_stream.write(data);
     }
   }
 
-  _on_close() {
+  _on_close(code) {
     this.pid            = null;
     this.state          = 'stopped';
     if (this.stdout_stream)
@@ -113,10 +115,10 @@ module.exports = class Process {
     this.stdout_stream  = null;
     this.stdin_stream   = null;
     if (this.exitcodes.indexOf(code) > -1 && this.startretries != 'always') {
-      console.log(`Process ${this.name} has normally stopped with code ${code}...`);
+      console.log(`\x1b[32mProcess ${this.name} has normally stopped with code ${code}.\x1b[0m`);
       return;
     }
-    console.log(`Process ${this.name} has crashed with code ${code}...`);
+    console.log(`\x1b[31mProcess ${this.name} has crashed with code ${code}\x1b[0m`);
     if (this.retries < this.startretries && !this.startretries != 'never') {
       this.restart();
       this.retries++;
@@ -127,6 +129,9 @@ module.exports = class Process {
     try {
       return process.kill(this.pid,0);
     }
+    catch(e) {
+      console.log(`Error : ${e}`);
+    }
   }
 
   stop(force_stop = false) {
@@ -136,10 +141,9 @@ module.exports = class Process {
     try {
         this._process.kill("SIG" +this.stopsignal);
         this._process.pid = null;
-    } catch (e) { }
-
-    this._process.stdout.end();
-    this._process.stderr.end();
+    } catch (e) {
+      console.log(e);
+    }
     setTimeout(() => {
        console.log(`\n\x1b[32m${this.name} : stopped\x1b[0m`); 
     }, 1000 * this.stoptime);

@@ -36,7 +36,6 @@ module.exports = class ProcessManager {
           this.processes[process_name].push(_process);
           indexes++;
        }
-     console.log(`\n\x1b[32m${process_name} : started\x1b[0m`);
      }
   }
 

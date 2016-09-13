@@ -39,7 +39,7 @@
     },
     "ping" : {
         "cmd" : "/sbin/ping 8.8.8.8",
-        "numprocs" : 1,
+        "numprocs" : 2,
         "umask": "022",
         "workingdir": "/tmp",
         "autostart": true,

@@ -1,9 +1,9 @@
 {
     "ls" : {
-        "cmd" : "/bin/ls -la",
+        "cmd" : "/bin/ls ",
         "numprocs" : 5,
-        "umask": "022",
-        "workingdir": "/tmp",
+        "umask": "000",
+        "workingdir": "/tmp/coucou",
         "autostart": true,
         "autorestart": "unexpected",
         "exitcodes": [0, 1, 2],
@@ -21,7 +21,7 @@
     "pwd" : {
         "cmd" : "/bin/pwd -P",
         "numprocs" : 3,
-        "umask": "022",
+        "umask": "002",
         "workingdir": "/tmp",
         "autostart": true,
         "autorestart": "unexpected",

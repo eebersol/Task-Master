@@ -1,19 +1,19 @@
 {
-  "name": "task-master",
+  "name": "taskmaster",
   "version": "1.0.0",
-  "description": "",
+  "description": "program must be able to start jobs as child processes, and keep them alive, restarting",
   "main": "taskmaster.js",
   "scripts": {
-    "start": "node taskmaster.js"
+    "start": "node --harmony --harmony_default_parameters taskmaster.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/eebersol/Task-Master.git"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/eebersol/Task-Master/issues"
-  },
-  "homepage": "https://github.com/eebersol/Task-Master#readme"
+  "author": "eebersol",
+  "license": "MIT",
+  "dependencies": {
+    "winston": "^2.2.0",
+    "winston-loggly": "^1.3.1"
+  }
 }

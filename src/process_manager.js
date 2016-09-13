@@ -6,11 +6,10 @@ const fs              = require('fs');
 module.exports = class ProcessManager {
   constructor(taskmaster) {
 
+    this.taskmaster = taskmaster;
     this.processes  = {};
-    this.old_path   = process.cwd();
     this.config_file = taskmaster.config.options;
     this.first_time = 0;
-  //  this.processes  = [];
 
     for (let process_name in this.config_file) {
       this.start_one(process_name, this.config_file[process_name]);
@@ -29,7 +28,7 @@ module.exports = class ProcessManager {
         return;
     } else if (this.first_time != 0 || (this.first_time == 0 && this.config_file[process_name].autostart == true)) {
         while (indexes < this.config_file[process_name].numprocs) {
-            let _process = new Process(this.config_file[process_name], process_name);
+            let _process = new Process(this.config_file[process_name], process_name, this.taskmaster);
             this.processes[process_name].push(_process);
             indexes++;
         }
@@ -48,6 +47,13 @@ module.exports = class ProcessManager {
       return;
     }
 
+    if (cmd[0] == 'all') {
+      for (let process_name in this.processes) {
+         this.stop_one(process_name, cmd);
+       }
+       return;
+    }
+
     while (i_stop < (cmd.length)) {
       if (!this.process_exists(cmd[i_stop])) {
         console.log(`\x1b[31mError  ${cmd[i_stop]}: invalid process name.\x1b[0m`);
@@ -56,13 +62,6 @@ module.exports = class ProcessManager {
       i_stop++;
     } 
     i_stop = 0;
-
-    if (cmd[0] == 'all') {
-      for (let process_name in this.processes) {
-         this.stop_one(process_name, cmd);
-       }
-       return;
-    }
 
      while(i_stop < cmd.length) {
       this.stop_one(cmd[i_stop], cmd);
@@ -131,7 +130,7 @@ module.exports = class ProcessManager {
         console.log(`\x1b[31mError  ${cmd}: invalid process name.\x1b[0m`);
         return;
       }
-    this.taskmaster.config.load_config(this.old_path);
+    this.taskmaster.config.load_config();
 
     for (let _p in this.config_file[cmd]) {
       let old_property = old_config[cmd][_p];

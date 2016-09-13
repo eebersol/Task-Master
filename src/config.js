@@ -2,16 +2,15 @@ const fs = require('fs');
 
 module.exports = class Config {
   constructor() {
+    this.old_path = process.cwd();
     this.options = {};
 
     this.load_config();
   }
 
-  load_config(path) {
-    if (path == null)
-      path = process.cwd();
+  load_config() {
     try {
-      let contents = fs.readFileSync(path + "/config/config.json", 'utf8');
+      let contents = fs.readFileSync(this.old_path + "/config/config.json", 'utf8');
       this.options = JSON.parse(contents);
     }
     catch(e) {

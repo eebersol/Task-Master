@@ -1,8 +1,8 @@
 
-const spawn   = require('child_process').spawn;
-const fs              = require('fs');
+const spawn               = require('child_process').spawn;
+const fs                  = require('fs');
 
-module.exports = class Process {
+module.exports            = class Process {
   constructor(process_config, process_name, taskmaster) {
     
     this.taskmaster       = taskmaster;
@@ -61,7 +61,7 @@ module.exports = class Process {
     this.pid = this._process.pid;
     setTimeout(() => {
       if (this.is_running()) {
-        this.state = 'started';
+        this.state         = 'started';
         this._process.on('close', this._on_close.bind(this));
         this.taskmaster.logger.info(`\x1b[32m${this.name} has sucessfully started.\x1b[0m`);
       } 
@@ -75,11 +75,11 @@ module.exports = class Process {
       let flag = {flags : 'a'};
       if (this.stdout) {
         fs.appendFileSync(this.stdout, ' ', flag)
-        this.stdout_stream = fs.createWriteStream(this.stdout, { flags : 'a' });
+        this.stdout_stream  = fs.createWriteStream(this.stdout, { flags : 'a' });
       }
       if (this.stderr) {
         fs.appendFileSync(this.stderr, ' ', flag)
-        this.stderr_stream = fs.createWriteStream(this.stderr, { flags : 'a' });
+        this.stderr_stream  = fs.createWriteStream(this.stderr, { flags : 'a' });
       }
     }
     catch(e) {
@@ -100,14 +100,14 @@ module.exports = class Process {
   }
 
   _on_close(code) {
-    this.pid              = null;
-    this.state            = 'stopped';
+    this.pid                = null;
+    this.state              = 'stopped';
     if (this.stdout_stream)
       this.stdout_stream.end();
     if (this.stdin_stream)
       this.stdin_stream.end();
-    this.stdout_stream    = null;
-    this.stdin_stream     = null;
+    this.stdout_stream      = null;
+    this.stdin_stream       = null;
     if (this.exitcodes.indexOf(code) > -1 && this.startretries != 'always') {
       this.taskmaster.logger.info(`\x1b[32mProcess ${this.name} has normally stopped with code ${code}.\x1b[0m`);
       return;
@@ -143,7 +143,7 @@ module.exports = class Process {
 
   restart() {
     this.stop()
-    new Process (this.object, this.name);
+    new Process (this.object, this.name, this.taskmaster);
     this.taskmaster.logger.info(`\n\x1b[32m${this.name} : started\x1b[0m`);
   }
 

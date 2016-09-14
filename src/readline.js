@@ -38,11 +38,11 @@ module.exports = class Readline {
 	help() {
 		console.log(' _____________________________________________ ');
 		console.log('|                                             |');
-		console.log('|           | Default command |               |');
+		console.log('|           [] Default command []             |');
 		console.log('|_____________________________________________|');
 		console.log('|                                             |');
-		console.log('|           .start  .restart .stop            |');
-		console.log('|           .status .reload  .shutdown        |');
+		console.log('|          [start] [restart] [stop]           |');
+		console.log('|          [status] [reload] [shutdown]       |');
 		console.log('|_____________________________________________|');
 	}
 }

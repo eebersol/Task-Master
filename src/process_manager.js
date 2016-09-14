@@ -11,7 +11,6 @@ module.exports = class ProcessManager {
     this.config_file = taskmaster.config.options;
     this.first_time = 0;
 
-    this._check_json();
     for (let process_name in this.config_file) {
       this.start_one(process_name, this.config_file[process_name]);
     }
@@ -144,14 +143,6 @@ module.exports = class ProcessManager {
     }
   }
 
-  _check_json() {
-      let old_config = Object.assign({}, this.config_file);
-      this.taskmaster.config.load_config();
-
-      let num = (Object.keys(old_config).length - Object.keys(this.taskmaster.config.options).length)
-      console.log("num : " + num);
-
-  }
   __reload_cmd(cmd) {
     this.taskmaster.process_manager.stop_one(cmd);
     this.taskmaster.process_manager.start_one(cmd, this.taskmaster.config[cmd]);

@@ -243,3 +243,636 @@
 [1473786331] [INFO] [32mpwd : stopped[0m
 [1473786331] [INFO] [32mpwd : stopped[0m
 [1473786331] [INFO] [32mpwd : stopped[0m
+[1473847495] [INFO] [32mls has sucessfully started.[0m
+[1473847495] [INFO] [32mls has sucessfully started.[0m
+[1473847495] [INFO] [32mls has sucessfully started.[0m
+[1473847495] [INFO] [32mls has sucessfully started.[0m
+[1473847495] [INFO] [32mls has sucessfully started.[0m
+[1473847495] [INFO] [32mpwd has sucessfully started.[0m
+[1473847495] [INFO] [32mpwd has sucessfully started.[0m
+[1473847495] [INFO] [32mpwd has sucessfully started.[0m
+[1473847495] [INFO] [32mping has sucessfully started.[0m
+[1473847495] [INFO] [32mping has sucessfully started.[0m
+[1473847495] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473847495] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473847495] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473847495] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473847495] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473847495] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473847495] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473847495] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473847559] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473847559] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473847559] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473847559] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473847559] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473847559] [INFO] [32mls has sucessfully started.[0m
+[1473847559] [INFO] [32mls has sucessfully started.[0m
+[1473847559] [INFO] [32mls has sucessfully started.[0m
+[1473847559] [INFO] [32mls has sucessfully started.[0m
+[1473847559] [INFO] [32mls has sucessfully started.[0m
+[1473847559] [INFO] [32mpwd has sucessfully started.[0m
+[1473847559] [INFO] [32mpwd has sucessfully started.[0m
+[1473847559] [INFO] [32mpwd has sucessfully started.[0m
+[1473847559] [INFO] [32mping has sucessfully started.[0m
+[1473847559] [INFO] [32mping has sucessfully started.[0m
+[1473847559] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473847559] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473847559] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473847559] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473847559] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473847559] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473847559] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473847559] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473847593] [WARN] [31mProcess ping has crashed with code null[0m
+[1473847593] [WARN] [31mProcess ping has crashed with code null[0m
+[1473847603] [INFO] [32mping : stopped[0m
+[1473847603] [INFO] [32mping : stopped[0m
+[1473847651] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473847651] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473847651] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473847651] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473847651] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473847651] [INFO] [32mls has sucessfully started.[0m
+[1473847651] [INFO] [32mls has sucessfully started.[0m
+[1473847651] [INFO] [32mls has sucessfully started.[0m
+[1473847651] [INFO] [32mls has sucessfully started.[0m
+[1473847651] [INFO] [32mls has sucessfully started.[0m
+[1473847651] [INFO] [32mpwd has sucessfully started.[0m
+[1473847651] [INFO] [32mpwd has sucessfully started.[0m
+[1473847651] [INFO] [32mpwd has sucessfully started.[0m
+[1473847651] [INFO] [32mping has sucessfully started.[0m
+[1473847651] [INFO] [32mping has sucessfully started.[0m
+[1473847651] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473847651] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473847651] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473847651] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473847651] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473847651] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473847651] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473847651] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473847655] [INFO] ls reloading
+[1473847678] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473847678] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473847678] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473847678] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473847678] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473847678] [INFO] [32mls has sucessfully started.[0m
+[1473847678] [INFO] [32mls has sucessfully started.[0m
+[1473847678] [INFO] [32mls has sucessfully started.[0m
+[1473847678] [INFO] [32mls has sucessfully started.[0m
+[1473847678] [INFO] [32mls has sucessfully started.[0m
+[1473847678] [INFO] [32mpwd has sucessfully started.[0m
+[1473847678] [INFO] [32mpwd has sucessfully started.[0m
+[1473847678] [INFO] [32mpwd has sucessfully started.[0m
+[1473847678] [INFO] [32mping has sucessfully started.[0m
+[1473847678] [INFO] [32mping has sucessfully started.[0m
+[1473847678] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473847678] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473847678] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473847678] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473847678] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473847678] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473847678] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473847678] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473847680] [INFO] [32mls reloading[0m
+[1473847816] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473847816] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473847816] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473847816] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473847816] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473847816] [INFO] [32mls has sucessfully started.[0m
+[1473847816] [INFO] [32mls has sucessfully started.[0m
+[1473847816] [INFO] [32mls has sucessfully started.[0m
+[1473847816] [INFO] [32mls has sucessfully started.[0m
+[1473847816] [INFO] [32mls has sucessfully started.[0m
+[1473847816] [INFO] [32mpwd has sucessfully started.[0m
+[1473847816] [INFO] [32mpwd has sucessfully started.[0m
+[1473847816] [INFO] [32mpwd has sucessfully started.[0m
+[1473847816] [INFO] [32mping has sucessfully started.[0m
+[1473847816] [INFO] [32mping has sucessfully started.[0m
+[1473847816] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473847816] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473847816] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473847816] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473847816] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473847816] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473847816] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473847816] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473848389] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473848389] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473848389] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473848389] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473848389] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473848389] [INFO] [32mls has sucessfully started.[0m
+[1473848389] [INFO] [32mls has sucessfully started.[0m
+[1473848389] [INFO] [32mls has sucessfully started.[0m
+[1473848389] [INFO] [32mls has sucessfully started.[0m
+[1473848389] [INFO] [32mls has sucessfully started.[0m
+[1473848389] [INFO] [32mpwd has sucessfully started.[0m
+[1473848389] [INFO] [32mpwd has sucessfully started.[0m
+[1473848389] [INFO] [32mpwd has sucessfully started.[0m
+[1473848389] [INFO] [32mping has sucessfully started.[0m
+[1473848389] [INFO] [32mping has sucessfully started.[0m
+[1473848389] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473848389] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473848389] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473848389] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473848389] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473848389] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473848389] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473848389] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473848412] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473848412] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473848412] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473848412] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473848412] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473848412] [INFO] [32mls has sucessfully started.[0m
+[1473848412] [INFO] [32mls has sucessfully started.[0m
+[1473848412] [INFO] [32mls has sucessfully started.[0m
+[1473848412] [INFO] [32mls has sucessfully started.[0m
+[1473848412] [INFO] [32mls has sucessfully started.[0m
+[1473848412] [INFO] [32mpwd has sucessfully started.[0m
+[1473848412] [INFO] [32mpwd has sucessfully started.[0m
+[1473848412] [INFO] [32mpwd has sucessfully started.[0m
+[1473848412] [INFO] [32mping has sucessfully started.[0m
+[1473848412] [INFO] [32mping has sucessfully started.[0m
+[1473848412] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473848412] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473848412] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473848412] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473848412] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473848412] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473848412] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473848412] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473849376] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473849376] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473849376] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473849376] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473849376] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473849376] [INFO] [32mls has sucessfully started.[0m
+[1473849376] [INFO] [32mls has sucessfully started.[0m
+[1473849376] [INFO] [32mls has sucessfully started.[0m
+[1473849376] [INFO] [32mls has sucessfully started.[0m
+[1473849376] [INFO] [32mls has sucessfully started.[0m
+[1473849376] [INFO] [32mpwd has sucessfully started.[0m
+[1473849376] [INFO] [32mpwd has sucessfully started.[0m
+[1473849376] [INFO] [32mpwd has sucessfully started.[0m
+[1473849376] [INFO] [32mping has sucessfully started.[0m
+[1473849376] [INFO] [32mping has sucessfully started.[0m
+[1473849376] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473849376] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473849376] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473849376] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473849376] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473849376] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473849376] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473849376] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473849387] [INFO] [32m$Program : {cmd} reloading[0m
+[1473849414] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473849414] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473849414] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473849414] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473849414] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473849415] [INFO] [32mls has sucessfully started.[0m
+[1473849415] [INFO] [32mls has sucessfully started.[0m
+[1473849415] [INFO] [32mls has sucessfully started.[0m
+[1473849415] [INFO] [32mls has sucessfully started.[0m
+[1473849415] [INFO] [32mls has sucessfully started.[0m
+[1473849415] [INFO] [32mpwd has sucessfully started.[0m
+[1473849415] [INFO] [32mpwd has sucessfully started.[0m
+[1473849415] [INFO] [32mpwd has sucessfully started.[0m
+[1473849415] [INFO] [32mping has sucessfully started.[0m
+[1473849415] [INFO] [32mping has sucessfully started.[0m
+[1473849415] [INFO] [32mps has sucessfully started.[0m
+[1473849415] [INFO] [32mps has sucessfully started.[0m
+[1473849415] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473849415] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473849415] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473849415] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473849415] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473849415] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473849415] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473849415] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473849444] [INFO] [32m$Program : {cmd} reloading[0m
+[1473849508] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473849508] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473849508] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473849508] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473849508] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473849508] [INFO] [32mls has sucessfully started.[0m
+[1473849508] [INFO] [32mls has sucessfully started.[0m
+[1473849508] [INFO] [32mls has sucessfully started.[0m
+[1473849508] [INFO] [32mls has sucessfully started.[0m
+[1473849508] [INFO] [32mls has sucessfully started.[0m
+[1473849508] [INFO] [32mpwd has sucessfully started.[0m
+[1473849508] [INFO] [32mpwd has sucessfully started.[0m
+[1473849508] [INFO] [32mpwd has sucessfully started.[0m
+[1473849508] [INFO] [32mping has sucessfully started.[0m
+[1473849508] [INFO] [32mping has sucessfully started.[0m
+[1473849508] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473849508] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473849508] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473849508] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473849508] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473849508] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473849508] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473849508] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473849510] [INFO] [32m$Program : {cmd} reloading[0m
+[1473849612] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473849612] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473849612] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473849612] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473849612] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473849612] [INFO] [32mls has sucessfully started.[0m
+[1473849612] [INFO] [32mls has sucessfully started.[0m
+[1473849612] [INFO] [32mls has sucessfully started.[0m
+[1473849612] [INFO] [32mls has sucessfully started.[0m
+[1473849612] [INFO] [32mls has sucessfully started.[0m
+[1473849612] [INFO] [32mpwd has sucessfully started.[0m
+[1473849612] [INFO] [32mpwd has sucessfully started.[0m
+[1473849612] [INFO] [32mpwd has sucessfully started.[0m
+[1473849612] [INFO] [32mping has sucessfully started.[0m
+[1473849612] [INFO] [32mping has sucessfully started.[0m
+[1473849612] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473849612] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473849612] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473849612] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473849612] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473849612] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473849612] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473849612] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473849631] [INFO] [32m$Program : {cmd} reloading[0m
+[1473849631] [INFO] [32m$Program : {cmd} reloading[0m
+[1473849631] [INFO] [32m$Program : {cmd} reloading[0m
+[1473849631] [INFO] [32m$Program : {cmd} reloading[0m
+[1473849631] [INFO] [32m$Program : {cmd} reloading[0m
+[1473849631] [INFO] [32m$Program : {cmd} reloading[0m
+[1473849631] [INFO] [32m$Program : {cmd} reloading[0m
+[1473849631] [INFO] [32m$Program : {cmd} reloading[0m
+[1473849631] [INFO] [32m$Program : {cmd} reloading[0m
+[1473849631] [INFO] [32m$Program : {cmd} reloading[0m
+[1473849631] [INFO] [32m$Program : {cmd} reloading[0m
+[1473849631] [INFO] [32m$Program : {cmd} reloading[0m
+[1473849631] [INFO] [32m$Program : {cmd} reloading[0m
+[1473849631] [INFO] [32m$Program : {cmd} reloading[0m
+[1473849681] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473849681] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473849681] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473849681] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473849681] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473849681] [INFO] [32mls has sucessfully started.[0m
+[1473849681] [INFO] [32mls has sucessfully started.[0m
+[1473849681] [INFO] [32mls has sucessfully started.[0m
+[1473849681] [INFO] [32mls has sucessfully started.[0m
+[1473849681] [INFO] [32mls has sucessfully started.[0m
+[1473849681] [INFO] [32mpwd has sucessfully started.[0m
+[1473849681] [INFO] [32mpwd has sucessfully started.[0m
+[1473849681] [INFO] [32mpwd has sucessfully started.[0m
+[1473849681] [INFO] [32mping has sucessfully started.[0m
+[1473849681] [INFO] [32mping has sucessfully started.[0m
+[1473849681] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473849681] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473849681] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473849681] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473849681] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473849681] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473849681] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473849681] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473849720] [INFO] [32m$Program : ls reloading[0m
+[1473849720] [INFO] [32m$Program : ls reloading[0m
+[1473849720] [INFO] [32m$Program : ls reloading[0m
+[1473849720] [INFO] [32m$Program : ls reloading[0m
+[1473849720] [INFO] [32m$Program : ls reloading[0m
+[1473849720] [INFO] [32m$Program : ls reloading[0m
+[1473849720] [INFO] [32m$Program : ls reloading[0m
+[1473849720] [INFO] [32m$Program : ls reloading[0m
+[1473849720] [INFO] [32m$Program : ls reloading[0m
+[1473849720] [INFO] [32m$Program : ls reloading[0m
+[1473849720] [INFO] [32m$Program : ls reloading[0m
+[1473849720] [INFO] [32m$Program : ls reloading[0m
+[1473849720] [INFO] [32m$Program : ls reloading[0m
+[1473849720] [INFO] [32m$Program : ls reloading[0m
+[1473849751] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473849751] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473849751] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473849751] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473849751] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473849751] [INFO] [32mls has sucessfully started.[0m
+[1473849751] [INFO] [32mls has sucessfully started.[0m
+[1473849751] [INFO] [32mls has sucessfully started.[0m
+[1473849751] [INFO] [32mls has sucessfully started.[0m
+[1473849751] [INFO] [32mls has sucessfully started.[0m
+[1473849751] [INFO] [32mpwd has sucessfully started.[0m
+[1473849751] [INFO] [32mpwd has sucessfully started.[0m
+[1473849751] [INFO] [32mpwd has sucessfully started.[0m
+[1473849751] [INFO] [32mping has sucessfully started.[0m
+[1473849751] [INFO] [32mping has sucessfully started.[0m
+[1473849751] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473849751] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473849751] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473849751] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473849751] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473849751] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473849751] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473849751] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473849788] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473849788] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473849788] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473849788] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473849788] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473849788] [INFO] [32mls has sucessfully started.[0m
+[1473849788] [INFO] [32mls has sucessfully started.[0m
+[1473849788] [INFO] [32mls has sucessfully started.[0m
+[1473849788] [INFO] [32mls has sucessfully started.[0m
+[1473849788] [INFO] [32mls has sucessfully started.[0m
+[1473849788] [INFO] [32mpwd has sucessfully started.[0m
+[1473849788] [INFO] [32mpwd has sucessfully started.[0m
+[1473849788] [INFO] [32mpwd has sucessfully started.[0m
+[1473849788] [INFO] [32mping has sucessfully started.[0m
+[1473849788] [INFO] [32mping has sucessfully started.[0m
+[1473849788] [INFO] [32mpong has sucessfully started.[0m
+[1473849788] [INFO] [32mpong has sucessfully started.[0m
+[1473849788] [INFO] [32mpung has sucessfully started.[0m
+[1473849788] [INFO] [32mpung has sucessfully started.[0m
+[1473849788] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473849788] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473849788] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473849788] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473849788] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473849788] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473849788] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473849788] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473850151] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473850151] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473850151] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473850151] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473850151] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473850151] [INFO] [32mls has sucessfully started.[0m
+[1473850151] [INFO] [32mls has sucessfully started.[0m
+[1473850151] [INFO] [32mls has sucessfully started.[0m
+[1473850151] [INFO] [32mls has sucessfully started.[0m
+[1473850151] [INFO] [32mls has sucessfully started.[0m
+[1473850151] [INFO] [32mpwd has sucessfully started.[0m
+[1473850151] [INFO] [32mpwd has sucessfully started.[0m
+[1473850151] [INFO] [32mpwd has sucessfully started.[0m
+[1473850151] [INFO] [32mping has sucessfully started.[0m
+[1473850151] [INFO] [32mping has sucessfully started.[0m
+[1473850151] [INFO] [32mpong has sucessfully started.[0m
+[1473850151] [INFO] [32mpong has sucessfully started.[0m
+[1473850151] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473850151] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473850151] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473850151] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473850151] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473850151] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473850151] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473850151] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473850179] [WARN] [31mProcess ping has crashed with code null[0m
+[1473850179] [WARN] [31mProcess ping has crashed with code null[0m
+[1473850183] [INFO] [32mls : stopped[0m
+[1473850183] [INFO] [32mls : stopped[0m
+[1473850183] [INFO] [32mls : stopped[0m
+[1473850183] [INFO] [32mls : stopped[0m
+[1473850183] [INFO] [32mls : stopped[0m
+[1473850188] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473850188] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473850188] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473850188] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473850188] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473850188] [INFO] [32mls has sucessfully started.[0m
+[1473850188] [INFO] [32mls has sucessfully started.[0m
+[1473850188] [INFO] [32mls has sucessfully started.[0m
+[1473850188] [INFO] [32mls has sucessfully started.[0m
+[1473850188] [INFO] [32mls has sucessfully started.[0m
+[1473850188] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473850188] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473850188] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473850188] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473850188] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473850189] [INFO] [32mping : stopped[0m
+[1473850189] [INFO] [32mping : stopped[0m
+[1473850800] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473850800] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473850800] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473850800] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473850800] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473850800] [INFO] [32mls has sucessfully started.[0m
+[1473850800] [INFO] [32mls has sucessfully started.[0m
+[1473850800] [INFO] [32mls has sucessfully started.[0m
+[1473850800] [INFO] [32mls has sucessfully started.[0m
+[1473850800] [INFO] [32mls has sucessfully started.[0m
+[1473850800] [INFO] [32mpwd has sucessfully started.[0m
+[1473850800] [INFO] [32mpwd has sucessfully started.[0m
+[1473850800] [INFO] [32mpwd has sucessfully started.[0m
+[1473850800] [INFO] [32mping has sucessfully started.[0m
+[1473850800] [INFO] [32mping has sucessfully started.[0m
+[1473850800] [INFO] [32mpong has sucessfully started.[0m
+[1473850800] [INFO] [32mpong has sucessfully started.[0m
+[1473850800] [INFO] [32mpongue has sucessfully started.[0m
+[1473850800] [INFO] [32mpongue has sucessfully started.[0m
+[1473850800] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473850800] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473850800] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473850800] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473850800] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473850800] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473850800] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473850800] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473853875] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473853875] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473853875] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473853875] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473853875] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473853875] [INFO] [32mls has sucessfully started.[0m
+[1473853875] [INFO] [32mls has sucessfully started.[0m
+[1473853875] [INFO] [32mls has sucessfully started.[0m
+[1473853875] [INFO] [32mls has sucessfully started.[0m
+[1473853875] [INFO] [32mls has sucessfully started.[0m
+[1473853875] [INFO] [32mpwd has sucessfully started.[0m
+[1473853875] [INFO] [32mpwd has sucessfully started.[0m
+[1473853875] [INFO] [32mpwd has sucessfully started.[0m
+[1473853875] [INFO] [32mping has sucessfully started.[0m
+[1473853875] [INFO] [32mping has sucessfully started.[0m
+[1473853875] [INFO] [32mpong has sucessfully started.[0m
+[1473853875] [INFO] [32mpong has sucessfully started.[0m
+[1473853875] [INFO] [32mpongue has sucessfully started.[0m
+[1473853875] [INFO] [32mpongue has sucessfully started.[0m
+[1473853875] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473853875] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473853875] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473853875] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473853875] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473853875] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473853875] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473853875] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473853886] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473853886] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473853886] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473853886] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473853886] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473853886] [INFO] [32mls has sucessfully started.[0m
+[1473853886] [INFO] [32mls has sucessfully started.[0m
+[1473853886] [INFO] [32mls has sucessfully started.[0m
+[1473853886] [INFO] [32mls has sucessfully started.[0m
+[1473853886] [INFO] [32mls has sucessfully started.[0m
+[1473853886] [INFO] [32mpwd has sucessfully started.[0m
+[1473853886] [INFO] [32mpwd has sucessfully started.[0m
+[1473853886] [INFO] [32mpwd has sucessfully started.[0m
+[1473853886] [INFO] [32mping has sucessfully started.[0m
+[1473853886] [INFO] [32mping has sucessfully started.[0m
+[1473853886] [INFO] [32mpong has sucessfully started.[0m
+[1473853886] [INFO] [32mpong has sucessfully started.[0m
+[1473853886] [INFO] [32mpongue has sucessfully started.[0m
+[1473853886] [INFO] [32mpongue has sucessfully started.[0m
+[1473853886] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473853886] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473853886] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473853886] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473853886] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473853886] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473853886] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473853886] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473853901] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473853901] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473853901] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473853901] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473853901] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473853901] [INFO] [32mls has sucessfully started.[0m
+[1473853901] [INFO] [32mls has sucessfully started.[0m
+[1473853901] [INFO] [32mls has sucessfully started.[0m
+[1473853901] [INFO] [32mls has sucessfully started.[0m
+[1473853901] [INFO] [32mls has sucessfully started.[0m
+[1473853901] [INFO] [32mpwd has sucessfully started.[0m
+[1473853901] [INFO] [32mpwd has sucessfully started.[0m
+[1473853901] [INFO] [32mpwd has sucessfully started.[0m
+[1473853901] [INFO] [32mping has sucessfully started.[0m
+[1473853901] [INFO] [32mping has sucessfully started.[0m
+[1473853901] [INFO] [32mpong has sucessfully started.[0m
+[1473853901] [INFO] [32mpong has sucessfully started.[0m
+[1473853901] [INFO] [32mpongue has sucessfully started.[0m
+[1473853901] [INFO] [32mpongue has sucessfully started.[0m
+[1473853901] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473853901] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473853901] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473853901] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473853901] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473853901] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473853901] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473853901] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473853914] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473853914] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473853914] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473853914] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473853914] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473853914] [INFO] [32mls has sucessfully started.[0m
+[1473853914] [INFO] [32mls has sucessfully started.[0m
+[1473853914] [INFO] [32mls has sucessfully started.[0m
+[1473853914] [INFO] [32mls has sucessfully started.[0m
+[1473853914] [INFO] [32mls has sucessfully started.[0m
+[1473853914] [INFO] [32mpwd has sucessfully started.[0m
+[1473853914] [INFO] [32mpwd has sucessfully started.[0m
+[1473853914] [INFO] [32mpwd has sucessfully started.[0m
+[1473853914] [INFO] [32mping has sucessfully started.[0m
+[1473853914] [INFO] [32mping has sucessfully started.[0m
+[1473853914] [INFO] [32mpong has sucessfully started.[0m
+[1473853914] [INFO] [32mpong has sucessfully started.[0m
+[1473853914] [INFO] [32mpongue has sucessfully started.[0m
+[1473853914] [INFO] [32mpongue has sucessfully started.[0m
+[1473853914] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473853914] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473853914] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473853914] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473853914] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473853914] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473853914] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473853914] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473853920] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473853920] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473853920] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473853920] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473853920] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473853920] [INFO] [32mls has sucessfully started.[0m
+[1473853920] [INFO] [32mls has sucessfully started.[0m
+[1473853920] [INFO] [32mls has sucessfully started.[0m
+[1473853920] [INFO] [32mls has sucessfully started.[0m
+[1473853920] [INFO] [32mls has sucessfully started.[0m
+[1473853920] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473853920] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473853920] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473853920] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473853920] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473853959] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473853959] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473853959] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473853959] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473853959] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473853959] [INFO] [32mls has sucessfully started.[0m
+[1473853959] [INFO] [32mls has sucessfully started.[0m
+[1473853959] [INFO] [32mls has sucessfully started.[0m
+[1473853959] [INFO] [32mls has sucessfully started.[0m
+[1473853959] [INFO] [32mls has sucessfully started.[0m
+[1473853959] [INFO] [32mpwd has sucessfully started.[0m
+[1473853959] [INFO] [32mpwd has sucessfully started.[0m
+[1473853959] [INFO] [32mpwd has sucessfully started.[0m
+[1473853959] [INFO] [32mping has sucessfully started.[0m
+[1473853959] [INFO] [32mping has sucessfully started.[0m
+[1473853959] [INFO] [32mpong has sucessfully started.[0m
+[1473853959] [INFO] [32mpong has sucessfully started.[0m
+[1473853959] [INFO] [32mpongue has sucessfully started.[0m
+[1473853959] [INFO] [32mpongue has sucessfully started.[0m
+[1473853959] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473853959] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473853959] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473853959] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473853959] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473853959] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473853959] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473853959] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473854035] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473854035] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473854035] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473854035] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473854035] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473854035] [INFO] [32mls has sucessfully started.[0m
+[1473854035] [INFO] [32mls has sucessfully started.[0m
+[1473854035] [INFO] [32mls has sucessfully started.[0m
+[1473854035] [INFO] [32mls has sucessfully started.[0m
+[1473854035] [INFO] [32mls has sucessfully started.[0m
+[1473854035] [INFO] [32mpwd has sucessfully started.[0m
+[1473854035] [INFO] [32mpwd has sucessfully started.[0m
+[1473854035] [INFO] [32mpwd has sucessfully started.[0m
+[1473854035] [INFO] [32mping has sucessfully started.[0m
+[1473854035] [INFO] [32mping has sucessfully started.[0m
+[1473854035] [INFO] [32mpong has sucessfully started.[0m
+[1473854035] [INFO] [32mpong has sucessfully started.[0m
+[1473854035] [INFO] [32mpongue has sucessfully started.[0m
+[1473854035] [INFO] [32mpongue has sucessfully started.[0m
+[1473854035] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473854035] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473854035] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1473854035] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473854035] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473854035] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473854035] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473854035] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473854049] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473854049] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473854049] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473854049] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473854049] [ERROR] [31mError : Error: ENOENT: no such file or directory, open '/logs/ls.stdout'[0m
+[1473854049] [INFO] [32mls has sucessfully started.[0m
+[1473854049] [INFO] [32mls has sucessfully started.[0m
+[1473854049] [INFO] [32mls has sucessfully started.[0m
+[1473854049] [INFO] [32mls has sucessfully started.[0m
+[1473854049] [INFO] [32mls has sucessfully started.[0m
+[1473854049] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473854049] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473854049] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473854049] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473854049] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1473854057] [INFO] [32mls : stopped[0m
+[1473854057] [INFO] [32mls : stopped[0m
+[1473854057] [INFO] [32mls : stopped[0m
+[1473854057] [INFO] [32mls : stopped[0m
+[1473854057] [INFO] [32mls : stopped[0m

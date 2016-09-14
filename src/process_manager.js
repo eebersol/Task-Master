@@ -11,6 +11,7 @@ module.exports = class ProcessManager {
     this.config_file = taskmaster.config.options;
     this.first_time = 0;
 
+    this._check_json();
     for (let process_name in this.config_file) {
       this.start_one(process_name, this.config_file[process_name]);
     }
@@ -40,10 +41,7 @@ module.exports = class ProcessManager {
     cmd.splice(0, 1);
 
     if (cmd[0] == undefined) {
-      console.log(`\x1b[31m Error : stop/restart requires a process name`);
-      console.log(`stop <name>            Stop a process`);
-      console.log(`stop <name> <name>     Stop multiple process`);
-      console.log(`stop                   Stop all process \x1b[0m`);
+      this._help_stop();
       return;
     }
 
@@ -126,7 +124,7 @@ module.exports = class ProcessManager {
     let old_config = Object.assign({}, this.config_file);
     let updated_properies = [];
 
-    if (!this.process_exists(cmd)) {
+    if (!this.process_exists(cmd) && cmd != undefined) {
         console.log(`\x1b[31mError  ${cmd}: invalid process name.\x1b[0m`);
         return;
       }
@@ -136,16 +134,24 @@ module.exports = class ProcessManager {
       let old_property = old_config[cmd][_p];
       let new_property = this.config_file[cmd][_p];
 
+      this.taskmaster.logger.info(`\x1b[32m$Program : ${cmd} reloading\x1b[0m`);
       if ((old_property != new_property) && _p == 'cmd') {
         this.__reload_cmd(cmd);
       }
       if ((old_property != new_property) && _p == 'numprocs') {
         this.__reload_numprocs(cmd);
       }
-
     }
   }
 
+  _check_json() {
+      let old_config = Object.assign({}, this.config_file);
+      this.taskmaster.config.load_config();
+
+      let num = (Object.keys(old_config).length - Object.keys(this.taskmaster.config.options).length)
+      console.log("num : " + num);
+
+  }
   __reload_cmd(cmd) {
     this.taskmaster.process_manager.stop_one(cmd);
     this.taskmaster.process_manager.start_one(cmd, this.taskmaster.config[cmd]);
@@ -188,5 +194,12 @@ module.exports = class ProcessManager {
     setTimeout(() => {
       process.exit();
     }, 5000);
+  }
+
+  _help_stop() {
+      console.log(`\x1b[31m Error : stop/restart requires a process name.`);
+      console.log(`stop <name>            Stop a process.`);
+      console.log(`stop <name> <name>     Stop multiple process.`);
+      console.log(`stop                   Stop all process.\x1b[0m`);    
   }
 }

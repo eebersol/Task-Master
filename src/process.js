@@ -9,13 +9,12 @@ module.exports            = class Process {
     this.name             = process_name;
     this.args             = process_config.cmd.split(' ');
     this.cmd_bis          = this.args[0];
-    this.state            = 'stopped'
+    this.state            = 'stopped';
     this.uptime           = 0;
     this.retries          = 0;
+   
     this.args.splice(0, 1);
-
     this.reload_config(process_config);
-    this.spawn_process();
   }
 
   reload_config(process_config) {
@@ -33,32 +32,32 @@ module.exports            = class Process {
     this.stdout           = process_config.stdout;
     this.stderr           = process_config.stderr;
     this.env              = process_config.env || {};
+    this.spawn_process();
   }
 
   spawn_process(options) {
 
     if (this.state == 'starting' || this.state == 'started')
       return;
-    this.state = 'starting';
-
+    
+    this.state            = 'starting';
     let args              = this.cmd.split(' ');
     let process_cmd       = args[0];
     args.splice(0, 1);
 
     if (!fs.existsSync(process_cmd))
-      this.taskmaster.logger.err(`Cannot launch process ${this.name}`);
+      this.taskmaster.logger.error(`Cannot launch process ${this.name}`);
     
     this.timer();
-
     this._process         = spawn(process_cmd, args, {env : this.env});
-
     this.set_std();
 
     process.umask(this.umask);
     process.chdir(this.workingdir);
+
     this._process.stdout.on('data', this._on_stdout.bind(this));
     this._process.stdout.on('data', this._on_stderr.bind(this));
-    this.pid = this._process.pid;
+    this.pid               = this._process.pid;
     setTimeout(() => {
       if (this.is_running()) {
         this.state         = 'started';
@@ -83,7 +82,7 @@ module.exports            = class Process {
       }
     }
     catch(e) {
-      this.taskmaster.logger.err(`\x1b[31mError : ${e}\x1b[0m`);
+      this.taskmaster.logger.error(`\x1b[31mError : ${e}\x1b[0m`);
     }
   }
 

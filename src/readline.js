@@ -21,6 +21,8 @@ module.exports = class Readline {
 			this.taskmaster.process_manager.restart(opts);
 		} else if (opts[0] == 'reload') {
 			this.taskmaster.process_manager.reload(opts[1]);
+		} else if (opts[0] == 'check_reload') {
+			this.taskmaster.process_manager.reload(opts[1]);
 		} else if (opts[0] == 'status') {
 			this.taskmaster.process_manager.status_general(opts);
 		} else if (opts[0] == 'shutdown') {

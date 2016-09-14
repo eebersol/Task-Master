@@ -3,7 +3,7 @@
         "cmd" : "/bin/ls ",
         "numprocs" : 5,
         "umask": "000",
-        "workingdir": "/tmp/coucou",
+        "workingdir": "/tmp",
         "autostart": true,
         "autorestart": "unexpected",
         "exitcodes": [0, 1, 2],
@@ -11,8 +11,8 @@
         "starttime": 3,
         "stopsignal": "TERM",
         "stoptime": 10,
-        "stdout": "/tmp/ls.stdout",
-        "stderr": "/tmp/ls.stderr",
+        "stdout": "/logs/ls.stdout",
+        "stderr": "/logs/ls.stderr",
         "env": {
             "STARTED_BY": "taskmaster",
             "ANSWER": 42
@@ -55,6 +55,24 @@
             "STARTED_BY": "taskmaster",
             "ANSWER": 42
         } 
-    }
-
+    },
+    "pong" : {
+        "cmd" : "/sbin/ping 8.8.8.8",
+        "numprocs" : 2,
+        "umask": "022",
+        "workingdir": "/tmp",
+        "autostart": true,
+        "autorestart": "always",
+        "exitcodes": [0, 1, 2],
+        "startretries": 3,
+        "starttime": 5,
+        "stopsignal": "TERM",
+        "stoptime": 10,
+        "stdout": "/tmp/ping.stdout",
+        "stderr": "/tmp/ping.stderr",
+        "env": {
+            "STARTED_BY": "taskmaster",
+            "ANSWER": 42
+        } 
+    }      
 }

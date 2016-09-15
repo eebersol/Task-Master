@@ -4,7 +4,7 @@ const fs                  = require('fs');
 
 module.exports            = class Process {
   constructor(process_config, process_name, taskmaster) {
-    
+
     this.taskmaster       = taskmaster;
     this.name             = process_name;
     this.args             = process_config.cmd.split(' ');
@@ -45,9 +45,10 @@ module.exports            = class Process {
     let process_cmd       = args[0];
     args.splice(0, 1);
 
+
     if (!fs.existsSync(process_cmd))
       this.taskmaster.logger.error(`Cannot launch process ${this.name}`);
-    
+
     this.timer();
     this._process         = spawn(process_cmd, args, {env : this.env});
     this.set_std();

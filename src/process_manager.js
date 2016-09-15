@@ -10,12 +10,31 @@ module.exports = class ProcessManager {
     this.processes  = {};
     this.config_file = taskmaster.config.options;
     this.first_time = 0;
+    this.old_path = process.cwd();
 
-    for (let process_name in this.config_file) {
-      this.start_one(process_name, this.config_file[process_name]);
+    for (let process_name in this.taskmaster.config.options) {
+      this.start_one(process_name, this.taskmaster.config.options[process_name]);
     }
     this.first_time = 1;
+    this._fs_watch();
 
+  }
+
+  _fs_watch() {
+    fs.watch(this.old_path + '/config/config.json', {encoding: 'buffer'}, (eventType, filename) => {
+       if (filename) {
+        this._reload_all();       
+      }
+    });
+  }
+
+  _reload_all() {
+      let contents = fs.readFileSync(this.old_path + "/config/config.json", 'utf8');
+      contents     = JSON.parse(contents);
+
+    for (let process_name in contents) {
+      this.reload(process_name)
+    }
   }
 
   start_one(process_name) {
@@ -26,9 +45,9 @@ module.exports = class ProcessManager {
     if (!this.process_exists(process_name)) {
         console.log(`\x1b[31mError  ${process_name}: invalid process name.\x1b[0m`);
         return;
-    } else if (this.first_time != 0 || (this.first_time == 0 && this.config_file[process_name].autostart == true)) {
-        while (indexes < this.config_file[process_name].numprocs) {
-            let _process = new Process(this.config_file[process_name], process_name, this.taskmaster);
+    } else if (this.first_time != 0 || (this.first_time == 0 && this.taskmaster.config.options[process_name].autostart == true)) {
+        while (indexes < this.taskmaster.config.options[process_name].numprocs) {
+            let _process = new Process(this.taskmaster.config.options[process_name], process_name, this.taskmaster);
             this.processes[process_name].push(_process);
             indexes++;
         }
@@ -76,7 +95,7 @@ module.exports = class ProcessManager {
     opts.splice(0, 1);
     console.log('');
     if (!opts[0]) {
-      for (let process_name in this.config_file) { 
+      for (let process_name in this.taskmaster.config.options) { 
         this.status_one(process_name);
       }
       return;
@@ -129,18 +148,24 @@ module.exports = class ProcessManager {
       }
     this.taskmaster.config.load_config();
 
-    for (let _p in this.config_file[cmd]) {
-      let old_property = old_config[cmd][_p];
-      let new_property = this.config_file[cmd][_p];
+    for (let _p in this.taskmaster.config.options[cmd]) {
+      if (old_config[cmd] == undefined) {
+        var old_property = this.taskmaster.config.options[cmd[_p]];
+        this.start_this = cmd;
+      } else 
+        var old_property = old_config[cmd][_p];
+      let new_property = this.taskmaster.config.options[cmd][_p];
 
-      this.taskmaster.logger.info(`\x1b[32m$Program : ${cmd} reloading\x1b[0m`);
-      if ((old_property != new_property) && _p == 'cmd') {
+      this.taskmaster.logger.info(`\x1b[32mProgram : ${cmd} reloading\x1b[0m`);
+      if ((old_property != new_property) && _p == 'cmd' && this.start_this == undefined) {
         this.__reload_cmd(cmd);
       }
-      if ((old_property != new_property) && _p == 'numprocs') {
+      if ((old_property != new_property) && _p == 'numprocs' && this.start_this == undefined) {
         this.__reload_numprocs(cmd);
       }
     }
+    if (this.start_this != undefined)
+      this.taskmaster.process_manager.start_one(this.start_this, this.taskmaster.config[this.start_this]);
   }
 
   __reload_cmd(cmd) {
@@ -156,7 +181,7 @@ module.exports = class ProcessManager {
       console.log('new_proc ' +new_proc);
       console.log('numprocs ' +numprocs);
       for(let index = 0; index < new_proc; index++) {
-        let _process = new Process(this.config_file[cmd], cmd);
+        let _process = new Process(this.taskmaster.config.options[cmd], cmd);
         this.processes[cmd].push(_process);
       }
     }
@@ -171,7 +196,7 @@ module.exports = class ProcessManager {
   }
 
   process_exists(cmd) {
-    return this.config_file[cmd];
+    return this.taskmaster.config.options[cmd];
   }
 
   _exit() {

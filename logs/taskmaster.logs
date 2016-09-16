@@ -1796,3 +1796,190 @@
 [1474047385] [INFO] [32mping has sucessfully started.[0m
 [1474047385] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
 [1474047385] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1474047546] [ERROR] Je passe : + $(process_name)
+[1474047546] [ERROR] Je passe : + $(process_name)
+[1474047546] [ERROR] Je passe : + $(process_name)
+[1474047546] [ERROR] Je passe : + $(process_name)
+[1474047546] [ERROR] Je passe : + $(process_name)
+[1474047546] [INFO] Api ready
+[1474047546] [INFO] [32mls has sucessfully started.[0m
+[1474047546] [INFO] [32mpwd has sucessfully started.[0m
+[1474047546] [INFO] [32mping has sucessfully started.[0m
+[1474047546] [INFO] [32mping has sucessfully started.[0m
+[1474047546] [INFO] [32mping has sucessfully started.[0m
+[1474047546] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474047546] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1474047560] [ERROR] Je passe ici aussi + ping ++ [object Object]
+[1474047560] [ERROR] Je passe ici aussi + ping ++ [object Object]
+[1474047560] [ERROR] Je passe ici aussi + ping ++ [object Object]
+[1474047560] [ERROR] Je passe : + $(process_name)
+[1474047560] [ERROR] Je passe : + $(process_name)
+[1474047560] [ERROR] Je passe : + $(process_name)
+[1474047560] [INFO] [32mping has sucessfully started.[0m
+[1474047560] [INFO] [32mping has sucessfully started.[0m
+[1474047560] [INFO] [32mping has sucessfully started.[0m
+[1474047560] [WARN] [31mProcess ping has crashed with code null[0m
+[1474047560] [WARN] [31mProcess ping has crashed with code null[0m
+[1474047560] [WARN] [31mProcess ping has crashed with code null[0m
+[1474047570] [INFO] [32mping : stopped[0m
+[1474047570] [INFO] [32mping : stopped[0m
+[1474047570] [INFO] [32mping : stopped[0m
+[1474047581] [ERROR] Je passe ici aussi + ping ++ [object Object]
+[1474047581] [ERROR] Je passe ici aussi + ping ++ [object Object]
+[1474047581] [ERROR] Je passe ici aussi + ping ++ [object Object]
+[1474047581] [ERROR] Je passe : + $(process_name)
+[1474047581] [ERROR] Je passe : + $(process_name)
+[1474047581] [ERROR] Je passe : + $(process_name)
+[1474047581] [INFO] [32mping has sucessfully started.[0m
+[1474047581] [INFO] [32mping has sucessfully started.[0m
+[1474047581] [INFO] [32mping has sucessfully started.[0m
+[1474047581] [WARN] [31mProcess ping has crashed with code null[0m
+[1474047581] [WARN] [31mProcess ping has crashed with code null[0m
+[1474047581] [WARN] [31mProcess ping has crashed with code null[0m
+[1474047581] [ERROR] Je passe ici aussi + ping ++ [object Object]
+[1474047581] [ERROR] Je passe ici aussi + ping ++ [object Object]
+[1474047581] [ERROR] Je passe ici aussi + ping ++ [object Object]
+[1474047581] [ERROR] Je passe : + $(process_name)
+[1474047581] [ERROR] Je passe : + $(process_name)
+[1474047581] [ERROR] Je passe : + $(process_name)
+[1474047581] [INFO] [32mping has sucessfully started.[0m
+[1474047581] [INFO] [32mping has sucessfully started.[0m
+[1474047581] [INFO] [32mping has sucessfully started.[0m
+[1474047582] [WARN] [31mProcess ping has crashed with code null[0m
+[1474047582] [WARN] [31mProcess ping has crashed with code null[0m
+[1474047582] [WARN] [31mProcess ping has crashed with code null[0m
+[1474047582] [ERROR] Je passe ici aussi + ping ++ [object Object]
+[1474047582] [ERROR] Je passe ici aussi + ping ++ [object Object]
+[1474047582] [ERROR] Je passe ici aussi + ping ++ [object Object]
+[1474047582] [ERROR] Je passe : + $(process_name)
+[1474047582] [ERROR] Je passe : + $(process_name)
+[1474047582] [ERROR] Je passe : + $(process_name)
+[1474047582] [INFO] [32mping has sucessfully started.[0m
+[1474047582] [INFO] [32mping has sucessfully started.[0m
+[1474047582] [INFO] [32mping has sucessfully started.[0m
+[1474047582] [WARN] [31mProcess ping has crashed with code null[0m
+[1474047582] [WARN] [31mProcess ping has crashed with code null[0m
+[1474047582] [WARN] [31mProcess ping has crashed with code null[0m
+[1474047582] [ERROR] Je passe ici aussi + ping ++ [object Object]
+[1474047582] [ERROR] Je passe ici aussi + ping ++ [object Object]
+[1474047582] [ERROR] Je passe ici aussi + ping ++ [object Object]
+[1474047582] [ERROR] Je passe : + $(process_name)
+[1474047582] [ERROR] Je passe : + $(process_name)
+[1474047582] [ERROR] Je passe : + $(process_name)
+[1474047582] [INFO] [32mping has sucessfully started.[0m
+[1474047582] [INFO] [32mping has sucessfully started.[0m
+[1474047582] [INFO] [32mping has sucessfully started.[0m
+[1474047582] [WARN] [31mProcess ping has crashed with code null[0m
+[1474047582] [WARN] [31mProcess ping has crashed with code null[0m
+[1474047582] [WARN] [31mProcess ping has crashed with code null[0m
+[1474047582] [ERROR] Je passe ici aussi + ping ++ [object Object]
+[1474047582] [ERROR] Je passe ici aussi + ping ++ [object Object]
+[1474047582] [ERROR] Je passe ici aussi + ping ++ [object Object]
+[1474047582] [ERROR] Je passe : + $(process_name)
+[1474047582] [ERROR] Je passe : + $(process_name)
+[1474047582] [ERROR] Je passe : + $(process_name)
+[1474047582] [INFO] [32mping has sucessfully started.[0m
+[1474047582] [INFO] [32mping has sucessfully started.[0m
+[1474047582] [INFO] [32mping has sucessfully started.[0m
+[1474047582] [WARN] [31mProcess ping has crashed with code null[0m
+[1474047582] [WARN] [31mProcess ping has crashed with code null[0m
+[1474047582] [WARN] [31mProcess ping has crashed with code null[0m
+[1474047583] [ERROR] Je passe : + $(process_name)
+[1474047583] [ERROR] Je passe : + $(process_name)
+[1474047583] [ERROR] Je passe : + $(process_name)
+[1474047583] [INFO] [32mping has sucessfully started.[0m
+[1474047583] [INFO] [32mping has sucessfully started.[0m
+[1474047583] [INFO] [32mping has sucessfully started.[0m
+[1474047583] [ERROR] Je passe : + $(process_name)
+[1474047583] [ERROR] Je passe : + $(process_name)
+[1474047583] [ERROR] Je passe : + $(process_name)
+[1474047583] [INFO] [32mping has sucessfully started.[0m
+[1474047583] [INFO] [32mping has sucessfully started.[0m
+[1474047583] [INFO] [32mping has sucessfully started.[0m
+[1474047584] [ERROR] Je passe : + $(process_name)
+[1474047584] [ERROR] Je passe : + $(process_name)
+[1474047584] [ERROR] Je passe : + $(process_name)
+[1474047584] [INFO] [32mping has sucessfully started.[0m
+[1474047584] [INFO] [32mping has sucessfully started.[0m
+[1474047584] [INFO] [32mping has sucessfully started.[0m
+[1474047584] [ERROR] Je passe : + $(process_name)
+[1474047584] [ERROR] Je passe : + $(process_name)
+[1474047584] [ERROR] Je passe : + $(process_name)
+[1474047584] [INFO] [32mping has sucessfully started.[0m
+[1474047584] [INFO] [32mping has sucessfully started.[0m
+[1474047584] [INFO] [32mping has sucessfully started.[0m
+[1474047584] [ERROR] Je passe : + $(process_name)
+[1474047584] [ERROR] Je passe : + $(process_name)
+[1474047584] [ERROR] Je passe : + $(process_name)
+[1474047584] [INFO] [32mping has sucessfully started.[0m
+[1474047584] [INFO] [32mping has sucessfully started.[0m
+[1474047584] [INFO] [32mping has sucessfully started.[0m
+[1474047584] [ERROR] Je passe : + $(process_name)
+[1474047584] [ERROR] Je passe : + $(process_name)
+[1474047584] [ERROR] Je passe : + $(process_name)
+[1474047584] [INFO] [32mping has sucessfully started.[0m
+[1474047584] [INFO] [32mping has sucessfully started.[0m
+[1474047584] [INFO] [32mping has sucessfully started.[0m
+[1474047584] [ERROR] Je passe : + $(process_name)
+[1474047584] [ERROR] Je passe : + $(process_name)
+[1474047584] [ERROR] Je passe : + $(process_name)
+[1474047584] [INFO] [32mping has sucessfully started.[0m
+[1474047584] [INFO] [32mping has sucessfully started.[0m
+[1474047584] [INFO] [32mping has sucessfully started.[0m
+[1474047584] [ERROR] Je passe : + $(process_name)
+[1474047584] [ERROR] Je passe : + $(process_name)
+[1474047584] [ERROR] Je passe : + $(process_name)
+[1474047584] [INFO] [32mping has sucessfully started.[0m
+[1474047584] [INFO] [32mping has sucessfully started.[0m
+[1474047584] [INFO] [32mping has sucessfully started.[0m
+[1474047584] [ERROR] Je passe : + $(process_name)
+[1474047584] [ERROR] Je passe : + $(process_name)
+[1474047584] [ERROR] Je passe : + $(process_name)
+[1474047585] [INFO] [32mping has sucessfully started.[0m
+[1474047585] [INFO] [32mping has sucessfully started.[0m
+[1474047585] [INFO] [32mping has sucessfully started.[0m
+[1474047585] [ERROR] Je passe : + $(process_name)
+[1474047585] [ERROR] Je passe : + $(process_name)
+[1474047585] [ERROR] Je passe : + $(process_name)
+[1474047585] [INFO] [32mping has sucessfully started.[0m
+[1474047585] [INFO] [32mping has sucessfully started.[0m
+[1474047585] [INFO] [32mping has sucessfully started.[0m
+[1474047585] [ERROR] Je passe : + $(process_name)
+[1474047585] [ERROR] Je passe : + $(process_name)
+[1474047585] [ERROR] Je passe : + $(process_name)
+[1474047585] [INFO] [32mping has sucessfully started.[0m
+[1474047585] [INFO] [32mping has sucessfully started.[0m
+[1474047585] [INFO] [32mping has sucessfully started.[0m
+[1474047585] [ERROR] Je passe : + $(process_name)
+[1474047585] [ERROR] Je passe : + $(process_name)
+[1474047585] [ERROR] Je passe : + $(process_name)
+[1474047585] [INFO] [32mping has sucessfully started.[0m
+[1474047585] [INFO] [32mping has sucessfully started.[0m
+[1474047585] [INFO] [32mping has sucessfully started.[0m
+[1474047585] [ERROR] Je passe : + $(process_name)
+[1474047585] [ERROR] Je passe : + $(process_name)
+[1474047585] [ERROR] Je passe : + $(process_name)
+[1474047585] [INFO] [32mping has sucessfully started.[0m
+[1474047585] [INFO] [32mping has sucessfully started.[0m
+[1474047585] [INFO] [32mping has sucessfully started.[0m
+[1474047585] [ERROR] Je passe : + $(process_name)
+[1474047585] [ERROR] Je passe : + $(process_name)
+[1474047585] [ERROR] Je passe : + $(process_name)
+[1474047585] [INFO] [32mping has sucessfully started.[0m
+[1474047585] [INFO] [32mping has sucessfully started.[0m
+[1474047585] [INFO] [32mping has sucessfully started.[0m
+[1474047591] [INFO] [32mping : stopped[0m
+[1474047591] [INFO] [32mping : stopped[0m
+[1474047591] [INFO] [32mping : stopped[0m
+[1474047591] [INFO] [32mping : stopped[0m
+[1474047591] [INFO] [32mping : stopped[0m
+[1474047591] [INFO] [32mping : stopped[0m
+[1474047592] [INFO] [32mping : stopped[0m
+[1474047592] [INFO] [32mping : stopped[0m
+[1474047592] [INFO] [32mping : stopped[0m
+[1474047592] [INFO] [32mping : stopped[0m
+[1474047592] [INFO] [32mping : stopped[0m
+[1474047592] [INFO] [32mping : stopped[0m
+[1474047592] [INFO] [32mping : stopped[0m
+[1474047592] [INFO] [32mping : stopped[0m
+[1474047592] [INFO] [32mping : stopped[0m

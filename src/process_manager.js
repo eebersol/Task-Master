@@ -84,7 +84,6 @@ module.exports = class ProcessManager {
 
   stop_one(cmd) {
     this.processes[cmd].forEach(_process => {
-      this.taskmaster.logger.error(`Je passe ici aussi + ${cmd} ++ ${_process}`)
       _process.stop(true);
     });
   }

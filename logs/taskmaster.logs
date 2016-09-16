@@ -2535,3 +2535,63 @@
 [1474050835] [INFO] process_name : pwd 
 [1474050835] [INFO] process_name : ping 
 [1474050835] [INFO] process_name : pioupiou 
+[1474051767] [ERROR] Je passe : + $(process_name)
+[1474051767] [ERROR] Je passe : + $(process_name)
+[1474051767] [ERROR] Je passe : + $(process_name)
+[1474051767] [ERROR] Je passe : + $(process_name)
+[1474051767] [ERROR] Je passe : + $(process_name)
+[1474051767] [ERROR] Je passe : + $(process_name)
+[1474051767] [INFO] Api ready
+[1474051767] [INFO] [32mls has sucessfully started.[0m
+[1474051767] [INFO] [32mpwd has sucessfully started.[0m
+[1474051767] [INFO] [32mping has sucessfully started.[0m
+[1474051767] [INFO] [32mping has sucessfully started.[0m
+[1474051767] [INFO] [32mping has sucessfully started.[0m
+[1474051767] [INFO] [32mpioupiou has sucessfully started.[0m
+[1474051767] [INFO] [32mProcess pioupiou has normally stopped with code 0.[0m
+[1474051767] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474051767] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1474051769] [INFO] process_name : ls 
+[1474051769] [INFO] process_name : pwd 
+[1474051769] [INFO] process_name : ping 
+[1474051769] [INFO] process_name : pioupiou 
+[1474051796] [INFO] process_name : ls 
+[1474051796] [INFO] process_name : pwd 
+[1474051796] [INFO] process_name : ping 
+[1474051796] [INFO] process_name : pioupiou 
+[1474051837] [INFO] process_name : ls 
+[1474051837] [INFO] process_name : pwd 
+[1474051837] [INFO] process_name : ping 
+[1474051837] [INFO] process_name : pioupiou 
+[1474051872] [INFO] process_name : ls 
+[1474051872] [INFO] process_name : pwd 
+[1474051872] [INFO] process_name : ping 
+[1474051872] [INFO] process_name : pioupiou 
+[1474051889] [INFO] process_name : ls 
+[1474051889] [INFO] process_name : pwd 
+[1474051889] [INFO] process_name : ping 
+[1474051889] [INFO] process_name : pioupiou 
+[1474051939] [INFO] process_name : ls 
+[1474051939] [INFO] process_name : pwd 
+[1474051939] [INFO] process_name : ping 
+[1474051939] [INFO] process_name : pioupiou 
+[1474051962] [INFO] process_name : ls 
+[1474051962] [INFO] process_name : pwd 
+[1474051962] [INFO] process_name : ping 
+[1474051962] [INFO] process_name : pioupiou 
+[1474051994] [INFO] process_name : ls 
+[1474051994] [INFO] process_name : pwd 
+[1474051994] [INFO] process_name : ping 
+[1474051994] [INFO] process_name : pioupiou 
+[1474052008] [INFO] process_name : ls 
+[1474052008] [INFO] process_name : pwd 
+[1474052008] [INFO] process_name : ping 
+[1474052008] [INFO] process_name : pioupiou 
+[1474052067] [INFO] process_name : ls 
+[1474052067] [INFO] process_name : pwd 
+[1474052067] [INFO] process_name : ping 
+[1474052067] [INFO] process_name : pioupiou 
+[1474052085] [INFO] process_name : ls 
+[1474052085] [INFO] process_name : pwd 
+[1474052085] [INFO] process_name : ping 
+[1474052085] [INFO] process_name : pioupiou 

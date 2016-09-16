@@ -22,7 +22,6 @@ class Api {
        var id_hack = 0;
       let program = {};
       let uper_name = this.capitalizeFirstLetter(process_name)
-      this.taskmaster.logger.info(`process_name : ${process_name} `)
       program.name = uper_name;
       program.processes = [];
      let program_ = this.taskmaster.process_manager.processes[process_name];

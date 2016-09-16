@@ -1744,3 +1744,55 @@
 [1474041432] [INFO] [32mping has sucessfully started.[0m
 [1474041433] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
 [1474041433] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1474047135] [ERROR] Je passe : + $(process_name)
+[1474047135] [ERROR] Je passe : + $(process_name)
+[1474047135] [ERROR] Je passe : + $(process_name)
+[1474047135] [ERROR] Je passe : + $(process_name)
+[1474047135] [ERROR] Je passe : + $(process_name)
+[1474047135] [INFO] Api ready
+[1474047135] [INFO] [32mls has sucessfully started.[0m
+[1474047135] [INFO] [32mpwd has sucessfully started.[0m
+[1474047135] [INFO] [32mping has sucessfully started.[0m
+[1474047135] [INFO] [32mping has sucessfully started.[0m
+[1474047135] [INFO] [32mping has sucessfully started.[0m
+[1474047135] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474047135] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1474047188] [ERROR] Je passe : + $(process_name)
+[1474047188] [ERROR] Je passe : + $(process_name)
+[1474047188] [ERROR] Je passe : + $(process_name)
+[1474047188] [ERROR] Je passe : + $(process_name)
+[1474047188] [ERROR] Je passe : + $(process_name)
+[1474047188] [INFO] Api ready
+[1474047188] [INFO] [32mls has sucessfully started.[0m
+[1474047188] [INFO] [32mpwd has sucessfully started.[0m
+[1474047188] [INFO] [32mping has sucessfully started.[0m
+[1474047188] [INFO] [32mping has sucessfully started.[0m
+[1474047188] [INFO] [32mping has sucessfully started.[0m
+[1474047188] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474047188] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1474047354] [ERROR] Je passe : + $(process_name)
+[1474047354] [ERROR] Je passe : + $(process_name)
+[1474047354] [ERROR] Je passe : + $(process_name)
+[1474047354] [ERROR] Je passe : + $(process_name)
+[1474047354] [ERROR] Je passe : + $(process_name)
+[1474047354] [INFO] Api ready
+[1474047354] [INFO] [32mls has sucessfully started.[0m
+[1474047354] [INFO] [32mpwd has sucessfully started.[0m
+[1474047354] [INFO] [32mping has sucessfully started.[0m
+[1474047354] [INFO] [32mping has sucessfully started.[0m
+[1474047354] [INFO] [32mping has sucessfully started.[0m
+[1474047354] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474047354] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1474047385] [ERROR] Je passe : + $(process_name)
+[1474047385] [ERROR] Je passe : + $(process_name)
+[1474047385] [ERROR] Je passe : + $(process_name)
+[1474047385] [ERROR] Je passe : + $(process_name)
+[1474047385] [ERROR] Je passe : + $(process_name)
+[1474047385] [INFO] Api ready
+[1474047385] [INFO] [32mls has sucessfully started.[0m
+[1474047385] [INFO] [32mpwd has sucessfully started.[0m
+[1474047385] [INFO] [32mping has sucessfully started.[0m
+[1474047385] [INFO] [32mping has sucessfully started.[0m
+[1474047385] [INFO] [32mping has sucessfully started.[0m
+[1474047385] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474047385] [INFO] [32mProcess ls has normally stopped with code 1.[0m

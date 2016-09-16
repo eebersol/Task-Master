@@ -19,3 +19,7 @@ footer.footers {
 div.nav_wrapper {
 	font-size: 2.1rem;
 }
+
+a.collection-item {
+	font-weight: bold;
+}

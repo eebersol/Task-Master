@@ -22,15 +22,17 @@ class Api {
   get_programs(req, res) {
     let result = [];
     for (var process_name in this.taskmaster.process_manager.processes) {
+       var id_hack = 0;
       let program = {};
       program.name = process_name;
       program.processes = [];
      let program_ = this.taskmaster.process_manager.processes[process_name];
       program_.forEach(process_ => {
         program.processes.push({
-          id : process_.id,
+          id : id_hack,
           state : process_.state
         });
+        id_hack++;
       });
       result.push(program);
     }

@@ -3,12 +3,13 @@ const spawn               = require('child_process').spawn;
 const fs                  = require('fs');
 
 module.exports            = class Process {
-  constructor(process_config, process_name, taskmaster) {
+  constructor(process_config, process_name, taskmaster, old_path) {
 
     this.taskmaster       = taskmaster;
     this.name             = process_name;
     this.args             = process_config.cmd.split(' ');
     this.cmd_bis          = this.args[0];
+    this.old_path         = old_path;
     this.state            = 'stopped';
     this.uptime           = 0;
     this.retries          = 0;
@@ -81,9 +82,15 @@ module.exports            = class Process {
         fs.appendFileSync(this.stderr, ' ', flag)
         this.stderr_stream  = fs.createWriteStream(this.stderr, { flags : 'a' });
       }
+      return true;
     }
     catch(e) {
-      this.taskmaster.logger.error(`\x1b[31mError : ${e}\x1b[0m`);
+      this.stdout           = this.old_path.concat(this.stdout);
+      this.stderr           = this.old_path.concat(this.stderr);
+      if (this.set_std() == true)
+        return ;
+      else
+        this.taskmaster.logger.error(`\x1b[31mError : ${e}\x1b[0m`);
     }
   }
 

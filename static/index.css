@@ -1,0 +1,21 @@
+div.big_div {
+	background-color : #cccccc;
+}
+
+div.collection {
+	border-style: solid;
+    border-color: black black;
+}
+
+h4.ng-binding {
+	text-align: center;
+	font-weight: bold;
+}
+
+footer.footers {
+	background-color : #29b6f6;
+}
+
+div.nav_wrapper {
+	font-size: 2.1rem;
+}

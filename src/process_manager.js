@@ -2,7 +2,6 @@ const child_process   = require('child_process');
 const Process         = require('./process');
 const fs              = require('fs');
 
-
 module.exports = class ProcessManager {
   constructor(taskmaster) {
 
@@ -17,7 +16,6 @@ module.exports = class ProcessManager {
     }
     this.first_time = 1;
     this._fs_watch();
-
   }
 
   _fs_watch() {
@@ -47,7 +45,8 @@ module.exports = class ProcessManager {
         return;
     } else if (this.first_time != 0 || (this.first_time == 0 && this.taskmaster.config.options[process_name].autostart == true)) {
         while (indexes < this.taskmaster.config.options[process_name].numprocs) {
-            let _process = new Process(this.taskmaster.config.options[process_name], process_name, this.taskmaster);
+          this.taskmaster.logger.error(`Je passe : + $(process_name)`)
+            let _process = new Process(this.taskmaster.config.options[process_name], process_name, this.taskmaster, this.old_path);
             this.processes[process_name].push(_process);
             indexes++;
         }
@@ -61,14 +60,12 @@ module.exports = class ProcessManager {
     if (cmd[0] == undefined) {
       this._help_stop();
       return;
-    }
-
-    if (cmd[0] == 'all') {
-      for (let process_name in this.processes) {
-         this.stop_one(process_name, cmd);
-       }
-       return;
-    }
+    } else if (cmd[0] == 'all') {
+        for (let process_name in this.processes) {
+           this.stop_one(process_name, cmd);
+        }
+        return;
+      }
 
     while (i_stop < (cmd.length)) {
       if (!this.process_exists(cmd[i_stop])) {
@@ -87,6 +84,7 @@ module.exports = class ProcessManager {
 
   stop_one(cmd) {
     this.processes[cmd].forEach(_process => {
+      this.taskmaster.logger.error(`Je passe ici aussi + ${cmd} ++ ${_process}`)
       _process.stop(true);
     });
   }
@@ -109,7 +107,6 @@ module.exports = class ProcessManager {
 
   status_one(process_name) {
     let index = 0;
-
     this.processes[process_name].forEach(_process => {
       _process.status(process_name, index);
       index++;
@@ -148,6 +145,7 @@ module.exports = class ProcessManager {
       }
     this.taskmaster.config.load_config();
 
+    this.taskmaster.logger.info(`\x1b[32mProgram : ${cmd} reloading\x1b[0m`);
     for (let _p in this.taskmaster.config.options[cmd]) {
       if (old_config[cmd] == undefined) {
         var old_property = this.taskmaster.config.options[cmd[_p]];
@@ -156,7 +154,6 @@ module.exports = class ProcessManager {
         var old_property = old_config[cmd][_p];
       let new_property = this.taskmaster.config.options[cmd][_p];
 
-      this.taskmaster.logger.info(`\x1b[32mProgram : ${cmd} reloading\x1b[0m`);
       if ((old_property != new_property) && _p == 'cmd' && this.start_this == undefined) {
         this.__reload_cmd(cmd);
       }

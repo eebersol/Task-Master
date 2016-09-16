@@ -30,8 +30,8 @@
         "starttime": 5,
         "stopsignal": "TERM",
         "stoptime": 10,
-        "stdout": "/tmp/pwd.stdout",
-        "stderr": "/tmp/pwd.stderr",
+        "stdout": "/logs/pwd.stdout",
+        "stderr": "/logs/pwd.stderr",
         "env": {
             "STARTED_BY": "taskmaster",
             "COUCOU": 54
@@ -49,8 +49,27 @@
         "starttime": 5,
         "stopsignal": "TERM",
         "stoptime": 10,
-        "stdout": "/tmp/ping.stdout",
-        "stderr": "/tmp/ping.stderr",
+        "stdout": "/logs/ping.stdout",
+        "stderr": "/logs/ping.stderr",
+        "env": {
+            "STARTED_BY": "taskmaster",
+            "COUCOU": 54
+        } 
+    },
+    "pioupiou" : {
+        "cmd" : "/bin/pwd -P",
+        "numprocs" : 1,
+        "umask": "002",
+        "workingdir": "/tmp",
+        "autostart": true,
+        "autorestart": "unexpected",
+        "exitcodes": [0, 1, 2],
+        "startretries": 3,
+        "starttime": 5,
+        "stopsignal": "TERM",
+        "stoptime": 10,
+        "stdout": "/tmp/pwd.stdout",
+        "stderr": "/tmp/pwd.stderr",
         "env": {
             "STARTED_BY": "taskmaster",
             "COUCOU": 54

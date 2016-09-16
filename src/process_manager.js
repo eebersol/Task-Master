@@ -5,16 +5,16 @@ const fs              = require('fs');
 module.exports = class ProcessManager {
   constructor(taskmaster) {
 
-    this.taskmaster = taskmaster;
-    this.processes  = {};
-    this.config_file = taskmaster.config.options;
-    this.first_time = 0;
-    this.old_path = process.cwd();
+    this.taskmaster   = taskmaster;
+    this.processes    = {};
+    this.config_file  = taskmaster.config.options;
+    this.first_time   = 0;
+    this.old_path     = process.cwd();
 
     for (let process_name in this.taskmaster.config.options) {
       this.start_one(process_name, this.taskmaster.config.options[process_name]);
     }
-    this.first_time = 1;
+    this.first_time   = 1;
     this._fs_watch();
   }
 
@@ -27,8 +27,8 @@ module.exports = class ProcessManager {
   }
 
   _reload_all() {
-      let contents = fs.readFileSync(this.old_path + "/config/config.json", 'utf8');
-      contents     = JSON.parse(contents);
+      let contents  = fs.readFileSync(this.old_path + "/config/config.json", 'utf8');
+      contents      = JSON.parse(contents);
 
     for (let process_name in contents) {
       this.reload(process_name)
@@ -38,7 +38,7 @@ module.exports = class ProcessManager {
   start_one(process_name) {
 
     this.processes[process_name] = [];
-    let indexes = 0;
+    let indexes     = 0;
 
     if (!this.process_exists(process_name)) {
         console.log(`\x1b[31mError  ${process_name}: invalid process name.\x1b[0m`);
@@ -54,7 +54,7 @@ module.exports = class ProcessManager {
   }
 
   stop_general(cmd) {
-    let i_stop = 0;
+    let i_stop    = 0;
     cmd.splice(0, 1);
 
     if (cmd[0] == undefined) {

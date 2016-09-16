@@ -1,5 +1,5 @@
 div.big_div {
-	background-color : #cccccc;
+	background-image: url("task_master_back.png");
 }
 
 div.collection {
@@ -10,10 +10,8 @@ div.collection {
 h4.ng-binding {
 	text-align: center;
 	font-weight: bold;
-}
-
-footer.footers {
-	background-color : #29b6f6;
+	font-family: 'Comic Sans MS';
+	text-decoration : underline;
 }
 
 div.nav_wrapper {
@@ -22,4 +20,8 @@ div.nav_wrapper {
 
 a.collection-item {
 	font-weight: bold;
+}
+
+div.buttone {
+	text-align: center;
 }

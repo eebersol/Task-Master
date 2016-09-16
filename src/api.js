@@ -7,16 +7,13 @@ class Api {
     this.api = express();
     this.api.use(express.static(this.taskmaster.process_manager.old_path +'/static'));
     this.api.listen(8080, () => {
-      this.taskmaster.logger.info("Api ready");
+      this.taskmaster.logger.info('Api ready');
     });
 
     this.api.get('/programs', this.get_programs.bind(this));
     this.api.get('/start/:name', this.start.bind(this));
     this.api.get('/restart/:name', this.restart.bind(this));
-    this.api.get('/stop/:name', (req, res) => {
-      this.stop(req, res)
-    });
-
+    this.api.get('/stop/:name', this.stop.bind(this));
   }
 
   get_programs(req, res) {
@@ -24,7 +21,9 @@ class Api {
     for (var process_name in this.taskmaster.process_manager.processes) {
        var id_hack = 0;
       let program = {};
-      program.name = process_name;
+      let uper_name = this.capitalizeFirstLetter(process_name)
+      this.taskmaster.logger.info(`process_name : ${process_name} `)
+      program.name = uper_name;
       program.processes = [];
      let program_ = this.taskmaster.process_manager.processes[process_name];
       program_.forEach(process_ => {
@@ -42,7 +41,7 @@ class Api {
   start(req, res) {
     if (this.taskmaster.config.options[req.params.name])
       this.taskmaster.process_manager.start_one(req.params.name);
-    res.send("ok");
+    res.send('ok');
   }
 
   restart(req, res) {
@@ -52,14 +51,18 @@ class Api {
         array.push(req.params.name);
         this.taskmaster.process_manager.restart(array);
    }
-    res.send("ok");
+    res.send('ok');
   }
 
   stop(req, res) {
     if (this.taskmaster.config.options[req.params.name])
       this.taskmaster.process_manager.stop_one(req.params.name);
-    res.send("ok");  
+    res.send('ok');  
   }
+  
+  capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
 }
 
 module.exports = Api;

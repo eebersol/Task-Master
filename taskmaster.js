@@ -1,8 +1,8 @@
-const Config    		= require("./src/config");
-const Readline 			= require("./src/readline");
-const ProcessManager 	= require("./src/process_manager");
-const Logger  			= require("./src/logger.js");
-const Api  	  			= require("./src/api.js");
+const Config    		= require('./src/config');
+const Readline 			= require('./src/readline');
+const ProcessManager 	= require('./src/process_manager');
+const Logger  			= require('./src/logger.js');
+const Api  	  			= require('./src/api.js');
 
 class Taskmaster {
 	constructor() {

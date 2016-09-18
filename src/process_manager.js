@@ -38,14 +38,13 @@ module.exports = class ProcessManager {
   start_one(process_name) {
 
     this.processes[process_name] = [];
-    let indexes     = 0;
+    let indexes                  = 0;
 
     if (!this.process_exists(process_name)) {
         console.log(`\x1b[31mError  ${process_name}: invalid process name.\x1b[0m`);
         return;
     } else if (this.first_time != 0 || (this.first_time == 0 && this.taskmaster.config.options[process_name].autostart == true)) {
         while (indexes < this.taskmaster.config.options[process_name].numprocs) {
-          this.taskmaster.logger.error(`Je passe : + $(process_name)`)
             let _process = new Process(this.taskmaster.config.options[process_name], process_name, this.taskmaster, this.old_path);
             this.processes[process_name].push(_process);
             indexes++;

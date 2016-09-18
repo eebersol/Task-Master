@@ -12,6 +12,7 @@ class Taskmaster {
 		this.readline 			= new Readline(this);
 		this.process_manager 	= new ProcessManager(this);
 	    this.api 				= new Api(this);
+	    this.state 				= 'stopped';
 	}
 }
 

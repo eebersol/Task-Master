@@ -27,7 +27,7 @@
       <div class = "buttone">
       <a class="waves-effect waves-light btn green darken-1" ng-click="start(program)">Start</a>
       <a class="waves-effect waves-light btn red darken-1" ng-click="stop(program)">Stop</a>
-      <a class="waves-effect waves-light btn" ng-click="restart(program)">Restart</a>
+      <a class="waves-effect waves-light btn" ng-click="restart(program, process)">Restart</a>
       </div>
       </div>
       <div class="collection">
@@ -88,6 +88,15 @@
         });
       }
 
+      $scope.shutdown = function() {
+        $http({
+          method: 'GET',
+          url: '/shutdown'
+        }).then(function sucessCallback(response){
+          $scope.update();
+        });
+      }
+
       $scope.update();
 
 
@@ -98,10 +107,11 @@
 </body>
 <footer>
     <nav class="light-blue lighten-1" role="navigation">
-    <div><a id="logo-container" href="#" class="brand-logo">Edit by  : eebersol - qdequelen</a>
-    <ul class="right hide-on-med-and-down">
-        <a href="#">2016</a>
-    </div>
-  </nav>
+       <div><a id="logo-container" href="#" class="brand-logo">Make by : qdequelen - eebersol</a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#" ng-click="shutdown()">Shutdown</a></li>
+          </ul>   
+        </div>
+    </nav>
 </footer>
 </html>

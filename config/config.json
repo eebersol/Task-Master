@@ -1,6 +1,6 @@
 {
     "ls" : {
-        "cmd" : "/bin/pwd -P ",
+        "cmd" : "/bin/pwd -P",
         "numprocs" : 1,
         "umask": "000",
         "workingdir": "/tmp",

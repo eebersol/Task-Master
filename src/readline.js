@@ -1,4 +1,5 @@
 const readline 			= require("readline");
+
 module.exports = class Readline {
 
 	constructor(taskmaster) {

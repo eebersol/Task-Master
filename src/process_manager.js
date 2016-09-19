@@ -1,6 +1,8 @@
 const child_process   = require('child_process');
 const Process         = require('./process');
 const fs              = require('fs');
+const Mailer          = require('./mailer.js');
+const Xauth           = require('./xauth2.js');
 
 module.exports = class ProcessManager {
   constructor(taskmaster) {
@@ -153,6 +155,7 @@ module.exports = class ProcessManager {
       let new_property = this.taskmaster.config.options[cmd][_p];
 
       if ((old_property != new_property) && _p == 'cmd' && this.start_this == undefined) {
+        new Mailer(this.taskmaster);
         this.__reload_cmd(cmd);
       }
       if ((old_property != new_property) && _p == 'numprocs' && this.start_this == undefined) {

@@ -3666,3 +3666,391 @@
 [1474217098] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
 [1474217104] [INFO] [32mping has sucessfully started.[0m
 [1474217117] [INFO] ping are already started
+[1474219607] [INFO] Api ready
+[1474219607] [INFO] [32mls has sucessfully started.[0m
+[1474219607] [INFO] [32mpwd has sucessfully started.[0m
+[1474219607] [INFO] [32mping has sucessfully started.[0m
+[1474219607] [INFO] [32mpioupiou has sucessfully started.[0m
+[1474219607] [INFO] [32mProcess pioupiou has normally stopped with code 0.[0m
+[1474219607] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474219607] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1474219617] [INFO] [32mProgram : ls reloading[0m
+[1474219653] [INFO] Api ready
+[1474219653] [INFO] [32mls has sucessfully started.[0m
+[1474219653] [INFO] [32mpwd has sucessfully started.[0m
+[1474219653] [INFO] [32mping has sucessfully started.[0m
+[1474219653] [INFO] [32mpioupiou has sucessfully started.[0m
+[1474219653] [INFO] [32mProcess pioupiou has normally stopped with code 0.[0m
+[1474219653] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474219653] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1474219656] [INFO] [32mProgram : ls reloading[0m
+[1474219674] [INFO] Api ready
+[1474219674] [INFO] [32mls has sucessfully started.[0m
+[1474219674] [INFO] [32mpwd has sucessfully started.[0m
+[1474219674] [INFO] [32mping has sucessfully started.[0m
+[1474219674] [INFO] [32mpioupiou has sucessfully started.[0m
+[1474219674] [INFO] [32mProcess pioupiou has normally stopped with code 0.[0m
+[1474219674] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474219674] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1474219678] [INFO] [32mProgram : ls reloading[0m
+[1474219751] [INFO] Api ready
+[1474219751] [INFO] [32mls has sucessfully started.[0m
+[1474219751] [INFO] [32mpwd has sucessfully started.[0m
+[1474219751] [INFO] [32mping has sucessfully started.[0m
+[1474219751] [INFO] [32mpioupiou has sucessfully started.[0m
+[1474219751] [INFO] [32mProcess pioupiou has normally stopped with code 0.[0m
+[1474219751] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474219751] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1474219753] [INFO] [32mProgram : ls reloading[0m
+[1474219783] [INFO] Api ready
+[1474219783] [INFO] [32mls has sucessfully started.[0m
+[1474219783] [INFO] [32mpwd has sucessfully started.[0m
+[1474219783] [INFO] [32mping has sucessfully started.[0m
+[1474219783] [INFO] [32mpioupiou has sucessfully started.[0m
+[1474219783] [INFO] [32mProcess pioupiou has normally stopped with code 0.[0m
+[1474219783] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474219783] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1474219797] [INFO] [32mProgram : ls reloading[0m
+[1474219797] [INFO] [32mProgram : pwd reloading[0m
+[1474219797] [INFO] [32mProgram : ping reloading[0m
+[1474219797] [INFO] [32mProgram : pioupiou reloading[0m
+[1474219797] [INFO] [32mls has sucessfully started.[0m
+[1474219797] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1474219807] [INFO] [32mls : stopped[0m
+[1474219823] [INFO] Api ready
+[1474219823] [INFO] [32mls has sucessfully started.[0m
+[1474219823] [INFO] [32mpwd has sucessfully started.[0m
+[1474219823] [INFO] [32mping has sucessfully started.[0m
+[1474219823] [INFO] [32mpioupiou has sucessfully started.[0m
+[1474219823] [INFO] [32mProcess pioupiou has normally stopped with code 0.[0m
+[1474219823] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474219823] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1474219827] [INFO] [32mProgram : ls reloading[0m
+[1474219827] [INFO] [32mProgram : pwd reloading[0m
+[1474219827] [INFO] [32mProgram : ping reloading[0m
+[1474219827] [INFO] [32mProgram : pioupiou reloading[0m
+[1474219827] [INFO] [32mls has sucessfully started.[0m
+[1474219827] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1474219884] [INFO] Api ready
+[1474219884] [INFO] [32mls has sucessfully started.[0m
+[1474219884] [INFO] [32mpwd has sucessfully started.[0m
+[1474219884] [INFO] [32mping has sucessfully started.[0m
+[1474219884] [INFO] [32mpioupiou has sucessfully started.[0m
+[1474219884] [INFO] [32mProcess pioupiou has normally stopped with code 0.[0m
+[1474219884] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474219884] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1474219893] [INFO] [32mProgram : ls reloading[0m
+[1474219893] [INFO] [32mProgram : pwd reloading[0m
+[1474219893] [INFO] [32mProgram : ping reloading[0m
+[1474219893] [INFO] [32mProgram : pioupiou reloading[0m
+[1474219893] [INFO] [32mls has sucessfully started.[0m
+[1474219893] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1474219903] [INFO] [32mls : stopped[0m
+[1474219975] [INFO] Api ready
+[1474219975] [INFO] [32mls has sucessfully started.[0m
+[1474219975] [INFO] [32mpwd has sucessfully started.[0m
+[1474219975] [INFO] [32mping has sucessfully started.[0m
+[1474219975] [INFO] [32mpioupiou has sucessfully started.[0m
+[1474219975] [INFO] [32mProcess pioupiou has normally stopped with code 0.[0m
+[1474219975] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474219975] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1474219985] [INFO] [32mProgram : ls reloading[0m
+[1474219985] [INFO] [32mProgram : pwd reloading[0m
+[1474219985] [INFO] [32mProgram : ping reloading[0m
+[1474219985] [INFO] [32mProgram : pioupiou reloading[0m
+[1474219985] [INFO] [32mls has sucessfully started.[0m
+[1474219985] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1474219995] [INFO] [32mls : stopped[0m
+[1474220144] [INFO] Api ready
+[1474220144] [INFO] [32mls has sucessfully started.[0m
+[1474220144] [INFO] [32mpwd has sucessfully started.[0m
+[1474220144] [INFO] [32mping has sucessfully started.[0m
+[1474220144] [INFO] [32mpioupiou has sucessfully started.[0m
+[1474220144] [INFO] [32mProcess pioupiou has normally stopped with code 0.[0m
+[1474220144] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474220144] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1474220148] [INFO] [32mProgram : ls reloading[0m
+[1474220148] [INFO] [32mProgram : pwd reloading[0m
+[1474220148] [INFO] [32mProgram : ping reloading[0m
+[1474220148] [INFO] [32mProgram : pioupiou reloading[0m
+[1474220148] [INFO] [32mls has sucessfully started.[0m
+[1474220148] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1474220158] [INFO] [32mls : stopped[0m
+[1474220267] [INFO] Api ready
+[1474220267] [INFO] [32mls has sucessfully started.[0m
+[1474220267] [INFO] [32mpwd has sucessfully started.[0m
+[1474220267] [INFO] [32mping has sucessfully started.[0m
+[1474220267] [INFO] [32mpioupiou has sucessfully started.[0m
+[1474220267] [INFO] [32mProcess pioupiou has normally stopped with code 0.[0m
+[1474220267] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474220267] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1474220273] [INFO] [32mProgram : ls reloading[0m
+[1474220273] [INFO] [32mProgram : pwd reloading[0m
+[1474220273] [INFO] [32mProgram : ping reloading[0m
+[1474220273] [INFO] [32mProgram : pioupiou reloading[0m
+[1474220273] [INFO] [32mls has sucessfully started.[0m
+[1474220273] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1474220283] [INFO] [32mls : stopped[0m
+[1474220305] [INFO] Api ready
+[1474220305] [INFO] [32mls has sucessfully started.[0m
+[1474220305] [INFO] [32mpwd has sucessfully started.[0m
+[1474220305] [INFO] [32mping has sucessfully started.[0m
+[1474220305] [INFO] [32mpioupiou has sucessfully started.[0m
+[1474220305] [INFO] [32mProcess pioupiou has normally stopped with code 0.[0m
+[1474220305] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474220305] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1474220320] [INFO] [32mProgram : ls reloading[0m
+[1474220436] [INFO] Api ready
+[1474220436] [INFO] [32mls has sucessfully started.[0m
+[1474220436] [INFO] [32mpwd has sucessfully started.[0m
+[1474220436] [INFO] [32mping has sucessfully started.[0m
+[1474220436] [INFO] [32mpioupiou has sucessfully started.[0m
+[1474220436] [INFO] [32mProcess pioupiou has normally stopped with code 0.[0m
+[1474220436] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474220436] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1474220441] [INFO] [32mProgram : ls reloading[0m
+[1474220441] [INFO] [32mProgram : pwd reloading[0m
+[1474220441] [INFO] [32mProgram : ping reloading[0m
+[1474220441] [INFO] [32mProgram : pioupiou reloading[0m
+[1474220441] [INFO] [32mls has sucessfully started.[0m
+[1474220441] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1474220451] [INFO] [32mls : stopped[0m
+[1474220549] [INFO] Api ready
+[1474220549] [INFO] [32mls has sucessfully started.[0m
+[1474220549] [INFO] [32mpwd has sucessfully started.[0m
+[1474220549] [INFO] [32mping has sucessfully started.[0m
+[1474220549] [INFO] [32mpioupiou has sucessfully started.[0m
+[1474220549] [INFO] [32mProcess pioupiou has normally stopped with code 0.[0m
+[1474220549] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474220549] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1474220553] [INFO] [32mProgram : ls reloading[0m
+[1474220553] [INFO] [32mProgram : pwd reloading[0m
+[1474220553] [INFO] [32mProgram : ping reloading[0m
+[1474220553] [INFO] [32mProgram : pioupiou reloading[0m
+[1474220553] [INFO] [32mls has sucessfully started.[0m
+[1474220553] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1474220563] [INFO] [32mls : stopped[0m
+[1474220602] [INFO] Api ready
+[1474220602] [INFO] [32mls has sucessfully started.[0m
+[1474220602] [INFO] [32mpwd has sucessfully started.[0m
+[1474220602] [INFO] [32mping has sucessfully started.[0m
+[1474220602] [INFO] [32mpioupiou has sucessfully started.[0m
+[1474220602] [INFO] [32mProcess pioupiou has normally stopped with code 0.[0m
+[1474220602] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474220602] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1474220606] [INFO] [32mProgram : ls reloading[0m
+[1474220606] [INFO] [32mProgram : pwd reloading[0m
+[1474220606] [INFO] [32mProgram : ping reloading[0m
+[1474220606] [INFO] [32mProgram : pioupiou reloading[0m
+[1474220606] [INFO] [32mls has sucessfully started.[0m
+[1474220606] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1474220616] [INFO] [32mls : stopped[0m
+[1474220989] [INFO] Api ready
+[1474220989] [INFO] [32mls has sucessfully started.[0m
+[1474220989] [INFO] [32mpwd has sucessfully started.[0m
+[1474220989] [INFO] [32mping has sucessfully started.[0m
+[1474220989] [INFO] [32mpioupiou has sucessfully started.[0m
+[1474220989] [INFO] [32mProcess pioupiou has normally stopped with code 0.[0m
+[1474220989] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474220989] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1474220994] [INFO] [32mProgram : ls reloading[0m
+[1474220994] [INFO] [32mProgram : pwd reloading[0m
+[1474220994] [INFO] [32mProgram : ping reloading[0m
+[1474220994] [INFO] [32mProgram : pioupiou reloading[0m
+[1474220994] [INFO] [32mls has sucessfully started.[0m
+[1474220994] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1474221004] [INFO] [32mls : stopped[0m
+[1474224345] [INFO] Api ready
+[1474224345] [INFO] [32mls has sucessfully started.[0m
+[1474224345] [INFO] [32mpwd has sucessfully started.[0m
+[1474224345] [INFO] [32mping has sucessfully started.[0m
+[1474224345] [INFO] [32mpioupiou has sucessfully started.[0m
+[1474224345] [INFO] [32mProcess pioupiou has normally stopped with code 0.[0m
+[1474224345] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474224345] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1474224350] [INFO] [32mProgram : ls reloading[0m
+[1474224410] [INFO] Api ready
+[1474224410] [INFO] [32mls has sucessfully started.[0m
+[1474224410] [INFO] [32mpwd has sucessfully started.[0m
+[1474224410] [INFO] [32mping has sucessfully started.[0m
+[1474224410] [INFO] [32mpioupiou has sucessfully started.[0m
+[1474224411] [INFO] [32mProcess pioupiou has normally stopped with code 0.[0m
+[1474224411] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474224411] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1474224414] [INFO] [32mProgram : ls reloading[0m
+[1474224414] [INFO] [32mProgram : pwd reloading[0m
+[1474224414] [INFO] [32mProgram : ping reloading[0m
+[1474224414] [INFO] [32mProgram : pioupiou reloading[0m
+[1474224414] [INFO] [32mls has sucessfully started.[0m
+[1474224414] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1474224424] [INFO] [32mls : stopped[0m
+[1474224931] [INFO] Api ready
+[1474224931] [INFO] [32mls has sucessfully started.[0m
+[1474224931] [INFO] [32mpwd has sucessfully started.[0m
+[1474224931] [INFO] [32mping has sucessfully started.[0m
+[1474224931] [INFO] [32mpioupiou has sucessfully started.[0m
+[1474224931] [INFO] [32mProcess pioupiou has normally stopped with code 0.[0m
+[1474224931] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474224931] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1474224969] [INFO] Api ready
+[1474224969] [INFO] [32mls has sucessfully started.[0m
+[1474224969] [INFO] [32mpwd has sucessfully started.[0m
+[1474224969] [INFO] [32mping has sucessfully started.[0m
+[1474224969] [INFO] [32mpioupiou has sucessfully started.[0m
+[1474224969] [INFO] [32mProcess pioupiou has normally stopped with code 0.[0m
+[1474224969] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474224969] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1474225002] [INFO] Api ready
+[1474225002] [INFO] [32mls has sucessfully started.[0m
+[1474225002] [INFO] [32mpwd has sucessfully started.[0m
+[1474225002] [INFO] [32mping has sucessfully started.[0m
+[1474225002] [INFO] [32mpioupiou has sucessfully started.[0m
+[1474225002] [INFO] [32mProcess pioupiou has normally stopped with code 0.[0m
+[1474225002] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474225002] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1474225012] [INFO] [32mProgram : ls reloading[0m
+[1474225012] [INFO] [32mProgram : pwd reloading[0m
+[1474225012] [INFO] [32mProgram : ping reloading[0m
+[1474225012] [INFO] [32mProgram : pioupiou reloading[0m
+[1474225012] [INFO] [32mls has sucessfully started.[0m
+[1474225012] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1474225022] [INFO] [32mls : stopped[0m
+[1474225154] [INFO] Api ready
+[1474225154] [INFO] [32mls has sucessfully started.[0m
+[1474225154] [INFO] [32mpwd has sucessfully started.[0m
+[1474225154] [INFO] [32mping has sucessfully started.[0m
+[1474225154] [INFO] [32mpioupiou has sucessfully started.[0m
+[1474225154] [INFO] [32mProcess pioupiou has normally stopped with code 0.[0m
+[1474225154] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474225154] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1474225161] [INFO] [32mProgram : ls reloading[0m
+[1474225161] [INFO] [32mProgram : pwd reloading[0m
+[1474225161] [INFO] [32mProgram : ping reloading[0m
+[1474225161] [INFO] [32mProgram : pioupiou reloading[0m
+[1474225161] [INFO] [32mls has sucessfully started.[0m
+[1474225161] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1474225171] [INFO] [32mls : stopped[0m
+[1474225541] [INFO] Api ready
+[1474225541] [INFO] [32mls has sucessfully started.[0m
+[1474225541] [INFO] [32mpwd has sucessfully started.[0m
+[1474225541] [INFO] [32mping has sucessfully started.[0m
+[1474225541] [INFO] [32mpioupiou has sucessfully started.[0m
+[1474225542] [INFO] [32mProcess pioupiou has normally stopped with code 0.[0m
+[1474225542] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474225542] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1474225546] [INFO] [32mProgram : ls reloading[0m
+[1474225546] [INFO] [32mProgram : pwd reloading[0m
+[1474225546] [INFO] [32mProgram : ping reloading[0m
+[1474225546] [INFO] [32mProgram : pioupiou reloading[0m
+[1474225546] [INFO] [32mls has sucessfully started.[0m
+[1474225546] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1474225556] [INFO] [32mls : stopped[0m
+[1474225578] [INFO] Api ready
+[1474225578] [INFO] [32mls has sucessfully started.[0m
+[1474225578] [INFO] [32mpwd has sucessfully started.[0m
+[1474225578] [INFO] [32mping has sucessfully started.[0m
+[1474225578] [INFO] [32mpioupiou has sucessfully started.[0m
+[1474225578] [INFO] [32mProcess pioupiou has normally stopped with code 0.[0m
+[1474225578] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474225578] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1474225589] [INFO] [32mProgram : ls reloading[0m
+[1474225590] [INFO] [32mProgram : pwd reloading[0m
+[1474225590] [INFO] [32mProgram : ping reloading[0m
+[1474225590] [INFO] [32mProgram : pioupiou reloading[0m
+[1474225590] [INFO] [32mls has sucessfully started.[0m
+[1474225590] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1474225600] [INFO] [32mls : stopped[0m
+[1474225683] [INFO] Api ready
+[1474225683] [INFO] [32mls has sucessfully started.[0m
+[1474225683] [INFO] [32mpwd has sucessfully started.[0m
+[1474225683] [INFO] [32mping has sucessfully started.[0m
+[1474225683] [INFO] [32mpioupiou has sucessfully started.[0m
+[1474225683] [INFO] [32mProcess pioupiou has normally stopped with code 0.[0m
+[1474225683] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474225683] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1474225687] [INFO] [32mProgram : ls reloading[0m
+[1474225687] [INFO] [32mProgram : pwd reloading[0m
+[1474225687] [INFO] [32mProgram : ping reloading[0m
+[1474225687] [INFO] [32mProgram : pioupiou reloading[0m
+[1474225687] [INFO] [32mls has sucessfully started.[0m
+[1474225687] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1474225697] [INFO] [32mls : stopped[0m
+[1474225725] [INFO] Api ready
+[1474225725] [INFO] [32mls has sucessfully started.[0m
+[1474225725] [INFO] [32mpwd has sucessfully started.[0m
+[1474225725] [INFO] [32mping has sucessfully started.[0m
+[1474225725] [INFO] [32mpioupiou has sucessfully started.[0m
+[1474225725] [INFO] [32mProcess pioupiou has normally stopped with code 0.[0m
+[1474225725] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474225725] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1474225764] [INFO] [32mProgram : ls reloading[0m
+[1474225764] [INFO] [32mProgram : pwd reloading[0m
+[1474225764] [INFO] [32mProgram : ping reloading[0m
+[1474225764] [INFO] [32mProgram : pioupiou reloading[0m
+[1474225773] [INFO] [32mProgram : ls reloading[0m
+[1474225773] [INFO] [32mProgram : pwd reloading[0m
+[1474225773] [INFO] [32mProgram : ping reloading[0m
+[1474225773] [INFO] [32mProgram : pioupiou reloading[0m
+[1474225773] [INFO] [32mls has sucessfully started.[0m
+[1474225773] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1474225783] [INFO] [32mls : stopped[0m
+[1474225809] [INFO] Api ready
+[1474225809] [INFO] [32mls has sucessfully started.[0m
+[1474225809] [INFO] [32mpwd has sucessfully started.[0m
+[1474225809] [INFO] [32mping has sucessfully started.[0m
+[1474225809] [INFO] [32mpioupiou has sucessfully started.[0m
+[1474225809] [INFO] [32mProcess pioupiou has normally stopped with code 0.[0m
+[1474225809] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474225809] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1474225813] [INFO] [32mProgram : ls reloading[0m
+[1474225814] [INFO] [32mProgram : pwd reloading[0m
+[1474225814] [INFO] [32mProgram : ping reloading[0m
+[1474225814] [INFO] [32mProgram : pioupiou reloading[0m
+[1474225814] [INFO] [32mls has sucessfully started.[0m
+[1474225814] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1474225824] [INFO] [32mls : stopped[0m
+[1474225825] [INFO] Api ready
+[1474225825] [INFO] [32mls has sucessfully started.[0m
+[1474225825] [INFO] [32mpwd has sucessfully started.[0m
+[1474225825] [INFO] [32mping has sucessfully started.[0m
+[1474225825] [INFO] [32mpioupiou has sucessfully started.[0m
+[1474225825] [INFO] [32mProcess pioupiou has normally stopped with code 0.[0m
+[1474225825] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474225825] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1474225836] [INFO] [32mProgram : ls reloading[0m
+[1474225836] [INFO] [32mProgram : pwd reloading[0m
+[1474225836] [INFO] [32mProgram : ping reloading[0m
+[1474225836] [INFO] [32mProgram : pioupiou reloading[0m
+[1474225836] [INFO] [32mls has sucessfully started.[0m
+[1474225836] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1474225846] [INFO] [32mls : stopped[0m
+[1474226002] [INFO] Api ready
+[1474226002] [INFO] [32mls has sucessfully started.[0m
+[1474226002] [INFO] [32mpwd has sucessfully started.[0m
+[1474226002] [INFO] [32mping has sucessfully started.[0m
+[1474226002] [INFO] [32mpioupiou has sucessfully started.[0m
+[1474226002] [INFO] [32mProcess pioupiou has normally stopped with code 0.[0m
+[1474226002] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474226002] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1474226009] [INFO] [32mProgram : ls reloading[0m
+[1474226009] [INFO] [32mProgram : pwd reloading[0m
+[1474226009] [INFO] [32mProgram : ping reloading[0m
+[1474226009] [INFO] [32mProgram : pioupiou reloading[0m
+[1474226009] [INFO] [32mls has sucessfully started.[0m
+[1474226009] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1474226019] [INFO] [32mls : stopped[0m
+[1474226906] [INFO] Api ready
+[1474226906] [INFO] [32mls has sucessfully started.[0m
+[1474226906] [INFO] [32mpwd has sucessfully started.[0m
+[1474226906] [INFO] [32mping has sucessfully started.[0m
+[1474226906] [INFO] [32mpioupiou has sucessfully started.[0m
+[1474226906] [INFO] [32mProcess pioupiou has normally stopped with code 0.[0m
+[1474226906] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474226906] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1474226913] [INFO] [32mProgram : ls reloading[0m
+[1474226913] [INFO] [32mProgram : pwd reloading[0m
+[1474226913] [INFO] [32mProgram : ping reloading[0m
+[1474226913] [INFO] [32mProgram : pioupiou reloading[0m
+[1474226913] [INFO] [32mls has sucessfully started.[0m
+[1474226913] [INFO] [32mProcess ls has normally stopped with code 1.[0m
+[1474226923] [INFO] [32mls : stopped[0m

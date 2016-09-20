@@ -25,3 +25,13 @@ a.collection-item {
 div.buttone {
 	text-align: center;
 }
+
+div.section-2 {
+	text-align: center;
+	font-weight: bold;
+	font-family: 'Comic Sans MS';
+}
+
+h5 {
+	text-decoration : underline;
+}

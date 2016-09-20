@@ -54,11 +54,16 @@ module.exports            = class Process {
     this._process         = spawn(process_cmd, args, {env : this.env});
     this.set_std();
 
-    process.umask(this.umask);
-    process.chdir(this.workingdir);
+    try {
+      process.umask(this.umask);
+      process.chdir(this.workingdir);
+    } catch(e) {
+      this.taskmaster.logger.error(`\x1b[31m${e}\x1b[0m`);
+      return ;
+    }
 
     this._process.stdout.on('data', this._on_stdout.bind(this));
-    this._process.stdout.on('data', this._on_stderr.bind(this));
+    this._process.stderr.on('data', this._on_stderr.bind(this));
     this.pid               = this._process.pid;
     setTimeout(() => {
       if (this.is_running()) {
@@ -150,7 +155,11 @@ module.exports            = class Process {
 
   restart() {
     this.stop()
-    new Process (this.object, this.name, this.taskmaster);
+    new Process (
+      this.object,
+      this.name,
+      this.taskmaster,
+      this.old_path);
     this.taskmaster.logger.info(`\n\x1b[32m${this.name} : started\x1b[0m`);
   }
 

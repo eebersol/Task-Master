@@ -46,7 +46,12 @@ module.exports = class ProcessManager {
         return;
     } else if (this.first_time != 0 || (this.first_time == 0 && this.taskmaster.config.options[process_name].autostart == true)) {
         while (indexes < this.taskmaster.config.options[process_name].numprocs) {
-            let _process = new Process(this.taskmaster.config.options[process_name], process_name, this.taskmaster, this.old_path);
+            let _process = new Process(
+              this.taskmaster.config.options[process_name],
+              process_name,
+              this.taskmaster,
+              this.old_path
+              );
             this.processes[process_name].push(_process);
             indexes++;
         }
@@ -175,10 +180,14 @@ module.exports = class ProcessManager {
 
     if (numprocs > this.processes[cmd].length) {
       let new_proc = numprocs - this.processes[cmd].length;
-      console.log('new_proc ' +new_proc);
-      console.log('numprocs ' +numprocs);
+      console.log(`\nnew_proc ${new_proc}`);
+      console.log(`numprocs ${numprocs}`);
       for(let index = 0; index < new_proc; index++) {
-        let _process = new Process(this.taskmaster.config.options[cmd], cmd);
+        let _process = new Process(
+          this.taskmaster.config.options[cmd],
+          cmd,
+          this.taskmaster,
+          this.old_path);
         this.processes[cmd].push(_process);
       }
     }

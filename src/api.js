@@ -1,4 +1,5 @@
 const express = require('express');
+const fs = require('fs')
 
 class Api {
 
@@ -15,6 +16,8 @@ class Api {
     this.api.get('/restart/:name', this.restart.bind(this));
     this.api.get('/stop/:name', this.stop.bind(this));
     this.api.get('/shutdown', this.shutdown.bind(this));
+    this.api.get('/get_config', this.get_config.bind(this));
+
   }
 
   get_programs(req, res) {
@@ -41,7 +44,7 @@ class Api {
   start(req, res) {
     req.params.name = this.uncapitalizeFirstLetter(req.params.name);
     if (this.taskmaster.process_manager.processes[req.params.name][0].state == 'started')
-      this.taskmaster.logger.info(`${req.params.name} are already started`);
+      this.taskmaster.logger.info(`\x1b[32m${req.params.name} are already started\x1b[0m`);
     else if (this.taskmaster.config.options[req.params.name])
       this.taskmaster.process_manager.start_one(req.params.name);
     res.send('ok');
@@ -60,9 +63,11 @@ class Api {
 
   stop(req, res) {
     req.params.name = this.uncapitalizeFirstLetter(req.params.name);
-    if (this.taskmaster.config.options[req.params.name]) {
+    if (this.taskmaster.config.options[req.params.name] &&
+      this.taskmaster.process_manager.processes[req.params.name][0].state != 'stopped') {
       this.taskmaster.process_manager.stop_one(req.params.name);
-    }
+    } else
+      this.taskmaster.logger.info(`\x1b[32m${req.params.name} are already stopped\x1b[0m`)
     res.send('ok');  
   }
   
@@ -77,6 +82,11 @@ class Api {
       process.exit();
     }, 5000);
     res.send('ok');
+  }
+
+  get_config(req, res) {
+    res.json(this.taskmaster.config.options);
+
   }
 
   capitalizeFirstLetter(string) {

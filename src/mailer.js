@@ -7,8 +7,8 @@ module.exports = class Mailer {
 		this.transporter 	= nodemailer.createTransport({
 		  service: 'Hotmail',
 		  auth: {
-		    user: '',
-		    pass: ''
+		    user: 'edouard.ebersoldt@hotmail.fr',
+		    pass: 'edcxszaqw1994'
 		  }
 		});
 		this.mailOptions = {
@@ -20,8 +20,8 @@ module.exports = class Mailer {
 		}
 		this.transporter.sendMail(this.mailOptions, function(error, info){
 			if (error) 
-				return console.log(`mail don't send ${error}`);
-			console.log('Message sent: ' + info.response);
-		});
+				return this.taskmaster.logger.error(`mail don't send ${error}`);
+			this.taskmaster.logger.info('Message sent: ' + info.response);
+		}.bind(this));
 	}
 }

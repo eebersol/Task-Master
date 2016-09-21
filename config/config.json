@@ -20,7 +20,7 @@
     },
     "pwd" : {
         "cmd" : "/bin/pwd -P",
-        "numprocs" : 1,
+        "numprocs" : 11,
         "umask": "002",
         "workingdir": "/tmp",
         "autostart": true,

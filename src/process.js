@@ -156,7 +156,7 @@ module.exports            = class Process {
   restart() {
     this.stop()
     new Process (
-      this.object,
+      this.taskmaster.config.options[this.name],
       this.name,
       this.taskmaster,
       this.old_path);

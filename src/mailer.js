@@ -8,7 +8,7 @@ module.exports = class Mailer {
 		  service: 'Hotmail',
 		  auth: {
 		    user: 'edouard.ebersoldt@hotmail.fr',
-		    pass: ''
+		    pass: process.env.MAIL_PASS,
 		  }
 		});
 		this.mailOptions = {

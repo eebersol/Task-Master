@@ -8317,3 +8317,673 @@
 [1474456887] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
 [1474456887] [INFO] [32mProcess ls has normally stopped with code 0.[0m
 [1474457838] [INFO] [32mProgram : undefined reloading[0m
+[1474459858] [INFO] Api ready
+[1474459858] [INFO] [32mls has sucessfully started.[0m
+[1474459858] [INFO] [32mpwd has sucessfully started.[0m
+[1474459858] [INFO] [32mpwd has sucessfully started.[0m
+[1474459858] [INFO] [32mpwd has sucessfully started.[0m
+[1474459858] [INFO] [32mpwd has sucessfully started.[0m
+[1474459858] [INFO] [32mpwd has sucessfully started.[0m
+[1474459858] [INFO] [32mpwd has sucessfully started.[0m
+[1474459858] [INFO] [32mpwd has sucessfully started.[0m
+[1474459858] [INFO] [32mpwd has sucessfully started.[0m
+[1474459858] [INFO] [32mpwd has sucessfully started.[0m
+[1474459858] [INFO] [32mpwd has sucessfully started.[0m
+[1474459858] [INFO] [32mpwd has sucessfully started.[0m
+[1474459858] [INFO] [32mping has sucessfully started.[0m
+[1474459858] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474459858] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474459858] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474459858] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474459858] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474459858] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474459858] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474459858] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474459858] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474459858] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474459858] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474459858] [INFO] [32mProcess ls has normally stopped with code 0.[0m
+[1474459870] [INFO] [32mProgram : ls reloading[0m
+[1474459870] [INFO] [32mProgram : pwd reloading[0m
+[1474459870] [INFO] [32mProgram : ping reloading[0m
+[1474459870] [INFO] [32mls has sucessfully started.[0m
+[1474459870] [INFO] [32mProcess ls has normally stopped with code 0.[0m
+[1474459872] [ERROR] mail don't send Error: Invalid login: 535 5.0.0 Authentication Failed
+[1474459881] [INFO] [32mls : stopped[0m
+[1474459947] [INFO] Api ready
+[1474459947] [INFO] [32mls has sucessfully started.[0m
+[1474459947] [INFO] [32mpwd has sucessfully started.[0m
+[1474459947] [INFO] [32mpwd has sucessfully started.[0m
+[1474459947] [INFO] [32mpwd has sucessfully started.[0m
+[1474459947] [INFO] [32mpwd has sucessfully started.[0m
+[1474459947] [INFO] [32mpwd has sucessfully started.[0m
+[1474459947] [INFO] [32mpwd has sucessfully started.[0m
+[1474459947] [INFO] [32mpwd has sucessfully started.[0m
+[1474459947] [INFO] [32mpwd has sucessfully started.[0m
+[1474459947] [INFO] [32mpwd has sucessfully started.[0m
+[1474459947] [INFO] [32mpwd has sucessfully started.[0m
+[1474459947] [INFO] [32mpwd has sucessfully started.[0m
+[1474459947] [INFO] [32mping has sucessfully started.[0m
+[1474459947] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474459947] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474459947] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474459947] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474459947] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474459947] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474459947] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474459947] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474459947] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474459947] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474459947] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474459947] [INFO] [32mProcess ls has normally stopped with code 0.[0m
+[1474459955] [INFO] [32mProgram : ls reloading[0m
+[1474459955] [INFO] [32mProgram : pwd reloading[0m
+[1474459955] [INFO] [32mProgram : ping reloading[0m
+[1474459955] [INFO] [32mls has sucessfully started.[0m
+[1474459955] [INFO] [32mProcess ls has normally stopped with code 0.[0m
+[1474459957] [ERROR] mail don't send Error: Invalid login: 535 5.0.0 Authentication Failed
+[1474459965] [INFO] [32mls : stopped[0m
+[1474460005] [INFO] Api ready
+[1474460005] [INFO] [32mls has sucessfully started.[0m
+[1474460005] [INFO] [32mpwd has sucessfully started.[0m
+[1474460005] [INFO] [32mpwd has sucessfully started.[0m
+[1474460005] [INFO] [32mpwd has sucessfully started.[0m
+[1474460005] [INFO] [32mpwd has sucessfully started.[0m
+[1474460005] [INFO] [32mpwd has sucessfully started.[0m
+[1474460005] [INFO] [32mpwd has sucessfully started.[0m
+[1474460005] [INFO] [32mpwd has sucessfully started.[0m
+[1474460005] [INFO] [32mpwd has sucessfully started.[0m
+[1474460005] [INFO] [32mpwd has sucessfully started.[0m
+[1474460005] [INFO] [32mpwd has sucessfully started.[0m
+[1474460005] [INFO] [32mpwd has sucessfully started.[0m
+[1474460005] [INFO] [32mping has sucessfully started.[0m
+[1474460005] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474460005] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474460005] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474460005] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474460005] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474460005] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474460005] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474460005] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474460005] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474460005] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474460005] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474460005] [INFO] [32mProcess ls has normally stopped with code 0.[0m
+[1474460010] [INFO] [32mProgram : ls reloading[0m
+[1474460067] [INFO] Api ready
+[1474460067] [INFO] [32mls has sucessfully started.[0m
+[1474460067] [INFO] [32mpwd has sucessfully started.[0m
+[1474460067] [INFO] [32mpwd has sucessfully started.[0m
+[1474460067] [INFO] [32mpwd has sucessfully started.[0m
+[1474460067] [INFO] [32mpwd has sucessfully started.[0m
+[1474460067] [INFO] [32mpwd has sucessfully started.[0m
+[1474460067] [INFO] [32mpwd has sucessfully started.[0m
+[1474460067] [INFO] [32mpwd has sucessfully started.[0m
+[1474460067] [INFO] [32mpwd has sucessfully started.[0m
+[1474460067] [INFO] [32mpwd has sucessfully started.[0m
+[1474460067] [INFO] [32mpwd has sucessfully started.[0m
+[1474460067] [INFO] [32mpwd has sucessfully started.[0m
+[1474460067] [INFO] [32mping has sucessfully started.[0m
+[1474460067] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474460067] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474460067] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474460067] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474460067] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474460067] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474460067] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474460067] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474460067] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474460067] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474460067] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474460067] [INFO] [32mProcess ls has normally stopped with code 0.[0m
+[1474460073] [INFO] [32mProgram : ls reloading[0m
+[1474460073] [INFO] [32mProgram : pwd reloading[0m
+[1474460073] [INFO] [32mProgram : ping reloading[0m
+[1474460073] [INFO] [32mls has sucessfully started.[0m
+[1474460073] [INFO] [32mProcess ls has normally stopped with code 0.[0m
+[1474460082] [INFO] Message sent: 250 2.6.0  <199051c1-f847-d3bf-a064-593013b38bb7@hotmail.fr> Queued mail for delivery
+[1474460083] [INFO] [32mls : stopped[0m
+[1474468032] [INFO] Api ready
+[1474468032] [INFO] [32mls has sucessfully started.[0m
+[1474468032] [INFO] [32mpwd has sucessfully started.[0m
+[1474468032] [INFO] [32mpwd has sucessfully started.[0m
+[1474468032] [INFO] [32mpwd has sucessfully started.[0m
+[1474468032] [INFO] [32mpwd has sucessfully started.[0m
+[1474468032] [INFO] [32mpwd has sucessfully started.[0m
+[1474468032] [INFO] [32mpwd has sucessfully started.[0m
+[1474468032] [INFO] [32mpwd has sucessfully started.[0m
+[1474468032] [INFO] [32mpwd has sucessfully started.[0m
+[1474468032] [INFO] [32mpwd has sucessfully started.[0m
+[1474468032] [INFO] [32mpwd has sucessfully started.[0m
+[1474468032] [INFO] [32mpwd has sucessfully started.[0m
+[1474468032] [INFO] [32mping has sucessfully started.[0m
+[1474468032] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468032] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468032] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468032] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468032] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468032] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468032] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468032] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468032] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468032] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468032] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468032] [INFO] [32mProcess ls has normally stopped with code 0.[0m
+[1474468080] [INFO] [32mpwd has sucessfully started.[0m
+[1474468080] [INFO] [32mpwd has sucessfully started.[0m
+[1474468080] [INFO] [32mpwd has sucessfully started.[0m
+[1474468080] [INFO] [32mpwd has sucessfully started.[0m
+[1474468080] [INFO] [32mpwd has sucessfully started.[0m
+[1474468080] [INFO] [32mpwd has sucessfully started.[0m
+[1474468080] [INFO] [32mpwd has sucessfully started.[0m
+[1474468080] [INFO] [32mpwd has sucessfully started.[0m
+[1474468080] [INFO] [32mpwd has sucessfully started.[0m
+[1474468080] [INFO] [32mpwd has sucessfully started.[0m
+[1474468080] [INFO] [32mpwd has sucessfully started.[0m
+[1474468080] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468080] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468080] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468080] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468080] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468080] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468080] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468080] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468080] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468080] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468080] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468088] [INFO] [32mpwd has sucessfully started.[0m
+[1474468088] [INFO] [32mpwd has sucessfully started.[0m
+[1474468088] [INFO] [32mpwd has sucessfully started.[0m
+[1474468088] [INFO] [32mpwd has sucessfully started.[0m
+[1474468088] [INFO] [32mpwd has sucessfully started.[0m
+[1474468088] [INFO] [32mpwd has sucessfully started.[0m
+[1474468088] [INFO] [32mpwd has sucessfully started.[0m
+[1474468088] [INFO] [32mpwd has sucessfully started.[0m
+[1474468088] [INFO] [32mpwd has sucessfully started.[0m
+[1474468088] [INFO] [32mpwd has sucessfully started.[0m
+[1474468088] [INFO] [32mpwd has sucessfully started.[0m
+[1474468088] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468088] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468088] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468088] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468088] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468088] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468088] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468088] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468088] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468088] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468088] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468089] [INFO] [32mpwd has sucessfully started.[0m
+[1474468089] [INFO] [32mpwd has sucessfully started.[0m
+[1474468089] [INFO] [32mpwd has sucessfully started.[0m
+[1474468089] [INFO] [32mpwd has sucessfully started.[0m
+[1474468089] [INFO] [32mpwd has sucessfully started.[0m
+[1474468089] [INFO] [32mpwd has sucessfully started.[0m
+[1474468089] [INFO] [32mpwd has sucessfully started.[0m
+[1474468089] [INFO] [32mpwd has sucessfully started.[0m
+[1474468089] [INFO] [32mpwd has sucessfully started.[0m
+[1474468089] [INFO] [32mpwd has sucessfully started.[0m
+[1474468089] [INFO] [32mpwd has sucessfully started.[0m
+[1474468089] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468089] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468089] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468089] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468089] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468089] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468089] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468089] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468089] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468089] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468089] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468089] [INFO] [32mpwd has sucessfully started.[0m
+[1474468089] [INFO] [32mpwd has sucessfully started.[0m
+[1474468089] [INFO] [32mpwd has sucessfully started.[0m
+[1474468089] [INFO] [32mpwd has sucessfully started.[0m
+[1474468089] [INFO] [32mpwd has sucessfully started.[0m
+[1474468089] [INFO] [32mpwd has sucessfully started.[0m
+[1474468089] [INFO] [32mpwd has sucessfully started.[0m
+[1474468089] [INFO] [32mpwd has sucessfully started.[0m
+[1474468089] [INFO] [32mpwd has sucessfully started.[0m
+[1474468089] [INFO] [32mpwd has sucessfully started.[0m
+[1474468089] [INFO] [32mpwd has sucessfully started.[0m
+[1474468089] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468089] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468089] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468089] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468089] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468089] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468089] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468089] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468089] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468089] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468089] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468090] [INFO] [32mpwd has sucessfully started.[0m
+[1474468090] [INFO] [32mpwd has sucessfully started.[0m
+[1474468090] [INFO] [32mpwd has sucessfully started.[0m
+[1474468090] [INFO] [32mpwd has sucessfully started.[0m
+[1474468090] [INFO] [32mpwd has sucessfully started.[0m
+[1474468090] [INFO] [32mpwd has sucessfully started.[0m
+[1474468090] [INFO] [32mpwd has sucessfully started.[0m
+[1474468090] [INFO] [32mpwd has sucessfully started.[0m
+[1474468090] [INFO] [32mpwd has sucessfully started.[0m
+[1474468090] [INFO] [32mpwd has sucessfully started.[0m
+[1474468090] [INFO] [32mpwd has sucessfully started.[0m
+[1474468090] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468090] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468090] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468090] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468090] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468090] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468090] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468090] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468090] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468090] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468090] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468090] [INFO] [32mpwd has sucessfully started.[0m
+[1474468090] [INFO] [32mpwd has sucessfully started.[0m
+[1474468090] [INFO] [32mpwd has sucessfully started.[0m
+[1474468090] [INFO] [32mpwd has sucessfully started.[0m
+[1474468090] [INFO] [32mpwd has sucessfully started.[0m
+[1474468090] [INFO] [32mpwd has sucessfully started.[0m
+[1474468090] [INFO] [32mpwd has sucessfully started.[0m
+[1474468090] [INFO] [32mpwd has sucessfully started.[0m
+[1474468090] [INFO] [32mpwd has sucessfully started.[0m
+[1474468090] [INFO] [32mpwd has sucessfully started.[0m
+[1474468090] [INFO] [32mpwd has sucessfully started.[0m
+[1474468090] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468090] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468090] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468090] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468090] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468090] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468090] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468090] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468090] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468090] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468090] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468090] [INFO] [32mpwd has sucessfully started.[0m
+[1474468090] [INFO] [32mpwd has sucessfully started.[0m
+[1474468090] [INFO] [32mpwd has sucessfully started.[0m
+[1474468090] [INFO] [32mpwd has sucessfully started.[0m
+[1474468090] [INFO] [32mpwd has sucessfully started.[0m
+[1474468090] [INFO] [32mpwd has sucessfully started.[0m
+[1474468090] [INFO] [32mpwd has sucessfully started.[0m
+[1474468090] [INFO] [32mpwd has sucessfully started.[0m
+[1474468090] [INFO] [32mpwd has sucessfully started.[0m
+[1474468090] [INFO] [32mpwd has sucessfully started.[0m
+[1474468090] [INFO] [32mpwd has sucessfully started.[0m
+[1474468090] [INFO] [32mpwd are already started[0m
+[1474468090] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468090] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468090] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468090] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468090] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468090] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468090] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468090] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468090] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468090] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468090] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468092] [INFO] [32mpwd has sucessfully started.[0m
+[1474468092] [INFO] [32mpwd has sucessfully started.[0m
+[1474468092] [INFO] [32mpwd has sucessfully started.[0m
+[1474468092] [INFO] [32mpwd has sucessfully started.[0m
+[1474468092] [INFO] [32mpwd has sucessfully started.[0m
+[1474468092] [INFO] [32mpwd has sucessfully started.[0m
+[1474468092] [INFO] [32mpwd has sucessfully started.[0m
+[1474468092] [INFO] [32mpwd has sucessfully started.[0m
+[1474468092] [INFO] [32mpwd has sucessfully started.[0m
+[1474468092] [INFO] [32mpwd has sucessfully started.[0m
+[1474468092] [INFO] [32mpwd has sucessfully started.[0m
+[1474468093] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468093] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468093] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468093] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468093] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468093] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468093] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468093] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468093] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468093] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468093] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468095] [INFO] [32mpwd has sucessfully started.[0m
+[1474468095] [INFO] [32mpwd has sucessfully started.[0m
+[1474468095] [INFO] [32mpwd has sucessfully started.[0m
+[1474468095] [INFO] [32mpwd has sucessfully started.[0m
+[1474468095] [INFO] [32mpwd has sucessfully started.[0m
+[1474468095] [INFO] [32mpwd has sucessfully started.[0m
+[1474468095] [INFO] [32mpwd has sucessfully started.[0m
+[1474468095] [INFO] [32mpwd has sucessfully started.[0m
+[1474468095] [INFO] [32mpwd has sucessfully started.[0m
+[1474468095] [INFO] [32mpwd has sucessfully started.[0m
+[1474468095] [INFO] [32mpwd has sucessfully started.[0m
+[1474468095] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468095] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468095] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468095] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468095] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468095] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468095] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468095] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468095] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468095] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468095] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468096] [INFO] [32mpwd has sucessfully started.[0m
+[1474468096] [INFO] [32mpwd has sucessfully started.[0m
+[1474468096] [INFO] [32mpwd has sucessfully started.[0m
+[1474468096] [INFO] [32mpwd has sucessfully started.[0m
+[1474468096] [INFO] [32mpwd has sucessfully started.[0m
+[1474468096] [INFO] [32mpwd has sucessfully started.[0m
+[1474468096] [INFO] [32mpwd has sucessfully started.[0m
+[1474468096] [INFO] [32mpwd has sucessfully started.[0m
+[1474468096] [INFO] [32mpwd has sucessfully started.[0m
+[1474468096] [INFO] [32mpwd has sucessfully started.[0m
+[1474468096] [INFO] [32mpwd has sucessfully started.[0m
+[1474468096] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468096] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468096] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468096] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468096] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468096] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468096] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468096] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468096] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468096] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468096] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468097] [INFO] [32mpwd has sucessfully started.[0m
+[1474468097] [INFO] [32mpwd has sucessfully started.[0m
+[1474468097] [INFO] [32mpwd has sucessfully started.[0m
+[1474468097] [INFO] [32mpwd has sucessfully started.[0m
+[1474468097] [INFO] [32mpwd has sucessfully started.[0m
+[1474468097] [INFO] [32mpwd has sucessfully started.[0m
+[1474468097] [INFO] [32mpwd has sucessfully started.[0m
+[1474468097] [INFO] [32mpwd has sucessfully started.[0m
+[1474468097] [INFO] [32mpwd has sucessfully started.[0m
+[1474468097] [INFO] [32mpwd has sucessfully started.[0m
+[1474468097] [INFO] [32mpwd has sucessfully started.[0m
+[1474468098] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468098] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468098] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468098] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468098] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468098] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468098] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468098] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468098] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468098] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468098] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468112] [INFO] [32mpwd are already stopped[0m
+[1474468118] [WARN] [31mProcess ping has crashed with code null[0m
+[1474468119] [INFO] [32mping has sucessfully started.[0m
+[1474468120] [INFO] [32mping are already started[0m
+[1474468120] [INFO] [32mping are already started[0m
+[1474468121] [INFO] [32mping are already started[0m
+[1474468121] [INFO] [32mping are already started[0m
+[1474468121] [INFO] [32mping are already started[0m
+[1474468121] [INFO] [32mping are already started[0m
+[1474468122] [INFO] [32mping are already started[0m
+[1474468122] [INFO] [32mping are already started[0m
+[1474468122] [INFO] [32mping are already started[0m
+[1474468122] [INFO] [32mping are already started[0m
+[1474468122] [INFO] [32mping are already started[0m
+[1474468122] [INFO] [32mping are already started[0m
+[1474468122] [INFO] [32mping are already started[0m
+[1474468123] [INFO] [32mping are already started[0m
+[1474468123] [INFO] [32mping are already started[0m
+[1474468123] [INFO] [32mping are already started[0m
+[1474468123] [INFO] [32mping are already started[0m
+[1474468123] [INFO] [32mping are already started[0m
+[1474468123] [INFO] [32mping are already started[0m
+[1474468124] [INFO] [32mping are already started[0m
+[1474468124] [WARN] [31mProcess ping has crashed with code null[0m
+[1474468124] [INFO] [32mping has sucessfully started.[0m
+[1474468125] [INFO] [32mping has sucessfully started.[0m
+[1474468125] [WARN] [31mProcess ping has crashed with code null[0m
+[1474468125] [INFO] [32mping has sucessfully started.[0m
+[1474468125] [WARN] [31mProcess ping has crashed with code null[0m
+[1474468125] [WARN] [31mProcess ping has crashed with code null[0m
+[1474468125] [INFO] [32mping has sucessfully started.[0m
+[1474468125] [INFO] [32mping has sucessfully started.[0m
+[1474468125] [WARN] [31mProcess ping has crashed with code null[0m
+[1474468125] [INFO] [32mping has sucessfully started.[0m
+[1474468125] [WARN] [31mProcess ping has crashed with code null[0m
+[1474468126] [INFO] [32mping has sucessfully started.[0m
+[1474468126] [WARN] [31mProcess ping has crashed with code null[0m
+[1474468126] [INFO] [32mping has sucessfully started.[0m
+[1474468126] [WARN] [31mProcess ping has crashed with code null[0m
+[1474468126] [WARN] [31mProcess ping has crashed with code null[0m
+[1474468126] [INFO] [32mping has sucessfully started.[0m
+[1474468126] [INFO] [32mping has sucessfully started.[0m
+[1474468126] [WARN] [31mProcess ping has crashed with code null[0m
+[1474468128] [INFO] [32mping : stopped[0m
+[1474468134] [INFO] [32mping : stopped[0m
+[1474468135] [INFO] [32mping : stopped[0m
+[1474468135] [INFO] [32mping : stopped[0m
+[1474468135] [INFO] [32mping : stopped[0m
+[1474468135] [INFO] [32mping : stopped[0m
+[1474468135] [INFO] [32mping : stopped[0m
+[1474468136] [INFO] [32mping : stopped[0m
+[1474468136] [INFO] [32mping : stopped[0m
+[1474468136] [INFO] [32mping : stopped[0m
+[1474468136] [INFO] [32mping : stopped[0m
+[1474468140] [WARN] [31mProcess ping has crashed with code null[0m
+[1474468163] [INFO] Api ready
+[1474468163] [INFO] [32mls has sucessfully started.[0m
+[1474468163] [INFO] [32mpwd has sucessfully started.[0m
+[1474468163] [INFO] [32mpwd has sucessfully started.[0m
+[1474468163] [INFO] [32mpwd has sucessfully started.[0m
+[1474468163] [INFO] [32mpwd has sucessfully started.[0m
+[1474468163] [INFO] [32mpwd has sucessfully started.[0m
+[1474468163] [INFO] [32mpwd has sucessfully started.[0m
+[1474468163] [INFO] [32mpwd has sucessfully started.[0m
+[1474468163] [INFO] [32mpwd has sucessfully started.[0m
+[1474468163] [INFO] [32mpwd has sucessfully started.[0m
+[1474468163] [INFO] [32mpwd has sucessfully started.[0m
+[1474468163] [INFO] [32mpwd has sucessfully started.[0m
+[1474468163] [INFO] [32mping has sucessfully started.[0m
+[1474468163] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468163] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468163] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468163] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468163] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468163] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468163] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468163] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468163] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468163] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468163] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468163] [INFO] [32mProcess ls has normally stopped with code 0.[0m
+[1474468164] [WARN] [31mProcess ping has crashed with code null[0m
+[1474468173] [INFO] Api ready
+[1474468173] [INFO] [32mls has sucessfully started.[0m
+[1474468173] [INFO] [32mpwd has sucessfully started.[0m
+[1474468173] [INFO] [32mpwd has sucessfully started.[0m
+[1474468173] [INFO] [32mpwd has sucessfully started.[0m
+[1474468173] [INFO] [32mpwd has sucessfully started.[0m
+[1474468173] [INFO] [32mpwd has sucessfully started.[0m
+[1474468173] [INFO] [32mpwd has sucessfully started.[0m
+[1474468173] [INFO] [32mpwd has sucessfully started.[0m
+[1474468173] [INFO] [32mpwd has sucessfully started.[0m
+[1474468173] [INFO] [32mpwd has sucessfully started.[0m
+[1474468173] [INFO] [32mpwd has sucessfully started.[0m
+[1474468173] [INFO] [32mpwd has sucessfully started.[0m
+[1474468173] [INFO] [32mping has sucessfully started.[0m
+[1474468173] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468173] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468173] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468173] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468173] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468173] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468173] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468173] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468173] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468173] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468173] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468173] [INFO] [32mProcess ls has normally stopped with code 0.[0m
+[1474468175] [WARN] [31mProcess ping has crashed with code null[0m
+[1474468283] [INFO] Api ready
+[1474468283] [INFO] [32mls has sucessfully started.[0m
+[1474468283] [INFO] [32mpwd has sucessfully started.[0m
+[1474468283] [INFO] [32mpwd has sucessfully started.[0m
+[1474468283] [INFO] [32mpwd has sucessfully started.[0m
+[1474468283] [INFO] [32mpwd has sucessfully started.[0m
+[1474468283] [INFO] [32mpwd has sucessfully started.[0m
+[1474468283] [INFO] [32mpwd has sucessfully started.[0m
+[1474468283] [INFO] [32mpwd has sucessfully started.[0m
+[1474468283] [INFO] [32mpwd has sucessfully started.[0m
+[1474468283] [INFO] [32mpwd has sucessfully started.[0m
+[1474468283] [INFO] [32mpwd has sucessfully started.[0m
+[1474468283] [INFO] [32mpwd has sucessfully started.[0m
+[1474468283] [INFO] [32mping has sucessfully started.[0m
+[1474468283] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468283] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468283] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468283] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468283] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468283] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468283] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468283] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468283] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468283] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468283] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468283] [INFO] [32mProcess ls has normally stopped with code 0.[0m
+[1474468313] [INFO] Api ready
+[1474468313] [INFO] [32mls has sucessfully started.[0m
+[1474468313] [INFO] [32mpwd has sucessfully started.[0m
+[1474468313] [INFO] [32mpwd has sucessfully started.[0m
+[1474468313] [INFO] [32mpwd has sucessfully started.[0m
+[1474468313] [INFO] [32mpwd has sucessfully started.[0m
+[1474468313] [INFO] [32mpwd has sucessfully started.[0m
+[1474468313] [INFO] [32mpwd has sucessfully started.[0m
+[1474468313] [INFO] [32mpwd has sucessfully started.[0m
+[1474468313] [INFO] [32mpwd has sucessfully started.[0m
+[1474468313] [INFO] [32mpwd has sucessfully started.[0m
+[1474468313] [INFO] [32mpwd has sucessfully started.[0m
+[1474468313] [INFO] [32mpwd has sucessfully started.[0m
+[1474468313] [INFO] [32mping has sucessfully started.[0m
+[1474468313] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468313] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468313] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468313] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468313] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468313] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468313] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468313] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468313] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468313] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468313] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468313] [INFO] [32mProcess ls has normally stopped with code 0.[0m
+[1474468318] [WARN] [31mProcess ping has crashed with code null[0m
+[1474468342] [INFO] Api ready
+[1474468342] [INFO] [32mls has sucessfully started.[0m
+[1474468342] [INFO] [32mpwd has sucessfully started.[0m
+[1474468342] [INFO] [32mpwd has sucessfully started.[0m
+[1474468342] [INFO] [32mpwd has sucessfully started.[0m
+[1474468342] [INFO] [32mpwd has sucessfully started.[0m
+[1474468342] [INFO] [32mpwd has sucessfully started.[0m
+[1474468342] [INFO] [32mpwd has sucessfully started.[0m
+[1474468342] [INFO] [32mpwd has sucessfully started.[0m
+[1474468342] [INFO] [32mpwd has sucessfully started.[0m
+[1474468342] [INFO] [32mpwd has sucessfully started.[0m
+[1474468342] [INFO] [32mpwd has sucessfully started.[0m
+[1474468342] [INFO] [32mpwd has sucessfully started.[0m
+[1474468342] [INFO] [32mping has sucessfully started.[0m
+[1474468342] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468342] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468342] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468342] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468342] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468342] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468342] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468342] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468342] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468342] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468342] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468342] [INFO] [32mProcess ls has normally stopped with code 0.[0m
+[1474468354] [WARN] [31mProcess ping has crashed with code null[0m
+[1474468611] [INFO] Api ready
+[1474468611] [INFO] [32mls has sucessfully started.[0m
+[1474468611] [INFO] [32mpwd has sucessfully started.[0m
+[1474468611] [INFO] [32mpwd has sucessfully started.[0m
+[1474468611] [INFO] [32mpwd has sucessfully started.[0m
+[1474468611] [INFO] [32mpwd has sucessfully started.[0m
+[1474468611] [INFO] [32mpwd has sucessfully started.[0m
+[1474468611] [INFO] [32mpwd has sucessfully started.[0m
+[1474468611] [INFO] [32mpwd has sucessfully started.[0m
+[1474468611] [INFO] [32mpwd has sucessfully started.[0m
+[1474468611] [INFO] [32mpwd has sucessfully started.[0m
+[1474468611] [INFO] [32mpwd has sucessfully started.[0m
+[1474468611] [INFO] [32mpwd has sucessfully started.[0m
+[1474468611] [INFO] [32mping has sucessfully started.[0m
+[1474468611] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468611] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468611] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468611] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468611] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468611] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468611] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468611] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468611] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468611] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468611] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468611] [INFO] [32mProcess ls has normally stopped with code 0.[0m
+[1474468623] [INFO] Api ready
+[1474468623] [INFO] [32mls has sucessfully started.[0m
+[1474468623] [INFO] [32mpwd has sucessfully started.[0m
+[1474468623] [INFO] [32mpwd has sucessfully started.[0m
+[1474468623] [INFO] [32mpwd has sucessfully started.[0m
+[1474468623] [INFO] [32mpwd has sucessfully started.[0m
+[1474468623] [INFO] [32mpwd has sucessfully started.[0m
+[1474468623] [INFO] [32mpwd has sucessfully started.[0m
+[1474468623] [INFO] [32mpwd has sucessfully started.[0m
+[1474468623] [INFO] [32mpwd has sucessfully started.[0m
+[1474468623] [INFO] [32mpwd has sucessfully started.[0m
+[1474468623] [INFO] [32mpwd has sucessfully started.[0m
+[1474468623] [INFO] [32mpwd has sucessfully started.[0m
+[1474468623] [INFO] [32mping has sucessfully started.[0m
+[1474468624] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468624] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468624] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468624] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468624] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468624] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468624] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468624] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468624] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468624] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468624] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468624] [INFO] [32mProcess ls has normally stopped with code 0.[0m
+[1474468632] [INFO] [32mping has sucessfully started.[0m
+[1474468632] [WARN] [31mProcess ping has crashed with code null[0m
+[1474468638] [WARN] [31mProcess ping has crashed with code null[0m
+[1474468686] [INFO] Api ready
+[1474468686] [INFO] [32mls has sucessfully started.[0m
+[1474468686] [INFO] [32mpwd has sucessfully started.[0m
+[1474468686] [INFO] [32mpwd has sucessfully started.[0m
+[1474468686] [INFO] [32mpwd has sucessfully started.[0m
+[1474468686] [INFO] [32mpwd has sucessfully started.[0m
+[1474468686] [INFO] [32mpwd has sucessfully started.[0m
+[1474468686] [INFO] [32mpwd has sucessfully started.[0m
+[1474468686] [INFO] [32mpwd has sucessfully started.[0m
+[1474468686] [INFO] [32mpwd has sucessfully started.[0m
+[1474468686] [INFO] [32mpwd has sucessfully started.[0m
+[1474468686] [INFO] [32mpwd has sucessfully started.[0m
+[1474468686] [INFO] [32mpwd has sucessfully started.[0m
+[1474468686] [INFO] [32mping has sucessfully started.[0m
+[1474468686] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468686] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468686] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468686] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468686] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468686] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468686] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468686] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468686] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468686] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468686] [INFO] [32mProcess pwd has normally stopped with code 0.[0m
+[1474468686] [INFO] [32mProcess ls has normally stopped with code 0.[0m
+[1474468692] [WARN] [31mProcess ping has crashed with code null[0m
+[1474468692] [INFO] 
+[32mping : started[0m
+[1474468692] [INFO] [32mping has sucessfully started.[0m
+[1474468702] [INFO] [32mping : stopped[0m

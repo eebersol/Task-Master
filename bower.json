@@ -1,0 +1,21 @@
+{
+  "name": "taskmaster",
+  "description": "program must be able to start jobs as child processes, and keep them alive, restarting",
+  "main": "taskmaster.js",
+  "authors": [
+    "eebersol"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/eebersol/Task-Master",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "json-formatter": "^0.6.0"
+  }
+}

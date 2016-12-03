@@ -12,9 +12,9 @@ module.exports = class ProcessManager {
     this.first_time   = 0;
     this.old_path     = process.cwd();
 
-    for (let process_name in this.taskmaster.config.options) {
+    for (let process_name in this.taskmaster.config.options)
       this.start_one(process_name, this.taskmaster.config.options[process_name]);
-    }
+    
     this.first_time   = 1;
     this._fs_watch();
   }
@@ -41,19 +41,19 @@ module.exports = class ProcessManager {
     this.processes[process_name] = [];
     let indexes                  = 0;
 
-    if (!this.process_exists(process_name)) {
+    if (!this.process_exists(process_name))
         console.log(`\x1b[31mError  ${process_name}: invalid process name.\x1b[0m`);
-        return;
-    } else if (this.first_time != 0 || (this.first_time == 0 && this.taskmaster.config.options[process_name].autostart == true)) {
-        while (indexes < this.taskmaster.config.options[process_name].numprocs) {
+    else if (this.first_time != 0 || (this.first_time == 0 && this.taskmaster.config.options[process_name].autostart == true)) {
+        for (let indexes = 0;indexes < this.taskmaster.config.options[process_name].numprocs; indexes++) {
+        /*while (indexes < this.taskmaster.config.options[process_name].numprocs) {*/
             let _process = new Process(
               this.taskmaster.config.options[process_name],
               process_name,
               this.taskmaster,
-              this.old_path
+              this.old_path,
+              0
               );
             this.processes[process_name].push(_process);
-            indexes++;
         }
       }
   }
@@ -72,18 +72,18 @@ module.exports = class ProcessManager {
         return;
       }
 
-    while (i_stop < (cmd.length)) {
-      if (!this.process_exists(cmd[i_stop])) {
+    for (let i_stop = 0; i_stop < cmd.length; i_stop++) {
+    /*while (i_stop < (cmd.length)) {*/
+      if (!this.process_exists(cmd[i_stop]))
         console.log(`\x1b[31mError  ${cmd[i_stop]}: invalid process name.\x1b[0m`);
-        return;
-      }
-      i_stop++;
+      // i_stop++;
     } 
     i_stop = 0;
 
-     while(i_stop < cmd.length) {
+    for (i_stop; i_stop < cmd.length; i_stop++) {
+     // while(i_stop < cmd.length) {
       this.stop_one(cmd[i_stop], cmd);
-       i_stop++;
+       // i_stop++;
      }
   }
 
@@ -103,9 +103,10 @@ module.exports = class ProcessManager {
       return;
     }
     let i_status = 0;
-    while(i_status < opts.length) {
+    for (let i_status = 0; i_status < opts.lenght; i_status++) {
+    // while(i_status < opts.length) {
       this.status_one(opts[i_status]);
-      i_status++;
+      // i_status++;
     }
   }
 
@@ -122,21 +123,22 @@ module.exports = class ProcessManager {
     if (!cmd) {
       console.log(`\x1b[31m Error : restart recquire process name.\x1b[0m`)
       return;
-    } 
-    while (i_restart < (cmd.length - 1)) {
+    }
+    for (let i_restart; i_restart < (cmd.length - 1); i_restart++) {
+    // while (i_restart < (cmd.length - 1)) {
       if (!this.process_exists(cmd[i_restart])) {
         console.log(`\x1b[31m Error  ${cmd[i_restart]}: invalid process name.\x1b[0m`);
-        return;
+        return ;
       }
-      i_restart++;
+      // i_restart++;
     } 
-    i_restart = 0;
+    // i_restart = 0;
     this.stop_general(cmd);
 
-    while (i_restart < cmd.length) {
+    for (i_restart = 0; i_restart < cmd.length; i_restart++)
+    // while (i_restart < cmd.length) {
       this.start_one(cmd[i_restart]);
-      i_restart++;
-    }
+      // i_restart++;
   }
 
   reload(cmd) {
@@ -171,6 +173,7 @@ module.exports = class ProcessManager {
   }
 
   __reload_cmd(cmd) {
+        console.log("1.2 ici")
     this.taskmaster.process_manager.stop_one(cmd);
     this.taskmaster.process_manager.start_one(cmd, this.taskmaster.config[cmd]);
   }
@@ -180,14 +183,14 @@ module.exports = class ProcessManager {
 
     if (numprocs > this.processes[cmd].length) {
       let new_proc = numprocs - this.processes[cmd].length;
-      console.log(`\nnew_proc ${new_proc}`);
-      console.log(`numprocs ${numprocs}`);
       for(let index = 0; index < new_proc; index++) {
         let _process = new Process(
           this.taskmaster.config.options[cmd],
           cmd,
           this.taskmaster,
-          this.old_path);
+          this.old_path,
+          0
+          );
         this.processes[cmd].push(_process);
       }
     }

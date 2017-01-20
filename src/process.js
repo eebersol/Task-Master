@@ -117,7 +117,6 @@ module.exports            = class Process {
   }
 
   _on_close(code) {
-    // this.pid                = null;
     this.state              = 'stopped';
     if (this.stdout_stream)
       this.stdout_stream.end();

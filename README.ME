@@ -5,7 +5,7 @@ To run program :
 
  - npm install
  - node taskmaster.js
- - http://localhost:8080/ -> 'graphic' console to managed.
+ - http://localhost:8080/       -> 'graphic' console to managed.
  - tail -f logs/taskmaster.logs -> to see logs
 
 
@@ -23,12 +23,12 @@ To run program :
    autorestart  -> always (graceful and crash exit) / never / unexpected (crash exit).
    exitcodes    -> What type of return value needed to considerate graceful stop.
    startretries -> how many times program try to restart.
-   starttime 	  -> How long has the program to be launched, to considerate successful
+   starttime    -> How long has the program to be launched, to considerate successful
    stopsignal   -> What signal is sent to stop gracefully program.
    stoptime     -> how many time program need to be considerate stopped
-   stdout 		  -> Where the result and logs of program are stocked
-   stderr 		  -> Wherre error return are stocked 
-   env 			    -> With which environments the program is launched
+   stdout       -> Where the result and logs of program are stocked
+   stderr       -> Wherre error return are stocked 
+   env          -> With which environments the program is launched
 
 
    Exemple : 
@@ -57,12 +57,12 @@ To run program :
 
 Command line : 
 
-start [process_name] 					           -> start program
-stop all / stop [process_name] [...]     -> stop all/one program
-restart [process_name]					         -> restart program without check modification in json file
-status / status [process_name] [...] 	   -> states of programs
-reload [process_name]					           -> Reload config.json and apply modification
-shutdown                                 -> Quit taskmaster and close all program supervised
+start [process_name]                      -> start program
+stop all / stop [process_name] [...]      -> stop all/one program
+restart [process_name]                    -> restart program without check modification in json file
+status / status [process_name] [...]      -> states of programs
+reload [process_name]                     -> Reload config.json and apply modification
+shutdown                                  -> Quit taskmaster and close all program supervised
 
 
 

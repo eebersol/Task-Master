@@ -1,7 +1,6 @@
-
 const spawn               = require('child_process').spawn;
 const fs                  = require('fs');
-const json 				  = require('../config/config.json');
+const json                = require('../config/config.json');
 
 module.exports            = class Process {
   constructor(process_config, process_name, taskmaster, old_path, retries) {
@@ -14,9 +13,9 @@ module.exports            = class Process {
     this.state            = 'stopped'
     this.uptime           = 0;
     if (retries)
-    	this.retries      = retries;
+      this.retries      = retries;
     else
-    	this.retries      = 0;
+      this.retries      = 0;
     this.args.splice(0, 1);
     this.reload_config(process_config);
   }
@@ -36,7 +35,7 @@ module.exports            = class Process {
     this.stdout           = process_config.stdout;
     this.stderr           = process_config.stderr;
     this.env              = process_config.env;
-    this.type 			  = process_config.type;
+    this.type             = process_config.type;
     this.spawn_process();
   }
 
@@ -77,7 +76,7 @@ module.exports            = class Process {
       } 
       else {
         this._on_close(this._process.exitCode);
-    	}
+      }
     }, 1000 * this.starttime);
   }
 
@@ -128,20 +127,20 @@ module.exports            = class Process {
       this.taskmaster.logger.info(`\x1b[32mProcess ${this.name} has normally stopped with code ${code}.\x1b[0m`);
       return;
     }
-    this.taskmaster.logger.warn(`\x1b[31mProcess ${this.name} has crashed with code unexpected.\x1b[0m`);    console.log(`${this.retries} < ${this.startretries}`)
+    this.taskmaster.logger.warn(`\x1b[31mProcess ${this.name} has crashed with code unexpected.\x1b[0m`);
     if (this.retries < this.startretries && this.startretries != 'never') {
-  		this.retries++;
-  		this.state = 'started';
-      	this.restart();
+      this.retries++;
+      this.state = 'started';
+        this.restart();
     }
     else 
-    	this.pid  = null;
+      this.pid  = null;
   }
 
   is_running() {
     try {
-    	if (this.type == "loop")
-      		return process.kill(this.pid,0);
+      if (this.type == "loop")
+          return process.kill(this.pid,0);
     }
     catch(e) {
       this.taskmaster.logger.error(`\x1b[31mError : ${e}\x1b[0m`);
@@ -175,7 +174,7 @@ module.exports            = class Process {
 
   status(process_name, index) {
     if (this._process.pid != null && this.state == 'started')
-      console.log(`[${process_name}][${index}] RUNNING with [${this._process.pid}] and uptime ${this.uptime}s`);
+      console.log(`[${process_name}][${index}] RUNNING with [${this._process.pid}] and uptime ${this.uptime}s, number or retries : ${this.startretries}`);
     else
       console.log(`[${process_name}][${index}] STOPPED`);
     console.log('');

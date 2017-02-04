@@ -1,0 +1,68 @@
+Taskmaster is a program manager like supervisor in Nodejs, 'graphic' interface in Html/Css/Angular
+
+
+To run program : 
+
+ - npm install
+ - node taskmaster.js
+ - http://localhost:8080/ -> 'graphic' console to managed.
+ - tail -f logs/taskmaster.logs -> to see logs
+
+
+ Configuration : 
+
+ Taskmaster parse  /config/config.json and run program.
+
+ Different properties :
+
+   cmd          -> program,application,cmd to run.
+   numprocs     -> number of process to run.
+   umask        -> the rights granted (read,write,exec for user,group,all).
+   workingdir   -> where the program running.
+   autostart    -> if launched at begin (= true) or not (= false).
+   autorestart  -> always (graceful and crash exit) / never / unexpected (crash exit).
+   exitcodes    -> What type of return value needed to considerate graceful stop.
+   startretries -> how many times program try to restart.
+   starttime 	  -> How long has the program to be launched, to considerate successful
+   stopsignal   -> What signal is sent to stop gracefully program.
+   stoptime     -> how many time program need to be considerate stopped
+   stdout 		  -> Where the result and logs of program are stocked
+   stderr 		  -> Wherre error return are stocked 
+   env 			    -> With which environments the program is launched
+
+
+   Exemple : 
+    "ping" : {
+        "cmd" : "/sbin/ping 8.8.8.8",
+        "numprocs" : 6,
+        "umask": "002",
+        "workingdir": "/tmp",
+        "autostart": true,
+        "autorestart": "never",
+        "exitcodes": [0, 1, 2],
+        "startretries": "2",
+        "starttime": 5,
+        "stopsignal": "INT",
+        "stoptime": 10,
+        "stdout": "/logs/ping.stdout",
+        "stderr": "/logs/ping.stderr",
+        "type": "loop",
+        "env": {
+            "STARTED_BY": "taskmaster",
+            "COUCOU": 54
+        } 
+    }
+
+
+
+Command line : 
+
+start [process_name] 					           -> start program
+stop all / stop [process_name] [...]     -> stop all/one program
+restart [process_name]					         -> restart program without check modification in json file
+status / status [process_name] [...] 	   -> states of programs
+reload [process_name]					           -> Reload config.json and apply modification
+shutdown                                 -> Quit taskmaster and close all program supervised
+
+
+

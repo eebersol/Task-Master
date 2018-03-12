@@ -1,12 +1,12 @@
 Taskmaster is a program manager like supervisor in Nodejs, 'graphic' interface in Html/Css/Angular
 
 
-To run program : 
+First time : 
 
- - npm install
- - node taskmaster.js
- - http://localhost:8080/       -> 'graphic' console to managed.
- - tail -f logs/taskmaster.logs -> to see logs
+ . npm install
+ . node taskmaster.js
+ . http://localhost:8080/ (designed view)
+ . tail -f logs/taskmaster.logs (display log))
 
 
  Configuration : 
@@ -15,23 +15,24 @@ To run program :
 
  Different properties :
 
-   cmd          -> program,application,cmd to run.
-   numprocs     -> number of process to run.
-   umask        -> the rights granted (read,write,exec for user,group,all).
-   workingdir   -> where the program running.
-   autostart    -> if launched at begin (= true) or not (= false).
-   autorestart  -> always (graceful and crash exit) / never / unexpected (crash exit).
-   exitcodes    -> What type of return value needed to considerate graceful stop.
-   startretries -> how many times program try to restart.
-   starttime    -> How long has the program to be launched, to considerate successful
-   stopsignal   -> What signal is sent to stop gracefully program.
-   stoptime     -> how many time program need to be considerate stopped
-   stdout       -> Where the result and logs of program are stocked
-   stderr       -> Wherre error return are stocked 
-   env          -> With which environments the program is launched
+   .cmd          -> program,application,cmd to run.
+   .numprocs     -> number of process to run.
+   .umask        -> the rights granted (read,write,exec for user,group,all).
+   .workingdir   -> where the program running.
+   .autostart    -> if launched at begin (= true) or not (= false).
+   .autorestart  -> always (graceful and crash exit) / never / unexpected (crash exit).
+   .exitcodes    -> What type of return value needed to considerate graceful stop.
+   .startretries -> how many times program try to restart.
+   .starttime    -> How long has the program to be launched, to considerate successful
+   .stopsignal   -> What signal is sent to stop gracefully program.
+   .stoptime     -> how many time program need to be considerate stopped
+   .stdout       -> Where the result and logs of program are stocked
+   .stderr       -> Wherre error return are stocked 
+   .env          -> With which environments the program is launched
 
 
-   Exemple : 
+   Exemple JSON format : 
+
     "ping" : {
         "cmd" : "/sbin/ping 8.8.8.8",
         "numprocs" : 6,
@@ -57,12 +58,12 @@ To run program :
 
 Command line : 
 
-start [process_name]                      -> start program
-stop all / stop [process_name] [...]      -> stop all/one program
-restart [process_name]                    -> restart program without check modification in json file
-status / status [process_name] [...]      -> states of programs
-reload [process_name]                     -> Reload config.json and apply modification
-shutdown                                  -> Quit taskmaster and close all program supervised
+  .start [process_name]                 : Start process
+  .stop all / stop [process_name] [...] : Stop one/all process
+  .restart [process_name]               : Restart process without check last modification in config file
+  .status / status [process_name] [...] : States of process
+  .reload [process_name]                : Reload config.json and apply modification
+  .shutdown                             : Exit taskmaster and close all process supervised
 
 
 

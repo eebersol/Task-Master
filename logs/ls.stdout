@@ -2898,3 +2898,13 @@ com.adobe.AdobeIPCBroker.ctrl-macbook
 com.apple.launchd.7EhvltpiRk
 com.apple.launchd.fL8dysqNrL
 proxy-1kBmNM
+ README.ME
+bower.json
+config
+logs
+node_modules
+package-lock.json
+package.json
+src
+static
+taskmaster.js
